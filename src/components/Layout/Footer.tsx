@@ -34,11 +34,11 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-300 mt-4 mb-6 max-w-xs">
               Experienced psychiatrist providing compassionate care and comprehensive mental health services.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <SocialLink href={siteMetadata.linkedin} icon={FaLinkedin} />
               <SocialLink href={siteMetadata.facebook} icon={FaFacebookF} />
               <SocialLink href={siteMetadata.twitter} icon={FaTwitter} />
-            </div>
+            </div> */}
           </div>
 
           {/* Wrapper for Quick Links, Services, and Contact Us */}
@@ -93,6 +93,10 @@ const Footer: React.FC = () => {
           <p className="text-sm text-gray-300">
             DNB Psychiatrist | Mental Health Expert
           </p>
+          <p className='text-sm'>
+          Created by <a href="https://rnahealthtech.com" className="text-white-800 hover:underline">RNA HealthTech</a>
+               
+        </p>
         </div>
       </div>
     </footer>
