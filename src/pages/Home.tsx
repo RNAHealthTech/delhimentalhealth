@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import { FaChartLine, FaTrophy, FaSmile } from 'react-icons/fa';
 import HomeServices from '../components/services/HomeServices';
 import Testimonials from '../components/Testimonials';
+import FAQ from '../components/faq';
 
 
 
@@ -197,6 +198,7 @@ const Home: React.FC = () => {
     
         <HomeServices />
         <Testimonials />
+        <FAQ />
     </div>
   );
 };

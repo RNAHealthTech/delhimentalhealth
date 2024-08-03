@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 interface ServiceCardProps {
@@ -25,35 +25,35 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageUrl, title, description 
 const QuoteSection = () => {
     return (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <motion.div 
-            className="w-full md:w-1/2 mb-8 md:mb-0"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img 
-              src="/images/mental-health.jpg" 
-              alt="Mental Health Illustration" 
-              className="rounded-lg shadow-xl w-full h-auto"
-            />
-          </motion.div>
-          <motion.div 
-            className="w-full md:w-1/2 md:pl-12"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Your Journey to Wellness Begins Here</h3>
-            <p className="text-lg md:text-xl text-gray-600 mb-6">
-              "Mental health is not a destination, but a process. It's about how you drive, not where you're going." - Noam Shpancer
-            </p>
-            <p className="text-base md:text-lg text-gray-700">
-              Take the first step towards a healthier mind. Our expert team is here to support you every step of the way.
-            </p>
-          </motion.div>
-          </div>
-          </div>
+            <div className="flex flex-col md:flex-row items-center justify-between">
+                <motion.div
+                    className="w-full md:w-1/2 mb-8 md:mb-0"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <img
+                        src="/images/mental-health.jpg"
+                        alt="Mental Health Illustration"
+                        className="rounded-lg shadow-xl w-full h-auto"
+                    />
+                </motion.div>
+                <motion.div
+                    className="w-full md:w-1/2 md:pl-12"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                    <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Your Journey to Wellness Begins Here</h3>
+                    <p className="text-lg md:text-xl text-gray-600 mb-6">
+                        "Mental health is not a destination, but a process. It's about how you drive, not where you're going." - Noam Shpancer
+                    </p>
+                    <p className="text-base md:text-lg text-gray-700">
+                        Take the first step towards a healthier mind. Our expert team is here to support you every step of the way.
+                    </p>
+                </motion.div>
+            </div>
+        </div>
     )
 }
 
@@ -76,7 +76,7 @@ const HomeServices: React.FC = () => {
             title: "Epilepsy",
             description: "Comprehensive epilepsy and seizure management.",
         },
-       
+
     ];
 
     useEffect(() => {
@@ -93,9 +93,9 @@ const HomeServices: React.FC = () => {
             <QuoteSection />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Choose your Personalized Session</h2>
-                
+
                 <div className="flex flex-col lg:flex-row items-center justify-between">
-                    
+
                     <div className="w-full lg:w-3/4">
                         {/* Desktop view - unchanged */}
                         <div className="hidden lg:grid lg:grid-cols-2 lg:gap-6">
@@ -170,23 +170,22 @@ const HomeServices: React.FC = () => {
                     </div> */}
                 </div>
                 <div className="text-center mt-16">
+                    
                     <Link
                         to="/services"
-                        className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-peach hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        className="group inline-flex mt-4 items-center justify-center text-3xl font-medium text-teal-700 transition-all duration-300 ease-in-out"
                     >
-                        Explore All Services
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 ml-2"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clipRule="evenodd"
+                        Get rid of your suffering
+                        <span className="ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
+                            <img
+                                src="/images/yellow-circle.png"
+                                alt="Animated Circle"
+                                className="w-40 h-40 object-contain animate-spin-slow"
                             />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-6 w-6 text-black" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </span>
                     </Link>
                 </div>
             </div>
