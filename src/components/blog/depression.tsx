@@ -22,7 +22,7 @@ const DepressionBlog: React.FC = () => {
             },
             {
                 type: 'image' as const,
-                src: '/images/personalized-depression-treatment.jpg',
+                src: '/images/depressionmanagement.jpg',
                 alt: 'Illustration of personalized depression treatment approach'
             },
             {

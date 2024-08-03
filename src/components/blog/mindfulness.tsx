@@ -23,7 +23,7 @@ const blogContent = {
       },
       {
         type: "image" as const,
-        src: "/images/mindfulness-techniques.jpg",
+        src: "/images/mindfulnesstech.jpg",
         alt: "Person meditating in a peaceful natural setting"
       },
       {

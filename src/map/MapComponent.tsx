@@ -6,7 +6,7 @@ const mapContainerStyle: React.CSSProperties = {
     height: '300px'
 };
 
-const center = { lat: 28.6280493, lng: 77.2800304 };
+const center = { lat: 28.6712568, lng: 77.1031034 };
 
 const MapComponent: React.FC = () => {
     const mapRef = useRef<HTMLDivElement>(null);

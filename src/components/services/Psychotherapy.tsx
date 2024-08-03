@@ -1,9 +1,14 @@
 // services/psychotherapy.tsx
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import Helmet from "react-helmet";
 
 const Psychotherapy: React.FC = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <Helmet>
@@ -11,13 +16,13 @@ const Psychotherapy: React.FC = () => {
         <meta name="description" content="Expert psychotherapy services for mental health and personal growth. Explore our diverse therapeutic approaches and start your journey to emotional well-being." />
         <meta name="keywords" content="psychotherapy, therapy, counseling, mental health, personal growth, emotional well-being" />
       </Helmet>
-      <div className="container mx-auto px-4 py-12 mt-12">
+      <div className="container mx-auto px-4 py-12 mt-48">
         <h1 className="text-4xl font-bold mb-8">Psychotherapy Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Psychotherapy</h2>
             <p className="mb-4">Psychotherapy, also known as talk therapy, is a collaborative treatment based on the relationship between an individual and a therapist. It provides a supportive environment to talk openly about your concerns and feelings.</p>
-            <img src="/images/psychotherapy-session.jpg" alt="Psychotherapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="/images/heroimage.png" alt="Psychotherapy session" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Benefits of Psychotherapy</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Improved emotional regulation</li>
@@ -31,7 +36,7 @@ const Psychotherapy: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Psychotherapy Approach</h2>
             <p className="mb-4">We offer a range of evidence-based psychotherapy approaches, tailored to meet your individual needs and goals. Our experienced therapists work collaboratively with you to develop a personalized treatment plan.</p>
-            <img src="/images/diverse-therapy-approaches.jpg" alt="Diverse therapy approaches" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="/images/diverse-therapy-session.jpg" alt="Diverse therapy approaches" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Therapeutic Modalities Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Cognitive Behavioral Therapy (CBT)</li>

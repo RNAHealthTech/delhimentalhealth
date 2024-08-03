@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaFacebookF, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const siteMetadata = {
   linkedin: "https://www.linkedin.com/in/dr-pratik-kumar",
@@ -8,7 +8,7 @@ const siteMetadata = {
   twitter: "https://twitter.com/drpratikkumar",
   phone: "+91 9023997854",
   email: "docpratikkumar@gmail.com",
-  address: "S-666, Sai Bhawan, 3rd floor, School Block, Shakarpur, New Delhi-110092",
+  address: "BLOCK &POCKET, BN LOCALSHOPPING Centre, FIRST FLOOR, MANISH CHAMBERS,PLOT NO1, near WEST SHALIMAR BAGH, Delhi, 110088",
 };
 
 const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
@@ -17,28 +17,19 @@ const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, c
   </Link>
 );
 
-const SocialLink: React.FC<{ href: string; icon: React.ElementType }> = ({ href, icon: Icon }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-    <Icon className="h-6 w-6" />
-  </a>
-);
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-primary text-white rounded-t-3xl shadow-2xl relative overflow-hidden">
+    <footer className="bg-gradient-to-l from-teal-800 to-teal-600 text-white rounded-t-3xl shadow-2xl relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Column 1: About */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-3xl font-semibold mb-2">Dr. Pratik Kumar</h3>
+            <h4 className="text-md">Delhi Gl🌏bal Mind Clinic</h4>
             <p className="text-sm text-gray-300 mt-4 mb-6 max-w-xs">
               Experienced psychiatrist providing compassionate care and comprehensive mental health services.
             </p>
-            {/* <div className="flex space-x-4">
-              <SocialLink href={siteMetadata.linkedin} icon={FaLinkedin} />
-              <SocialLink href={siteMetadata.facebook} icon={FaFacebookF} />
-              <SocialLink href={siteMetadata.twitter} icon={FaTwitter} />
-            </div> */}
           </div>
 
           {/* Wrapper for Quick Links, Services, and Contact Us */}
@@ -59,11 +50,11 @@ const Footer: React.FC = () => {
             <div className="w-full md:w-1/3 mb-8 md:mb-0">
               <h3 className="text-xl font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>Psychiatric Consultation</li>
-                <li>Psychotherapy</li>
-                <li>Medication Management</li>
-                <li>Inpatient Care</li>
-                <li>Home Visits</li>
+                <li><FooterLink to="/services/">Psychiatric Consultation</FooterLink></li>
+                <li><FooterLink to="/services/psychotherapy">Psychotherapy</FooterLink></li>
+                <li><FooterLink to="/services/relationship-counseling">Relationship Counseling</FooterLink></li>
+                <li><FooterLink to="/services/ocd-ptsd-adhd">Trauma Healing</FooterLink></li>
+                <li>Call for Home Visits<FooterLink to="tel:9934035397">: 9934035397</FooterLink></li>
               </ul>
             </div>
 
@@ -94,7 +85,7 @@ const Footer: React.FC = () => {
             DNB Psychiatrist | Mental Health Expert
           </p>
           <p className='text-sm'>
-          Created by <a href="https://rnahealthtech.com" className="text-white-800 hover:underline">RNA HealthTech</a>
+          Website by <a href="https://rnahealthtech.com" className="text-white-800 hover:underline">RNA HealthTech</a>
                
         </p>
         </div>

@@ -22,7 +22,7 @@ const AnxietyBlog: React.FC = () => {
             },
             {
                 type: 'image' as const,
-                src: '/images/cbt-anxiety-treatment.jpg',
+                src: '/images/cbt.jpg',
                 alt: 'Illustration of CBT process for anxiety management'
             },
             {

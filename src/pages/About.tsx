@@ -1,5 +1,91 @@
-import React from "react";
-import { AnimatePresence } from "framer-motion";
+// import React, { useEffect } from "react";
+// import { AnimatePresence, motion } from "framer-motion";
+// import { EDUCATION } from "../components/About/data/education";
+// import EducationShowcaseList from "../components/About/education/education-showcase-list";
+// import { EXPERIENCE } from "../components/About/data/experience";
+// import ExperienceShowcaseList from "../components/About/experience/experience-showcase-list";
+// import ResearchList from "../components/About/research/research-list";
+// import { RESEARCH } from "../components/About/data/research";
+
+// const About: React.FC = () => {
+//     useEffect(() => {
+//         window.scrollTo(0, 0);
+//     }, []);
+
+//     return (
+//         <div className="bg-white">
+//             <div className="relative overflow-hidden">
+//                 {/* Curvy background */}
+//                 <div className="absolute inset-0">
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
+//                         <path fill="#D59187" fillOpacity="0.3" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"></path>
+//                     </svg>
+//                 </div>
+//                 <div className="container mx-auto px-6 pt-20 pb-12 relative z-10 mt-40">
+//                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+//                         <div className="w-full">
+//                             <AnimatePresence>
+//                                 <motion.div
+//                                     initial={{ opacity: 0, y: 20 }}
+//                                     animate={{ opacity: 1, y: 0 }}
+//                                     transition={{ duration: 0.5 }}
+//                                 >
+//                                     <h1 className="text-4xl font-bold text-teal-800 sm:text-5xl md:text-6xl lg:text-7xl">
+//                                         Dr. Pratik Kumar
+//                                     </h1>
+//                                     <h2 className="mt-4 text-xl font-semibold text-teal-600">Experienced Psychiatrist</h2>
+//                                     <p className="mt-6 text-lg text-gray-700">
+//                                         {/* copy goes here */}
+//                                         Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar. With over 5 years of experience, he has worked across various mental health facilities in Punjab and served as a Senior Resident at IHBAS, New Delhi.
+//                                     </p>
+//                                     <p className="mt-4 text-lg text-gray-700">
+//                                         {/* copy goes here */}
+//                                         Specializing in neuropsychiatry and de-addiction, Dr. Kumar has extensive experience in both outpatient and inpatient care. He has been involved in academic teaching, clinical research, and has provided mental health services through various outreach programs, including telepsychiatry during the COVID-19 pandemic.
+//                                     </p>
+//                                     <div className="mt-6 flex items-center gap-4">
+//                                         <img
+//                                             src="https://flagcdn.com/w40/in.png"
+//                                             alt="India"
+//                                             className="w-10 h-auto"
+//                                         />
+//                                         <span className="text-lg font-medium text-teal-700">
+//                                             Delhi, India
+//                                         </span>
+//                                     </div>
+//                                 </motion.div>
+//                             </AnimatePresence>
+//                         </div>
+//                         <div className="w-full flex justify-center lg:justify-end">
+//                             <AnimatePresence>
+//                                 <motion.div
+//                                     initial={{ opacity: 0, scale: 0.9 }}
+//                                     animate={{ opacity: 1, scale: 1 }}
+//                                     transition={{ duration: 0.5 }}
+//                                     className="w-full max-w-md"  // Adjust max-width as needed
+//                                 >
+//                                     <img
+//                                         src='/images/dr-pratik-kumar.jpg'
+//                                         className="w-full h-auto rounded-lg shadow-xl object-cover"
+//                                         alt="Dr. Pratik Kumar"
+//                                     />
+//                                 </motion.div>
+//                             </AnimatePresence>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
+//             <EducationShowcaseList title="Education" details={EDUCATION} />
+//             <ResearchList title="Research" details={RESEARCH} />
+//         </div>
+//     )
+// }
+
+// export default About;
+
+import React, { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { EDUCATION } from "../components/About/data/education";
 import EducationShowcaseList from "../components/About/education/education-showcase-list";
 import { EXPERIENCE } from "../components/About/data/experience";
@@ -8,71 +94,88 @@ import ResearchList from "../components/About/research/research-list";
 import { RESEARCH } from "../components/About/data/research";
 
 const About: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-
-        <div>
-            <div className="bg-primary  mx-auto mt-0 flex flex-col items-center gap-6 px-6 pt-20 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
-                {/*<div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-primary opacity-20"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
-  <path fill="#FFF" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"></path>
-</svg>
-    </div>*/}
-                <div className="w-full sm:w-1/2 md:w-2/3 lg:inline-block lg:h-full lg:w-1/2 relative z-8">
-                    <AnimatePresence>
-
-                        <img
-                            src='/images/dr-pratik.png'
-                            className="h-100 w-100 px-0 xl:px-16"
-                            alt="Dr. Pratik "
-                        />
-
-                    </AnimatePresence>
+        <div className="bg-white">
+            <div className="relative overflow-hidden">
+                {/* Curvy background */}
+                <div className="absolute inset-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
+                        <path fill="#D59187" fillOpacity="0.3" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,197.3C960,213,1056,203,1152,181.3C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"></path>
+                    </svg>
                 </div>
-                <div className="sm:1/2 mt-10 w-full lg:w-1/2 relative z-8">
-                    <AnimatePresence>
-
-                        <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-4xl lg:text-4xl xl:text-7xl">
-                            Dr. Pratik Kumar
-                        </h1>
-
-
-
-                        <h2 className="mt-8 text-sm font-semibold text-muted-foreground sm:text-xl md:text-xl">Associate Consultant in Endocrinology & Metabolism at Sir Ganga Ram Hospital, Delhi.</h2>
-
-
-
-                        <p className="mt-8 text-base font-medium text-white sm:text-lg md:text-lg">
-                            A young, astute, and passionate-about-endocrinology clinician, with interest in research and academia.
-                        </p>
-
-                        <p className="mt-8 text-base font-medium text-gray-900 sm:text-lg md:text-lg">
-                            As an Associate Consultant in Endocrinology & Metabolism, I specialize in Adult & Pediatric Endocrine disorders, Diabetes, and Metabolism. Passionate about research and academia, I provide exceptional healthcare with a problem-solving approach, ensuring advanced treatments and prioritizing patient well-being.
-
-                        </p>
-
-
-
-                        <div className="relative flex w-12 gap-4 overflow-hidden rounded-md">
-                            <img
-                                src="https://flagcdn.com/w80/in.png"
-                                width="20"
-                                alt="India"
-                            />
+                <div className="container mx-auto px-6 pt-20 pb-12 relative z-10 mt-40">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="w-full">
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="space-y-6"
+                                >
+                                    <div>
+                                        <h1 className="text-4xl font-bold text-teal-800 sm:text-5xl md:text-6xl lg:text-7xl">
+                                            Dr. Pratik Kumar
+                                        </h1>
+                                        <h2 className="mt-2 text-xl font-semibold text-teal-600">Experienced Psychiatrist</h2>
+                                    </div>
+                                    
+                                    <div className="space-y-4">
+                                        <p className="text-lg text-gray-700">
+                                            Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar. With over 5 years of experience, he has made significant contributions to the field of mental health.
+                                        </p>
+                                        <p className="text-lg text-gray-700">
+                                            Specializing in neuropsychiatry and de-addiction, Dr. Kumar's expertise spans:
+                                        </p>
+                                        <ul className="list-disc pl-6 text-lg text-gray-700">
+                                            <li>Extensive experience in outpatient and inpatient care</li>
+                                            <li>Academic teaching and clinical research</li>
+                                            <li>Mental health services through various outreach programs</li>
+                                            <li>Telepsychiatry services during the COVID-19 pandemic</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div className="flex items-center gap-4">
+                                        <img
+                                            src="https://flagcdn.com/w40/in.png"
+                                            alt="India"
+                                            className="w-10 h-auto"
+                                        />
+                                        <span className="text-lg font-medium text-teal-700">
+                                            Delhi, India
+                                        </span>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
                         </div>
-                        <span className="text-lg font-medium text-foreground">
-                            Delhi, India
-                        </span>
-
-                    </AnimatePresence>
+                        <div className="w-full flex justify-center lg:justify-end">
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="w-full max-w-md"
+                                >
+                                    <img
+                                        src='/images/dr-pratik-kumar.jpg'
+                                        className="w-full h-auto rounded-lg shadow-xl object-cover"
+                                        alt="Dr. Pratik Kumar"
+                                    />
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
             <EducationShowcaseList title="Education" details={EDUCATION} />
             <ResearchList title="Research" details={RESEARCH} />
-
         </div>
-
     )
 }
 

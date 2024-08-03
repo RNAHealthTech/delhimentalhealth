@@ -1,9 +1,14 @@
 // services/ocd-ptsd-adhd.tsx
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import Helmet from "react-helmet";
 
 const OCDPTSDandADHD: React.FC = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -11,13 +16,13 @@ const OCDPTSDandADHD: React.FC = () => {
         <meta name="description" content="Expert treatment for OCD, PTSD, and ADHD. Learn about symptoms, causes, and our tailored therapeutic approaches. Schedule a consultation today." />
         <meta name="keywords" content="OCD, PTSD, ADHD, treatment, therapy, mental health, anxiety disorders" />
       </Helmet>
-      <div className="container mx-auto px-4 py-12 mt-12">
+      <div className="container mx-auto px-4 py-12 mt-48">
         <h1 className="text-4xl font-bold mb-8">OCD, PTSD & ADHD Treatment</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding OCD, PTSD & ADHD</h2>
             <p className="mb-4">Obsessive-Compulsive Disorder (OCD), Post-Traumatic Stress Disorder (PTSD), and Attention-Deficit/Hyperactivity Disorder (ADHD) are complex conditions that can significantly impact daily life. While distinct, these disorders often require specialized care.</p>
-            <img src="/images/mental-health-illustration.jpg" alt="Illustration of mental health" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="/images/ocd.jpg" alt="Illustration of mental health" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Key Characteristics</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>OCD: Intrusive thoughts and repetitive behaviors</li>
@@ -28,7 +33,7 @@ const OCDPTSDandADHD: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Treatment Approach</h2>
             <p className="mb-4">We offer comprehensive, individualized treatment plans for OCD, PTSD, and ADHD, utilizing evidence-based therapies tailored to each condition.</p>
-            <img src="/images/therapy-session-specialized.jpg" alt="Specialized therapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="/images/mental-health.jpg" alt="Specialized therapy session" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Cognitive Behavioral Therapy (CBT)</li>

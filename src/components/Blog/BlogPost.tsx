@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type ParagraphContent = {
   type: 'paragraph';
@@ -32,8 +32,11 @@ interface BlogPostProps {
 }
 
 const BlogPost: React.FC<BlogPostProps> = ({ title, date, content, tags }) => {
+  useEffect(() => {
+      window.scrollTo(0,0);
+  },[])
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-20">
+    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-48">
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{title}</h1>
         <div className="flex items-center text-gray-600">
