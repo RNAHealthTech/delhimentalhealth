@@ -32,9 +32,9 @@ const testimonials: Testimonial[] = [
     avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWC3-3hHYtcOlce9ODauOZ9MD_bxMKhyAuLj8YJZ994s4w5Elk=w60-h60-p-rp-mo-br100",
   },
   {
-    id: 4, 
-    name: "Sanyam Gupta", 
-    role: "PTSD", 
+    id: 4,
+    name: "Sanyam Gupta",
+    role: "PTSD",
     content: "Amongst the best psychiatrists in New Delhi. Has great knowledge, will listen to your problems properly and suggest best treatment. Highly recommended.",
     avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUxZY7VfBzH_oRfks4amsYfnYMO0ey7-bIMvbQ_nVr808Z3yB1h=w60-h60-p-rp-mo-br100",
   }
@@ -42,15 +42,16 @@ const testimonials: Testimonial[] = [
 
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <motion.div 
+    <motion.div
       className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
-      <img 
-        src={testimonial.avatar} 
-        alt={testimonial.name} 
+      <img
+        src={testimonial.avatar}
+        alt={testimonial.name}
         className="w-20 h-20 rounded-full mb-4 border-4 border-amber-100"
       />
       <h3 className="text-xl font-semibold mb-2 text-teal-800">{testimonial.name}</h3>
@@ -83,22 +84,33 @@ const Testimonials: React.FC = () => {
   }, [isMobile]);
 
   return (
-    <div className="bg-rose-50 py-16 relative overflow-hidden">
+    <div className="bg-white py-16 relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-amber-200 rounded-full opacity-20"></div>
+        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-amber-200 rounded-full opacity-20"></div>
+        <div className="absolute top-1/4 -right-1/4 w-2/3 h-2/3 bg-amber-100 rounded-full opacity-15"></div>
+        <div className="absolute -top-1/4 left-1/4 w-1/2 h-1/2 bg-amber-300 rounded-full opacity-10"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1/3 h-1/3 bg-amber-200 rounded-full opacity-15"></div>
+      </div>
       <div className="container mx-auto px-4">
+
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">What Our Patients Say</h2>
-        
+
         {isMobile ? (
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              <TestimonialCard testimonial={testimonials[currentIndex]} />
-            </motion.div>
-          </AnimatePresence>
+          <div className='relative h-[400px]'>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5 }}
+                className="absolute w-full"
+              >
+                <TestimonialCard testimonial={testimonials[currentIndex]} />
+              </motion.div>
+            </AnimatePresence>
+          </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
@@ -107,13 +119,6 @@ const Testimonials: React.FC = () => {
           </div>
         )}
       </div>
-      
-      {/* Background decoration */}
-      <img 
-        src="/images/therapy.png" 
-        alt="Brain illustration" 
-        className="w-64 h-64 opacity-10"
-      />
     </div>
   );
 };

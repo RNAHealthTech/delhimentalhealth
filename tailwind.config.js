@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+         'roboto-slab': ['"Roboto Slab"', 'serif'],
+         'edu': ['"Edu AU VIC WA NT Hand"', 'cursive']
+      },
       colors: {
         'primary': '#032573',
         'secondary': '#ff3366',

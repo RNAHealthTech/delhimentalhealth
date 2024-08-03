@@ -27,15 +27,15 @@ export default function ResearchListItem(
           duration: 0.4,
         }}
       >
-        <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
+        <h3 className="text-base font-bold text-zinc-900 sm:text-xl md:text-2xl">
           {props.title}{" "}
 
         </h3>
 
-        <p className="text-sm font-medium text-muted-foreground xs:text-base">
+        <p className="text-sm font-medium text-zinc-500 xs:text-base">
           {props.coauthors}
         </p>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-zinc-800">
           {props.year}
         </p>
       </motion.div>

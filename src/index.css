@@ -1,22 +1,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply m-0 font-roboto-slab font-normal antialiased overflow-x-hidden;
+  }
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  font-style: normal;
+@layer components {
+  .animate-fadeIn {
+    @apply animate-[fadeIn_1s_ease-out];
+  }
+
+  .animate-slideIn {
+    @apply animate-[slideIn_1s_ease-out];
+  }
+
+  .container-home {
+    @apply bg-[url('../public/images/bg-circles-color.png')] bg-no-repeat bg-cover;
+  }
+
+  .container-contact {
+    @apply bg-[url('../public/images/bg-cirlces.jpg')] bg-no-repeat bg-cover;
+  }
+}
+
+@layer utilities {
+  /* Custom cursor styles */
+  .cursor-custom {
+    @apply cursor-[url('../public/images/custom-cursor.png'),_auto];
+  }
+
+  /* Custom scrollbar styles */
+  .scrollbar-custom {
+    @apply scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200;
+  }
+  .font-roboto-slab {
+      font-family: 'Roboto Slab', serif;
+  }
+  .font-edu {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 @keyframes fadeIn {
@@ -27,24 +65,4 @@ body {
 @keyframes slideIn {
   from { transform: translateX(50px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out;
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out;
-}
-
-.container-home {
-  background-image: url('../public/images/bg-circles-color.png');
-  background-repeat: no-repeat;
-  background-position: cover;
-}
-
-.container-contact {
-  background-image: url('../public/images/bg-cirlces.jpg');
-  background-repeat: no-repeat;
-  background-position: cover;
 }

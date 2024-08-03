@@ -155,32 +155,20 @@ const HomeServices: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="hidden lg:block lg:w-1/3 lg:pr-12">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-blue-200 rounded-full opacity-20 filter blur-3xl transform -rotate-6"></div>
-                            <img
-                                src="/images/man2.jpg"
-                                alt="therapist at work"
-                                className="relative z-10 w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                            />
-                        </div>
-                        <div className="mt-4 text-center">
-                            <p className="text-sm text-gray-600 italic">Dr. Pratik at work</p>
-                        </div>
-                    </div> */}
+                   
                 </div>
                 <div className="text-center mt-16">
                     
                     <Link
                         to="/services"
-                        className="group inline-flex mt-4 items-center justify-center text-3xl font-medium text-teal-700 transition-all duration-300 ease-in-out"
-                    >
-                        Get rid of your suffering
+                        className="group inline-flex mt-4 items-center justify-center text-xl font-edu sm:text-2xl md:text-3xl font-medium text-teal-700 transition-all duration-300 ease-in-out"
+                        >
+                        Get Rid of Your Suffering
                         <span className="ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
                             <img
                                 src="/images/yellow-circle.png"
                                 alt="Animated Circle"
-                                className="w-40 h-40 object-contain animate-spin-slow"
+                                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain animate-spin-slow"
                             />
                             <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-6 w-6 text-black" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -189,7 +177,8 @@ const HomeServices: React.FC = () => {
                     </Link>
                 </div>
             </div>
-            <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-blue-100 rounded-tl-full opacity-30 transform translate-x-1/4 translate-y-1/4"></div>
+            <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-white rounded-tl-full opacity-30 transform translate-x-1/4 translate-y-1/2"></div>
+
         </section>
     );
 };

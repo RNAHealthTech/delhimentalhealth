@@ -13,22 +13,22 @@ const Banner: React.FC = () => {
   }, []);
 
   return (
-    <div 
+    <div
       className={`
-        bg-peach text-center text-lg sm:text-xl font-bold text-teal-800 
-        transition-all duration-300 fixed w-full z-10
-        ${isScrolled ? 'max-h-0 py-0' : 'max-h-[200px] py-4'}
-      `}
+    bg-peach text-center text-base sm:text-lg md:text-xl font-bold text-teal-800 
+    transition-all duration-300 fixed w-full z-10
+    ${isScrolled ? 'max-h-0 py-0' : 'max-h-[200px] py-6 sm:py-4'}
+  `}
       style={{
         overflow: 'hidden',
         transitionProperty: 'max-height, padding',
-        left: 0, 
-        right: 0, 
+        left: 0,
+        right: 0,
       }}
     >
-      <div className="container mx-auto px-4">
-        <p className='hidden sm:block'>Discover unparalleled care with one of 🇮🇳's best therapists. Transform your life with personalized, compassionate therapy that empowers you to thrive.</p>
-        <p className="text-teal-900">Book Your Appointment Today!</p>
+      <div className="container mx-auto px-2 sm:px-4">
+        <p className='hidden sm:block text-sm sm:text-base md:text-lg'>Discover unparalleled care with one of 🇮🇳's best therapists. Transform your life with personalized, compassionate therapy that empowers you to thrive.</p>
+        <p className="text-teal-900 text-sm sm:text-base md:text-lg">Book Your Appointment Today!</p>
       </div>
     </div>
   );

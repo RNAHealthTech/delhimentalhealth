@@ -86,7 +86,7 @@ const Services: React.FC = () => {
             <p className="text-xl text-gray-600 mb-8">Expert care tailored to your well-being</p>
             
             {/* Transparent Slides */}
-            <div className="relative h-48 bg-amber-100 bg-opacity-30 rounded-lg p-6">
+            <div className="relative h-48 bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
               <AnimatePresence mode='wait'>
                 <motion.div
                   key={currentSlide}
@@ -108,7 +108,7 @@ const Services: React.FC = () => {
           </div>
           
           {/* Right side: Image */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 mt-12">
             <img 
               src="/images/therapist.png" 
               alt="Mental Health Services" 
