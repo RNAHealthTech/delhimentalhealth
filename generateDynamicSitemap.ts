@@ -1,3 +1,5 @@
+ //"generate-sitemap": "npm run build && node generateDynamicSitemap.js",
+
 import { writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { SitemapStream, streamToPromise } from 'sitemap';
