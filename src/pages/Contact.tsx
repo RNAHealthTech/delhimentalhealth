@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="md:w-1/2">
-              <img src="/images/contact-hero.png" alt="therapy" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fcontact-hero.png?alt=media&token=a87b326a-1b35-414f-b0ef-0faa14616da9" alt="therapy" />
             </div>
           </div>
         </div>

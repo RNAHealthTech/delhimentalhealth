@@ -22,7 +22,7 @@ const DepressionBlog: React.FC = () => {
             },
             {
                 type: 'image' as const,
-                src: '/images/depressionmanagement.jpg',
+                src: 'https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdepressionmanagement.jpg?alt=media&token=16a1f9a6-7dc5-42b7-9d97-ec69ee508918',
                 alt: 'Illustration of personalized depression treatment approach'
             },
             {

@@ -32,7 +32,8 @@ const AddictionDisorders: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Addiction</h2>
             <p className="mb-4">Addiction is a complex disorder that can involve substances or behaviors. It's characterized by compulsive engagement in rewarding stimuli despite adverse consequences.</p>
-            <img src="/images/cig-hand.jpg" alt="Illustration of addiction" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fcig-hand.jpg?alt=media&token=899b63b2-d2a9-438a-b8a9-511cf6fdf043"
+             alt="Illustration of addiction" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Common Types of Addiction</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Alcohol addiction</li>
@@ -46,7 +47,8 @@ const AddictionDisorders: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Treatment Approach</h2>
             <p className="mb-4">We offer comprehensive, individualized treatment plans for various addictions, combining evidence-based therapies to address your specific needs.</p>
-            <img src="/images/family-therapy.png" alt="Addiction therapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Ffamily-therapy.png?alt=media&token=4b0bad70-9906-4374-a653-f0459d4e840c" 
+            alt="Addiction therapy session" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Detoxification support</li>

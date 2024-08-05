@@ -22,7 +22,7 @@ const AnxietyBlog: React.FC = () => {
             },
             {
                 type: 'image' as const,
-                src: '/images/cbt.jpg',
+                src: 'https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fcbt.jpg?alt=media&token=0f4172ad-1c4b-48f3-927d-0b9ff7110063',
                 alt: 'Illustration of CBT process for anxiety management'
             },
             {

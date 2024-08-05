@@ -31,7 +31,8 @@ const SleepAndSexualHealth: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Sleep & Sexual Health</h2>
             <p className="mb-4">Sleep disorders and sexual health issues can significantly impact overall well-being and quality of life. These concerns are often interconnected and may be influenced by physical, psychological, and environmental factors.</p>
-            <img src="/images/pornaddiction.png" alt="Illustration of sleep" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fpornaddiction.png?alt=media&token=b9a729f0-4091-41f1-8a15-f9cfe3613d58"
+             alt="Illustration of sleep" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Common Concerns</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Insomnia and sleep disturbances</li>
@@ -45,7 +46,8 @@ const SleepAndSexualHealth: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Treatment Approach</h2>
             <p className="mb-4">We offer comprehensive, personalized treatment plans for sleep disorders and sexual health concerns, combining evidence-based therapies to address your unique needs.</p>
-            <img src="/images/therapy.jpg" alt="Sleep clinic" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Ftherapy.jpg?alt=media&token=190aa7d1-abce-46f8-a4a3-19432bc7ba7f" 
+            alt="Sleep clinic" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Sleep studies and assessments</li>

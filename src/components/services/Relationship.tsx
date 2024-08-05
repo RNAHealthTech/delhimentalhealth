@@ -32,7 +32,8 @@ const RelationshipCounseling: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Relationship Counseling</h2>
             <p className="mb-4">Relationship counseling helps couples and families improve communication, resolve conflicts, and strengthen their emotional connections. It can benefit relationships at any stage, from new couples to long-term partnerships facing challenges.</p>
-            <img src="/images/relationshipissues.jpg" alt="Couple in therapy" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Frelationship3.jpg?alt=media&token=65cd61e9-318b-4274-b72a-0adf5c7aa877" 
+            alt="Couple in therapy" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Common Relationship Issues</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Communication breakdown</li>
@@ -46,7 +47,8 @@ const RelationshipCounseling: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Counseling Approach</h2>
             <p className="mb-4">We offer compassionate and effective relationship counseling, tailored to the unique needs of each couple or family. Our approach focuses on enhancing communication, fostering understanding, and developing practical skills for healthier relationships.</p>
-            <img src="/images/family-therapy.png" alt="Family therapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Ffamily-therapy.png?alt=media&token=4b0bad70-9906-4374-a653-f0459d4e840c" 
+            alt="Family therapy session" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Couples therapy</li>

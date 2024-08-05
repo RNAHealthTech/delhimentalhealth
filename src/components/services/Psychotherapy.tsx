@@ -32,7 +32,12 @@ const Psychotherapy: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Psychotherapy</h2>
             <p className="mb-4">Psychotherapy, also known as talk therapy, is a collaborative treatment based on the relationship between an individual and a therapist. It provides a supportive environment to talk openly about your concerns and feelings.</p>
-            <img src="/images/heroimage.png" alt="Psychotherapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fheroimage.png?alt=media&token=53ba4ac8-beda-460f-9d67-8739eb54d7e1"
+             alt="Psychotherapy session" 
+             width={500} 
+             height={300} 
+             className="rounded-lg mb-4" 
+             />
             <h3 className="text-xl font-semibold mb-2">Benefits of Psychotherapy</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Improved emotional regulation</li>
@@ -46,7 +51,7 @@ const Psychotherapy: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Psychotherapy Approach</h2>
             <p className="mb-4">We offer a range of evidence-based psychotherapy approaches, tailored to meet your individual needs and goals. Our experienced therapists work collaboratively with you to develop a personalized treatment plan.</p>
-            <img src="/images/diverse-therapy-session.jpg" alt="Diverse therapy approaches" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdiverse-therapy-session.jpg?alt=media&token=3ee53e01-ed3e-4ea0-85de-0edb6cb2c3e9" alt="Diverse therapy approaches" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Therapeutic Modalities Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Cognitive Behavioral Therapy (CBT)</li>

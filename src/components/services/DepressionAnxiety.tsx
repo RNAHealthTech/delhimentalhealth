@@ -1,11 +1,11 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Helmet from "react-helmet";
 import AppointmentModal from '../AppointmentModal';
 
 const DepressionAnxiety: React.FC = () => {
-   
-  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
-   
+
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,7 +31,8 @@ const DepressionAnxiety: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Depression & Anxiety</h2>
             <p className="mb-4">Depression and anxiety are common mental health conditions that can significantly impact a person's quality of life. While they are distinct disorders, they often occur together and share some similar symptoms.</p>
-            <img src="/images/depression.jpg" alt="Illustration of depression" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdepression.jpg?alt=media&token=286895af-4e5b-44eb-8e8c-5c7aa198019b" 
+            alt="Illustration of depression" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Common Symptoms</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Persistent sad, anxious, or "empty" mood</li>
@@ -47,7 +48,10 @@ const DepressionAnxiety: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Treatment Approach</h2>
             <p className="mb-4">We offer comprehensive, personalized treatment plans for depression and anxiety, combining evidence-based therapies to address your unique needs.</p>
-            <img src="/images/therapy.jpg" alt="Therapy session" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Ftherapy.jpg?alt=media&token=190aa7d1-abce-46f8-a4a3-19432bc7ba7f"
+              alt="Therapy session"
+              width={500}
+              height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Cognitive Behavioral Therapy (CBT)</li>
@@ -63,7 +67,7 @@ const DepressionAnxiety: React.FC = () => {
           </div>
         </div>
       </div>
-      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };

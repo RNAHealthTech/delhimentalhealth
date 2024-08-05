@@ -31,7 +31,12 @@ const OCDPTSDandADHD: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding OCD, PTSD & ADHD</h2>
             <p className="mb-4">Obsessive-Compulsive Disorder (OCD), Post-Traumatic Stress Disorder (PTSD), and Attention-Deficit/Hyperactivity Disorder (ADHD) are complex conditions that can significantly impact daily life. While distinct, these disorders often require specialized care.</p>
-            <img src="/images/ocd.jpg" alt="Illustration of mental health" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Focd.jpg?alt=media&token=d8e4710b-74c9-411c-8693-40d523445a15" 
+                alt="Illustration of mental health" 
+                width={500} 
+                height={300} 
+                className="rounded-lg mb-4" />
+
             <h3 className="text-xl font-semibold mb-2">Key Characteristics</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>OCD: Intrusive thoughts and repetitive behaviors</li>

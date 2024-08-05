@@ -62,22 +62,22 @@ const HomeServices: React.FC = () => {
 
     const featuredServices = [
         {
-            imageUrl: "/images/depression.png",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdepression.png?alt=media&token=fef8d553-5703-431d-869a-7add37c73672",
             title: "Depression & Anxiety",
             description: "Expert treatment for mood and anxiety disorders.",
         },
         {
-            imageUrl: "/images/confidenceissues.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fconfidenceissues.jpg?alt=media&token=ce9b2a60-c644-4172-b78b-f1ba82820bf8",
             title: "Confidence Issues",
             description: "Tailored techniques and exercises to boost your confidence.",
         },
         {
-            imageUrl: "/images/epilepsy.png",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fepilepsy.png?alt=media&token=69b503eb-5b67-485e-8888-0157b515e419",
             title: "Epilepsy",
             description: "Comprehensive epilepsy and seizure management.",
         },
         {
-            imageUrl: "/images/bipolar-disorder-treatment.jpg", 
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar-disorder-treatment.jpg?alt=media&token=13e69c0c-0edb-4bfe-b0f6-8f3c8775e3fe", 
             title: "Bipolar Disorder", 
             description: "Helping in trigger identification and calming medications."
         }

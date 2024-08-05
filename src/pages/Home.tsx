@@ -16,6 +16,7 @@ const Home: React.FC = () => {
 
   const el = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  console.log(currentSlide);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -82,6 +83,7 @@ const Home: React.FC = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
+  console.log(ref, inView);
 
   const [experienceYears, setExperienceYears] = useState(0);
 
@@ -149,6 +151,7 @@ const Home: React.FC = () => {
     const intervalId = setInterval(changeText, 4000); // Change text every 5 seconds
 
     return () => clearInterval(intervalId);
+    //eslint-disable-next-line
   }, []);
 
   return (

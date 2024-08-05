@@ -31,7 +31,10 @@ const BipolarDisorder: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Understanding Bipolar Disorder</h2>
             <p className="mb-4">Bipolar disorder is a complex mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression).</p>
-            <img src="/images/bipolar.jpg" alt="Illustration of bipolar disorder" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar.jpg?alt=media&token=19739e83-da95-413d-9f1d-d5ffc4b58a18" alt="Illustration of bipolar disorder" 
+              width={500} 
+              height={300} 
+              className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Common Symptoms</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Manic episodes: Increased energy, reduced need for sleep, impulsivity</li>
@@ -45,7 +48,8 @@ const BipolarDisorder: React.FC = () => {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Treatment Approach</h2>
             <p className="mb-4">We offer specialized care for managing bipolar disorder, focusing on stabilizing mood and improving overall quality of life.</p>
-            <img src="/images/bipolar-disorder-treatment.jpg" alt="Bipolar disorder treatment" width={500} height={300} className="rounded-lg mb-4" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar-disorder-treatment.jpg?alt=media&token=13e69c0c-0edb-4bfe-b0f6-8f3c8775e3fe" 
+            alt="Bipolar disorder treatment" width={500} height={300} className="rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Services Include:</h3>
             <ul className="list-disc pl-6 mb-4">
               <li>Medication management (mood stabilizers, antipsychotics)</li>

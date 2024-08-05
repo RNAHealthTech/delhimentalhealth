@@ -38,6 +38,7 @@ const About: React.FC = () => {
         const intervalId = setInterval(changeText, 4000); // Change text every 5 seconds
 
         return () => clearInterval(intervalId);
+    //eslint-disable-next-line
     }, []);
 
 
@@ -115,7 +116,7 @@ const About: React.FC = () => {
                                         className="w-full max-w-md"
                                     >
                                         <img
-                                            src='/images/dr-pratik-kumar.jpg'
+                                            src='https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdr-pratik-kumar.jpg?alt=media&token=43b2e1d0-f42e-405f-af5b-00f26e731adc'
                                             className="w-full h-auto rounded-lg shadow-xl object-cover"
                                             alt="Dr. Pratik Kumar"
                                         />

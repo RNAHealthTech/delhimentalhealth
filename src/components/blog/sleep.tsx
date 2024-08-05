@@ -40,7 +40,7 @@ const SleepBlog: React.FC = () => {
       },
       {
         type: "image" as const,
-        src: "/images/sleep-mental-health.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fsleep-mental-health.jpg?alt=media&token=94d32646-6ab2-41b5-9769-30f370f777b0",
         alt: "Illustration showing the connection between sleep and mental health"
       },
       {

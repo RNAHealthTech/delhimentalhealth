@@ -23,7 +23,7 @@ const MindFullBlog: React.FC = () => {
       },
       {
         type: "image" as const,
-        src: "/images/mindfulnesstech.jpg",
+        src: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fmindfulnesstech.jpg?alt=media&token=c2897453-b43a-4350-8f41-76aacc9924ef",
         alt: "Person meditating in a peaceful natural setting"
       },
       {

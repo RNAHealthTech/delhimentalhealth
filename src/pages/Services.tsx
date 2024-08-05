@@ -111,7 +111,7 @@ const Services: React.FC = () => {
           {/* Right side: Image */}
           <div className="lg:w-1/2 mt-12">
             <img
-              src="/images/therapist.png"
+              src="https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Ftherapist.png?alt=media&token=b1ff4332-2d37-4f87-a838-633cad3ea9cb"
               alt="Mental Health Services"
 
             />
