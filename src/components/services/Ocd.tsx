@@ -1,13 +1,22 @@
-// services/ocd-ptsd-adhd.tsx
-
-import React, {useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const OCDPTSDandADHD: React.FC = () => {
+
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -44,12 +53,13 @@ const OCDPTSDandADHD: React.FC = () => {
               <li>Group therapy and support groups</li>
             </ul>
             <p className="mb-4">Our team of experienced mental health professionals is dedicated to helping you manage symptoms, develop coping strategies, and improve your quality of life.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Schedule a Consultation
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

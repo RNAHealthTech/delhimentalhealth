@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
 const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+      className="rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}

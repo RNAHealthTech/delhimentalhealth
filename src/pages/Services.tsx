@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaBrain, FaHeartbeat, FaBed, FaUsers, FaComments } from 'react-icons/fa';
 import { AnimatePresence, motion } from 'framer-motion';
 
+
 const Services: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -74,9 +75,9 @@ const Services: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Our Mental Health Services | Expert Care for Your Well-being</title>
-        <meta name="description" content="Comprehensive mental health services including depression, anxiety, bipolar disorder, addiction treatment, and more. Expert care tailored to your needs." />
-        <meta name="keywords" content="mental health, psychiatry, therapy, counseling, depression, anxiety, addiction" />
+        <title>Mental Health Services - Dr. Pratik Kumar</title>
+        <meta name="description" content="Comprehensive mental health services offered by Dr. Pratik Kumar, including OPD, IPD, de-addiction, neuropsychiatry, telepsychiatry, and emergency care." />
+        <meta name="keywords" content="psychiatric services, OPD, IPD, de-addiction, neuropsychiatry, telepsychiatry, mental health emergency care, Dr. Pratik Kumar" />
       </Helmet>
       <div className="container-contact py-20 mt-40 lg:mt-0 ">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
@@ -84,7 +85,7 @@ const Services: React.FC = () => {
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-4xl font-bold text-teal-800 mb-6">Our Mental Health Services</h1>
             <p className="text-xl text-gray-600 mb-8">Expert care tailored to your well-being</p>
-            
+
             {/* Transparent Slides */}
             <div className="relative h-48 bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
               <AnimatePresence mode='wait'>
@@ -96,23 +97,23 @@ const Services: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="absolute inset-0 flex items-center justify-center"
                 >
-               <div className="text-center">
+                  <div className="text-center">
                     {services[currentSlide].icon}
                     <h3 className="text-2xl font-semibold text-teal-800 mt-2">{services[currentSlide].title}</h3>
                     <p className="text-gray-600 mt-2">{services[currentSlide].description}</p>
                   </div>
 
                 </motion.div>
-                </AnimatePresence>
+              </AnimatePresence>
             </div>
           </div>
-          
+
           {/* Right side: Image */}
           <div className="lg:w-1/2 mt-12">
-            <img 
-              src="/images/therapist.png" 
-              alt="Mental Health Services" 
-              
+            <img
+              src="/images/therapist.png"
+              alt="Mental Health Services"
+
             />
           </div>
         </div>
@@ -129,7 +130,7 @@ const Services: React.FC = () => {
         <div className="relative container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12 text-teal-800">Services</h1>
           <p className='text-2xl text-center mb-4 text-gray-500'>Offered by Dr. Pratik</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-4">
             {services.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}
@@ -156,8 +157,8 @@ const ServiceCard: React.FC<{ icon: React.ReactNode; title: string; description:
         {/* Description text in a light gray */}
         <p className="text-gray-600 mb-4">{description}</p>
         {/* Button styled with teal-800 and amber-100 */}
-        <Link 
-          to={link} 
+        <Link
+          to={link}
           className="inline-block bg-teal-800 text-amber-100 py-2 px-4 rounded hover:bg-teal-900 transition duration-300"
         >
           Learn More

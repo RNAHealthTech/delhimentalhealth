@@ -1,11 +1,22 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const BipolarDisorder: React.FC = () => {
+
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
   
   return (
     <>
@@ -44,12 +55,13 @@ const BipolarDisorder: React.FC = () => {
               <li>Support groups</li>
             </ul>
             <p className="mb-4">Our experienced team of mental health professionals is dedicated to helping you manage bipolar disorder effectively and lead a balanced, fulfilling life.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Schedule a Consultation
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

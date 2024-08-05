@@ -1,14 +1,24 @@
 // services/psychotherapy.tsx
 
-import React, {useEffect} from 'react';
+import React, { useState ,useEffect} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const Psychotherapy: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <Helmet>
@@ -47,12 +57,13 @@ const Psychotherapy: React.FC = () => {
               <li>Interpersonal Therapy</li>
             </ul>
             <p className="mb-4">Our compassionate therapists are committed to providing a safe, confidential space for you to explore your thoughts and feelings, work through challenges, and achieve personal growth.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Begin Your Therapy Journey
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

@@ -68,14 +68,19 @@ const HomeServices: React.FC = () => {
         },
         {
             imageUrl: "/images/confidenceissues.jpg",
-            title: "Bipolar Disorder",
-            description: "Specialized care for managing bipolar illness.",
+            title: "Confidence Issues",
+            description: "Tailored techniques and exercises to boost your confidence.",
         },
         {
             imageUrl: "/images/epilepsy.png",
             title: "Epilepsy",
             description: "Comprehensive epilepsy and seizure management.",
         },
+        {
+            imageUrl: "/images/bipolar-disorder-treatment.jpg", 
+            title: "Bipolar Disorder", 
+            description: "Helping in trigger identification and calming medications."
+        }
 
     ];
 
@@ -147,22 +152,23 @@ const HomeServices: React.FC = () => {
                                 {featuredServices.map((_, index) => (
                                     <button
                                         key={index}
-                                        className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-peach' : 'bg-amber-200'
+                                        className={`w-2 h-2 rounded-full ${currentSlide === index ? 'bg-orange-100' : 'bg-amber-100'
                                             }`}
                                         onClick={() => setCurrentSlide(index)}
                                     ></button>
                                 ))}
-                            </div>
+                            </div> 
+                           
                         </div>
                     </div>
-                   
+
                 </div>
                 <div className="text-center mt-16">
-                    
+
                     <Link
                         to="/services"
                         className="group inline-flex mt-4 items-center justify-center text-xl font-edu sm:text-2xl md:text-3xl font-medium text-teal-700 transition-all duration-300 ease-in-out"
-                        >
+                    >
                         Get Rid of Your Suffering
                         <span className="ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
                             <img

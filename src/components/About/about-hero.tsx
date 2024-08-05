@@ -45,9 +45,8 @@ export default function AboutHero() {
 
                     </p>
 
-
-
                     <div className="relative flex w-12 gap-4 overflow-hidden rounded-md">
+                       
                         <img
                             src="https://flagcdn.com/w80/in.png"
                             width="20"

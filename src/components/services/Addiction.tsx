@@ -1,12 +1,24 @@
 // services/addiction-disorders.tsx
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const AddictionDisorders: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <Helmet>
@@ -45,12 +57,13 @@ const AddictionDisorders: React.FC = () => {
               <li>Medication-assisted treatment (when appropriate)</li>
             </ul>
             <p className="mb-4">Our experienced team of addiction specialists is committed to helping you overcome addiction, develop coping strategies, and build a fulfilling life in recovery.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Get Help Now
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

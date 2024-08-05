@@ -82,8 +82,8 @@ const AnxietyBlog: React.FC = () => {
                 <meta property="og:title" content={blogContent.title} />
                 <meta property="og:description" content="Discover cutting-edge techniques and treatments revolutionizing anxiety management in 2024. Learn about advanced CBT, mindfulness, and technological interventions." />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/blog/anxiety-management-strategies-2024" />
-                <meta property="og:image" content="https://yourwebsite.com/images/anxiety-management-2024.jpg" />
+                <meta property="og:url" content="https://delhimentalhealth.com/blog/anxiety-management-strategies-2024" />
+                <meta property="og:image" content="https://delhimentalhealth.com/images/anxiety-management-2024.jpg" />
             </Helmet>
             <BlogPost {...blogContent} />
         </>

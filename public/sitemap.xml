@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://delhimentalhealth.com/</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/about</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/contact</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog/</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog/understanding-depression</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog/anxiety-coping</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog/sleep-and-mental-health</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/blog/mindfulness-for-stress</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/depression-anxiety</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/bipolar-disorder</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/epilepsy</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/addiction-disorders</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/ocd-ptsd-adhd</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/sleep-sexual-health</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/relationship-counseling</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/services/psychotherapy</loc>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/images</loc>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/anxiety.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>anxiety.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/anxiety.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>anxiety.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bg-circles-color.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>bg-circles-color.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bg-cirlces.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>bg-cirlces.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bipolar-disorder-treatment.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>bipolar-disorder-treatment.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bipolar.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>bipolar.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/cbt.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>cbt.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/cig-hand.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>cig-hand.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/circle-red-double-hover.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>circle-red-double-hover.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/circle-red-double.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>circle-red-double.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/confidenceissues.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>confidenceissues.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/contact-hero.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>contact-hero.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depression.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>depression.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depression.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>depression.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depressionmanagement.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>depressionmanagement.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/diverse-therapy-session.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>diverse-therapy-session.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/doctor.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>doctor.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/dr-pratik-kumar.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>dr-pratik-kumar.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/dr-pratik.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>dr-pratik.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/epilepsy.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>epilepsy.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/family-therapy.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>family-therapy.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/hero-home.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>hero-home.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/heroimage.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>heroimage.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/logo.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>logo.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/logo.svg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>logo.svg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mental-disorders.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mental-disorders.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mental-health.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mental-health.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mentalhealth.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mentalhealth.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mindfulness.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mindfulness.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mindfulnesstech.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mindfulnesstech.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/ocd.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>ocd.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/overview.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>overview.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/pornaddiction.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>pornaddiction.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/psychotherapysession.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>psychotherapysession.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationship2.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>relationship2.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationship3.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>relationship3.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationshipissues.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>relationshipissues.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/sleep-mental-health.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>sleep-mental-health.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapist.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>therapist.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapy.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>therapy.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapy.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>therapy.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/yellow-circle.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>yellow-circle.png</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://delhimentalhealth.com/gallery</loc>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/anxiety.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/anxiety.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bg-circles-color.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bg-cirlces.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bipolar-disorder-treatment.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/bipolar.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/cbt.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/cig-hand.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/circle-red-double-hover.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/circle-red-double.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/confidenceissues.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/contact-hero.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depression.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depression.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/depressionmanagement.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/diverse-therapy-session.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/doctor.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/dr-pratik-kumar.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/dr-pratik.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/epilepsy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/family-therapy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/hero-home.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/heroimage.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/logo.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/logo.svg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mental-disorders.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mental-health.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mentalhealth.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mindfulness.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/mindfulnesstech.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/ocd.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/overview.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/pornaddiction.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/psychotherapysession.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationship2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationship3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/relationshipissues.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/sleep-mental-health.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapist.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapy.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/therapy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://delhimentalhealth.com/images/yellow-circle.png</image:loc>
+        </image:image>
+    </url>
+</urlset>

@@ -1,12 +1,22 @@
-// services/sleep-sexual-health.tsx
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const SleepAndSexualHealth: React.FC = () => {
+
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -46,12 +56,13 @@ const SleepAndSexualHealth: React.FC = () => {
               <li>Medication management when appropriate</li>
             </ul>
             <p className="mb-4">Our experienced team of sleep specialists and sex therapists is dedicated to helping you improve your sleep quality and sexual well-being, enhancing your overall health and relationships.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Book an Appointment
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

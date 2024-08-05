@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 
 const MindFullBlog: React.FC = () => {
-const blogContent = {
+  const blogContent = {
     title: "Mindfulness Techniques for Stress Reduction",
     author: "Dr. Emily Chen",
     date: "2024-08-15",
@@ -104,22 +104,20 @@ const blogContent = {
     ],
     tags: ['Mindfulness', 'Stress Reduction', 'Mental Health']
   };
-  
- 
-return (
+
+
+  return (
     <>
-    <Helmet>
-        <title>{blogContent.title}</title>
-        <meta name="description" content="Explore the latest evidence-based strategies for managing anxiety in 2024, including advancements in CBT, mindfulness techniques, lifestyle modifications, and technological interventions." />
-        <meta name="keywords" content="anxiety management, CBT, mindfulness, exercise, nutrition, mental health apps, virtual reality therapy" />
-        <meta property="og:title" content={blogContent.title} />
-        <meta property="og:description" content="Discover cutting-edge techniques and treatments revolutionizing anxiety management in 2024. Learn about advanced CBT, mindfulness, and technological interventions." />
+      <Helmet>
+        <title>Mindfulness Techniques for Stress Reduction | Dr. Pratik Kumar</title>
+        <meta name="description" content="Discover effective mindfulness practices for managing stress with guidance from Dr. Pratik Kumar. Learn how to incorporate mindfulness into your daily routine for better mental health." />
+        <meta name="keywords" content="mindfulness techniques, stress reduction, Dr. Pratik Kumar, mental health practices, meditation, mindful living" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourwebsite.com/blog/anxiety-management-strategies-2024" />
-        <meta property="og:image" content="https://yourwebsite.com/images/anxiety-management-2024.jpg" />
-    </Helmet>
-    <BlogPost {...blogContent} />
- </>
-)
+        <meta property="og:url" content="https://delhimentalhealth.com/blog/anxiety-management-strategies-2024" />
+        <meta property="og:image" content="https://delhimentalhealth.com/images/anxiety-management-2024.jpg" />
+      </Helmet>
+      <BlogPost {...blogContent} />
+    </>
+  )
 }
 export default MindFullBlog;

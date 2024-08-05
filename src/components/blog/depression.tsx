@@ -62,7 +62,7 @@ const DepressionBlog: React.FC = () => {
                 content: "Digital Therapeutics and Telepsychiatry"
             },
             {
-                type: 'paragraph' as const, 
+                type: 'paragraph' as const,
                 content: 'As we continyue '
             }
         ],
@@ -70,19 +70,16 @@ const DepressionBlog: React.FC = () => {
     };
     return (
         <>
-        <Helmet>
-            <title>{blogContent.title}</title>
-            <meta name="description" content="Explore the latest evidence-based strategies for managing anxiety in 2024, including advancements in CBT, mindfulness techniques, lifestyle modifications, and technological interventions." />
-            <meta name="keywords" content="anxiety management, CBT, mindfulness, exercise, nutrition, mental health apps, virtual reality therapy" />
-            <meta property="og:title" content={blogContent.title} />
-            <meta property="og:description" content="Discover cutting-edge techniques and treatments revolutionizing anxiety management in 2024. Learn about advanced CBT, mindfulness, and technological interventions." />
-            <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://yourwebsite.com/blog/anxiety-management-strategies-2024" />
-            <meta property="og:image" content="https://yourwebsite.com/images/anxiety-management-2024.jpg" />
-        </Helmet>
-        <BlogPost {...blogContent} />
-     </>
+            <Helmet>
+                <title>Understanding Depression: Symptoms, Causes, and Treatment | Dr. Pratik Kumar</title>
+                <meta name="description" content="Gain a deeper understanding of depression with insights from Dr. Pratik Kumar. Explore symptoms, potential causes, and effective treatment options for depression." />
+                <meta name="keywords" content="depression symptoms, depression causes, depression treatment, Dr. Pratik Kumar, mental health awareness, mood disorders" />
+                <meta property="og:url" content="https://delhimentalhealth.com/blog/anxiety-management-strategies-2024" />
+                <meta property="og:image" content="https://delhimentalhealth.com/images/anxiety-management-2024.jpg" />
+            </Helmet>
+            <BlogPost {...blogContent} />
+        </>
     )
-    }
+}
 
-    export default DepressionBlog;
+export default DepressionBlog;

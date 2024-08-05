@@ -1,12 +1,22 @@
-// pages/services/depression-anxiety.tsx
-import React, {useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const DepressionAnxiety: React.FC = () => {
- 
+   
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
+   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -47,12 +57,13 @@ const DepressionAnxiety: React.FC = () => {
               <li>Lifestyle counseling</li>
             </ul>
             <p className="mb-4">Our experienced team of mental health professionals is dedicated to helping you overcome depression and anxiety, improve your quality of life, and develop coping strategies for long-term well-being.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Schedule a Consultation
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

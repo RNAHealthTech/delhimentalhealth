@@ -1,12 +1,22 @@
-// pages/services/epilepsy.tsx
-import React, {useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const Epilepsy: React.FC = () => {
+
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
    
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -46,12 +56,13 @@ const Epilepsy: React.FC = () => {
               <li>Patient and family education</li>
             </ul>
             <p className="mb-4">Our team of neurologists and epilepsy specialists is committed to helping you achieve better seizure control and improve your quality of life.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Schedule a Consultation
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

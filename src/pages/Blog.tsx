@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import BlogCard from '../components/Blog/BlogCard';
 
@@ -45,9 +45,9 @@ const Blog: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Our Blog - Latest Articles on Mental Health</title>
-        <meta name="description" content="Explore our collection of articles on mental health, anxiety, depression, sleep, and mindfulness. Stay informed with the latest research and insights." />
-        <meta name="keywords" content="blog, mental health, anxiety, depression, sleep, mindfulness, stress reduction" />
+        <title>Mental Health Insights | Dr. Pratik Kumar's Blog</title>
+        <meta name="description" content="Explore expert insights on mental health, psychiatry, and well-being from Dr. Pratik Kumar. Stay informed with the latest in neuropsychiatry and de-addiction." />
+        <meta name="keywords" content="mental health blog, psychiatric insights, Dr. Pratik Kumar, neuropsychiatry articles, de-addiction information, well-being tips" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center mt-48">
         <h1 className="text-2xl font-bold text-teal-600 mb-8 lg:text-4xl">Blog & <span className='text-xl text-zinc-800'>Latest Research...</span>

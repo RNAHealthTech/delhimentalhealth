@@ -1,12 +1,23 @@
 
-import React, {useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import Helmet from "react-helmet";
+import AppointmentModal from '../AppointmentModal';
 
 const RelationshipCounseling: React.FC = () => {
   
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -46,12 +57,13 @@ const RelationshipCounseling: React.FC = () => {
               <li>Intimacy and sex therapy</li>
             </ul>
             <p className="mb-4">Our experienced relationship counselors are dedicated to helping you build stronger, more fulfilling relationships. We provide a safe, non-judgmental space to explore challenges and work towards positive change.</p>
-            <button className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300">
+            <button className="bg-peach text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition duration-300" onClick={openModal}>
               Start Counseling
             </button>
           </div>
         </div>
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={closeModal}  />
     </>
   );
 };

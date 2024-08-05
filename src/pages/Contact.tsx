@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Map from '../map';
 import { useForm, ValidationError } from '@formspree/react';
@@ -12,6 +13,11 @@ const Contact: React.FC = () => {
   console.log(state);
   return (
     <>
+      <Helmet>
+        <title>Contact Dr. Pratik Kumar - Book Your Appointment</title>
+        <meta name="description" content="Get in touch with Dr. Pratik Kumar for expert psychiatric consultations. Contact via phone: 9023997854 / 9877065403 or email: docpratikkumar@gmail.com" />
+        <meta name="keywords" content="contact Dr. Pratik Kumar, psychiatric appointment, mental health consultation, psychiatrist contact details" />
+      </Helmet>
       <section className="bg-white py-12 mt-28">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
