@@ -116,7 +116,7 @@ const About: React.FC = () => {
                                         className="w-full max-w-md"
                                     >
                                         <img
-                                            src='https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fdr-pratik-kumar.jpg?alt=media&token=43b2e1d0-f42e-405f-af5b-00f26e731adc'
+                                            src='/images/dr-prateek.png'
                                             className="w-full h-auto rounded-lg shadow-xl object-cover"
                                             alt="Dr. Pratik Kumar"
                                         />

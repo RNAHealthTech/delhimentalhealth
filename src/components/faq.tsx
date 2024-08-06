@@ -60,20 +60,31 @@ const FAQ: React.FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section className="bg-peach py-8 sm:py-12 md:py-16">
+        <section className="bg-gradient-to-l from-peach to-lg py-8 sm:py-12 md:py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-teal-800">
                     Frequently Asked Questions
                 </h2>
-                <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto">
-                    {faqs.map((faq, index) => (
-                        <FAQItems
-                            key={index}
-                            item={faq}
-                            isOpen={openIndex === index}
-                            toggleOpen={() => setOpenIndex(openIndex === index ? null : index)}
+                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+                    <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                        <img 
+                            src="/images/wallpaper.png" // Replace with your image path
+                            alt="FAQ Illustration"
+                            width={500}
+                            height={500}
+                            className="rounded-lg"
                         />
-                    ))}
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                        {faqs.map((faq, index) => (
+                            <FAQItems
+                                key={index}
+                                item={faq}
+                                isOpen={openIndex === index}
+                                toggleOpen={() => setOpenIndex(openIndex === index ? null : index)}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

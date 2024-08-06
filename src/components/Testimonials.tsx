@@ -37,6 +37,20 @@ const testimonials: Testimonial[] = [
     role: "PTSD",
     content: "Amongst the best psychiatrists in New Delhi. Has great knowledge, will listen to your problems properly and suggest best treatment. Highly recommended.",
     avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUxZY7VfBzH_oRfks4amsYfnYMO0ey7-bIMvbQ_nVr808Z3yB1h=w60-h60-p-rp-mo-br100",
+  },
+  {
+    id: 5,
+    name: "Anil Kumar Sharma",
+    role: "Clinical Depression",
+    content: "My 1st best experience with any doctor. Good behaviour with my known patient. I must recommend to visit for any patient.",
+    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXWq2s1zawN2G0IDU23TvPD4SPUEw4H98lbWw-wN5_TkguStZI=w60-h60-p-rp-mo-br100"
+  }, 
+  {
+    id: 6,
+    name: "Arumit Palit",
+    role: "Alcohal Addiction",
+    content: "Excellent doctor , understands patient . Very precise in picking up problems.available 24x7 for his patients",
+    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVtF-R5m-1EhugvUglqggxkunNvOQLTTEq1SnmDAOjYKB8X4At6=w60-h60-p-rp-mo-br100"
   }
 ];
 

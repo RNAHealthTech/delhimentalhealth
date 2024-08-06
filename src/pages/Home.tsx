@@ -129,11 +129,10 @@ const Home: React.FC = () => {
 
   const texts = [
     "Ranbir: 'Dr. Pratik's expertise changed my life.'",
-    "Mr. Sahu: What conditions does Dr. Pratik treat?",
+    "Mr. Sahu: 'He is basically brilliant.'",
     "Ganesah (Tilak Nagar): 'I finally found hope with Dr. Kumar's treatment.'",
-    "Priya: How long does a typical session last?",
     "Rubal: 'Dr. Pratik's approach is both professional and compassionate.'",
-    "Sushant: Does Dr. Pratik offer online consultations?",
+    "Sushant: 'Dr. Pratik helped me in the worst time of my career.'",
   ];
 
   useEffect(() => {
@@ -176,15 +175,8 @@ const Home: React.FC = () => {
                   </h1>
                   <p className="text-lg sm:text-xl mb-6 text-teal-600">
                     by DNB-qualified psychiatrist with over 10 years of experience in comprehensive mental health treatment
-                  </p>
-                  <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <Link
-                      to="/about"
-                      className="inline-flex items-center justify-center px-5 py-3 border border-teal-600 text-base font-medium rounded-md text-teal-600 bg-transparent hover:bg-teal-50 transition duration-300 ease-in-out"
-                    >
-                      More about Dr. Pratik
-                    </Link>
-                  </div>
+                </p>
+                
                 </div>
                 <Link
                   to="/contact"

@@ -45,11 +45,27 @@ const QuoteSection = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Your Journey to Wellness Begins Here</h3>
-                    <p className="text-lg md:text-xl text-gray-600 mb-6">
+                    {/* <p className="text-lg md:text-xl text-gray-600 mb-6">
                         "Mental health is not a destination, but a process. It's about how you drive, not where you're going." - Noam Shpancer
-                    </p>
+                    </p> */}
+                    <Link
+                        to="/about"
+                        className="group inline-flex mt-6 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out"
+                    >
+                        About Dr. Pratik Kumar
+                        <span className="ml-2 sm:ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
+                            <img
+                                src="/images/circle-red-double-hover.png"
+                                alt="Animated Circle"
+                                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain animate-spin-slow"
+                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </span>
+                    </Link>
                     <p className="text-base md:text-lg text-gray-700">
-                        Take the first step towards a healthier mind. Our expert team is here to support you every step of the way.
+                        An alumni of best indian Institute of psychiatry, sharing wisdom with his patients over mental health 
                     </p>
                 </motion.div>
             </div>
@@ -77,8 +93,8 @@ const HomeServices: React.FC = () => {
             description: "Comprehensive epilepsy and seizure management.",
         },
         {
-            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar-disorder-treatment.jpg?alt=media&token=13e69c0c-0edb-4bfe-b0f6-8f3c8775e3fe", 
-            title: "Bipolar Disorder", 
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar-disorder-treatment.jpg?alt=media&token=13e69c0c-0edb-4bfe-b0f6-8f3c8775e3fe",
+            title: "Bipolar Disorder",
             description: "Helping in trigger identification and calming medications."
         }
 
@@ -99,17 +115,17 @@ const HomeServices: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Choose your Personalized Session</h2>
 
-                <div className="flex flex-col lg:flex-row items-center justify-between">
+                <div className="flex justify-center">
 
-                    <div className="w-full lg:w-3/4">
+                    <div className="w-full max-w-5xl">
                         {/* Desktop view - unchanged */}
                         <div className="hidden lg:grid lg:grid-cols-2 lg:gap-6">
                             {featuredServices.map((service, index) => (
                                 <div
                                     key={index}
                                     className={`
-                                        relative z-${10 + index} 
-                                        lg:transform-none lg:hover:scale-105 
+                                        relative z-${10 + index}
+                                        lg:transform-none lg:hover:scale-105
                                         transition-all duration-300 mb-8 lg:mb-0
                                         ${index % 2 === 0 ? 'lg:even:mt-4' : 'lg:odd:mt-4'}
                                     `}
@@ -152,13 +168,13 @@ const HomeServices: React.FC = () => {
                                 {featuredServices.map((_, index) => (
                                     <button
                                         key={index}
-                                        className={`w-2 h-2 rounded-full ${currentSlide === index ? 'bg-orange-100' : 'bg-amber-100'
+                                        className={`w-4 h-4 rounded-full ${currentSlide === index ? 'bg-orange-100' : 'bg-amber-100'
                                             }`}
                                         onClick={() => setCurrentSlide(index)}
                                     ></button>
                                 ))}
-                            </div> 
-                           
+                            </div>
+
                         </div>
                     </div>
 

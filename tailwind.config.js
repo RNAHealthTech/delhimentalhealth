@@ -13,7 +13,8 @@ module.exports = {
         'primary': '#032573',
         'secondary': '#ff3366',
         'accent': '#6b46c1',
-        'peach': '#D59187'
+        'peach': '#D59187',
+        'lp': '#EAC8C3'
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
