@@ -112,7 +112,7 @@ const Testimonials: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <img 
-              src="/images/wallpaper.jpg" // Make sure this path is correct
+              src="/images/wallpaper.jpg" // looking dull 
               alt="Patient Testimonials"
               width={500}
               height={500}

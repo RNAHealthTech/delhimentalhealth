@@ -8,7 +8,7 @@ const siteMetadata = {
   twitter: "https://twitter.com/drpratikkumar",
   phone: "+91 9023997854",
   email: "docpratikkumar@gmail.com",
-  address: "BLOCK &POCKET, BN LOCALSHOPPING Centre, FIRST FLOOR, MANISH CHAMBERS,PLOT NO1, near WEST SHALIMAR BAGH, Delhi, 110088",
+  address: " Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi-88",
 };
 
 const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           {/* Column 1: About */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-3xl font-semibold mb-2">Dr. Pratik Kumar</h3>
-            <h4 className="text-md">Delhi Gl🌏bal Mind Clinic</h4>
+            <h4 className="text-md">Delhi Global Mind Clinic</h4>
             <p className="text-sm text-gray-300 mt-4 mb-6 max-w-xs">
               Experienced psychiatrist providing compassionate care and comprehensive mental health services.
             </p>

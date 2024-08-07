@@ -26,7 +26,7 @@ const QuoteSection = () => {
     return (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 ml-2">Embark on Your Journey to Wellness with Dr. Pratik Kumar</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 ml-2">Embark on Your Journey to Holistic Mental Health with Dr. Pratik Kumar</h3>
 
                 <motion.div
                     className="w-full md:w-1/2 mb-8 md:mb-0"
@@ -47,10 +47,10 @@ const QuoteSection = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <p className="text-base md:text-lg text-gray-700 mb-4">
-                        With over 10 years of specialized experience and a DNB in Psychiatry, Dr. Pratik Kumar offers compassionate, evidence-based care for a wide range of mental health concerns.
+                        With experience of over a decade and expertise in DNB (Psychiatry), Dr. Pratik Kumar offers compassionate, evidence-based care for a wide range of mental health concerns.
                     </p>
                     <p className="text-base md:text-lg text-gray-700 mb-4">
-                        From his work at prestigious institutions like IHBAS to his dedication during the COVID-19 pandemic, Dr. Kumar has consistently demonstrated his commitment to accessible, high-quality mental healthcare.
+                        From his work at prestigious institutions like IHBAS, New Delhi to his dedication during the COVID-19 pandemic, Dr. Kumar has consistently demonstrated his commitment to accessible, high-quality mental healthcare.
                     </p>
                     <Link
                         to="/about"
