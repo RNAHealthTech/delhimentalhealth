@@ -109,7 +109,17 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto px-4">
 
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">What Our Patients Say</h2>
-
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+            <img 
+              src="/images/wallpaper.jpg" // Make sure this path is correct
+              alt="Patient Testimonials"
+              width={500}
+              height={500}
+              className="rounded-lg"
+            />
+          </div>     
+        <div className='w-full lg:w-1/2'>
         {isMobile ? (
           <div className='relative h-[400px]'>
             <AnimatePresence mode="wait">
@@ -132,6 +142,8 @@ const Testimonials: React.FC = () => {
             ))}
           </div>
         )}
+        </div>
+        </div>
       </div>
     </div>
   );

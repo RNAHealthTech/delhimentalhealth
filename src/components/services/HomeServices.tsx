@@ -24,8 +24,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageUrl, title, description 
 
 const QuoteSection = () => {
     return (
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 ml-2">Embark on Your Journey to Wellness with Dr. Pratik Kumar</h3>
+
                 <motion.div
                     className="w-full md:w-1/2 mb-8 md:mb-0"
                     initial={{ opacity: 0, x: -50 }}
@@ -33,7 +35,7 @@ const QuoteSection = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <img
-                        src="/images/mental-health.jpg"
+                        src="/images/dr-prateek-2.jpg"
                         alt="Mental Health Illustration"
                         className="rounded-lg shadow-xl w-full h-auto"
                     />
@@ -44,10 +46,12 @@ const QuoteSection = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Your Journey to Wellness Begins Here</h3>
-                    {/* <p className="text-lg md:text-xl text-gray-600 mb-6">
-                        "Mental health is not a destination, but a process. It's about how you drive, not where you're going." - Noam Shpancer
-                    </p> */}
+                    <p className="text-base md:text-lg text-gray-700 mb-4">
+                        With over 10 years of specialized experience and a DNB in Psychiatry, Dr. Pratik Kumar offers compassionate, evidence-based care for a wide range of mental health concerns.
+                    </p>
+                    <p className="text-base md:text-lg text-gray-700 mb-4">
+                        From his work at prestigious institutions like IHBAS to his dedication during the COVID-19 pandemic, Dr. Kumar has consistently demonstrated his commitment to accessible, high-quality mental healthcare.
+                    </p>
                     <Link
                         to="/about"
                         className="group inline-flex mt-6 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out"
@@ -64,9 +68,7 @@ const QuoteSection = () => {
                             </svg>
                         </span>
                     </Link>
-                    <p className="text-base md:text-lg text-gray-700">
-                        An alumni of best indian Institute of psychiatry, sharing wisdom with his patients over mental health 
-                    </p>
+
                 </motion.div>
             </div>
         </div>
@@ -168,8 +170,8 @@ const HomeServices: React.FC = () => {
                                 {featuredServices.map((_, index) => (
                                     <button
                                         key={index}
-                                        className={`w-4 h-4 rounded-full ${currentSlide === index ? 'bg-orange-100' : 'bg-amber-100'
-                                            }`}
+                                        className={`rounded-full! ${currentSlide === index ? 'bg-peach' : 'bg-amber-100'}`}
+                                        style={{ width: '24px', height: '24px', borderRadius: '50%', padding: 0 }}
                                         onClick={() => setCurrentSlide(index)}
                                     ></button>
                                 ))}

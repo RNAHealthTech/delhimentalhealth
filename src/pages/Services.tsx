@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 import { FaBrain, FaHeartbeat, FaBed, FaUsers, FaComments } from 'react-icons/fa';
-import { AnimatePresence, motion } from 'framer-motion';
+//import { AnimatePresence, motion } from 'framer-motion';
 
 
 const Services: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [dailyTip, setDailyTip] = useState('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,6 +22,22 @@ const Services: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    const tips = [
+      "Take a few deep breaths when you feel overwhelmed.",
+      "Practice gratitude by noting three things you're thankful for today.",
+      "Reach out to a friend or loved one for a quick chat.",
+      "Take a short walk to clear your mind and boost your mood.",
+      "Try a few minutes of mindfulness meditation to center yourself."
+    ];
+    setDailyTip(tips[Math.floor(Math.random() * tips.length)]);
+     //eslint-disable-next-line
+  }, []);
+
+  const handleEmojiClick = (emoji: any) => {
+    console.log(emoji);
+  };
 
   const services = [
     {
@@ -79,34 +97,37 @@ const Services: React.FC = () => {
         <meta name="description" content="Comprehensive mental health services offered by Dr. Pratik Kumar, including OPD, IPD, de-addiction, neuropsychiatry, telepsychiatry, and emergency care." />
         <meta name="keywords" content="psychiatric services, OPD, IPD, de-addiction, neuropsychiatry, telepsychiatry, mental health emergency care, Dr. Pratik Kumar" />
       </Helmet>
-      <div className="container-contact py-20 mt-40 lg:mt-0 ">
+      <div className="container-services py-20 mt-40 lg:mt-0 ">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
           {/* Left side: Text and Slides */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <h1 className="text-4xl font-bold text-teal-800 mb-6">Our Mental Health Services</h1>
-            <p className="text-xl text-gray-600 mb-8">Expert care tailored to your well-being</p>
+            <h1 className="text-4xl font-bold text-teal-800 mb-6">Transformative Mental Health Care</h1>
+            <p className="text-xl text-gray-600 mb-8">Personalized expertise for your unique journey to well-being</p>
+            <div className="bg-amber-50 border-l-4 border-teal-800 p-6 rounded-r-lg shadow-md mb-8">
+              <h2 className="text-2xl font-semibold text-teal-800 mb-3">Daily Mental Health Check-In</h2>
+              <p className="text-gray-700 mb-4">How are you feeling today? Select an emoji that best represents your current state:</p>
+              <div className="flex justify-between items-center">
+                {['😊', '😐', '😢', '😠', '😰'].map((emoji, index) => (
+                  <button
+                    key={index}
+                    className="text-4xl bg-white rounded-full p-2 hover:bg-teal-100 transition duration-300"
+                    onClick={() => handleEmojiClick(emoji)}
+                  >
+                    {emoji}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-            {/* Transparent Slides */}
-            <div className="relative h-48 bg-white bg-opacity-80 rounded-lg shadow-lg p-6">
-              <AnimatePresence mode='wait'>
-                <motion.div
-                  key={currentSlide}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="absolute inset-0 flex items-center justify-center"
-                >
-                  <div className="text-center">
-                    {services[currentSlide].icon}
-                    <h3 className="text-2xl font-semibold text-teal-800 mt-2">{services[currentSlide].title}</h3>
-                    <p className="text-gray-600 mt-2">{services[currentSlide].description}</p>
-                  </div>
-
-                </motion.div>
-              </AnimatePresence>
+            {/* Added quick mental health tip */}
+            <div className="bg-teal-50 p-4 rounded-lg">
+              <h3 className="text-lg font-semibold text-teal-800 mb-2">Today's Mental Health Tip</h3>
+              <p className="text-gray-700">{dailyTip}</p>
             </div>
           </div>
+
+
+
 
           {/* Right side: Image */}
           <div className="lg:w-1/2 mt-12">
@@ -128,8 +149,8 @@ const Services: React.FC = () => {
 
         {/* Content */}
         <div className="relative container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-12 text-teal-800">Services</h1>
-          <p className='text-2xl text-center mb-4 text-gray-500'>Offered by Dr. Pratik</p>
+          <h1 className="text-4xl font-bold text-center mb-12 text-teal-800">Comprehensive Care for Your Mental Health</h1>
+          <p className='text-2xl text-center mb-4 text-gray-500'>Expert Services by Dr. Pratik Kumar</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-4">
             {services.map((service, index) => (
               <ServiceCard key={index} {...service} />
