@@ -66,7 +66,7 @@ const FAQ: React.FC = () => {
                     Frequently Asked Questions
                 </h2>
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 mb-8">
                         <img
                             src="/images/mental-health.jpg" alt="FAQ Illustration"
                             width={500}

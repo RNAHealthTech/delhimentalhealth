@@ -12,8 +12,7 @@ const Header: React.FC = () => {
 
   const services = [
     { name: "Depression & Anxiety", path: "/services/depression-anxiety" },
-    { name: "Bipolar Depression", path: "/services/bipolar-disorder" },
-    { name: "Epilepsy", path: "/services/epilepsy" },
+    { name: "Bipolar Disorder", path: "/services/bipolar-disorder" },
     { name: "Addiction", path: "/services/addiction-disorders" },
     { name: "OCD, PTSD & ADHD", path: "/services/ocd-ptsd-adhd" },
     { name: "Sleep & Sexual Health", path: "/services/sleep-sexual-health" },

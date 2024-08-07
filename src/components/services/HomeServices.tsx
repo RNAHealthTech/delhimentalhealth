@@ -90,9 +90,9 @@ const HomeServices: React.FC = () => {
             description: "Tailored techniques and exercises to boost your confidence.",
         },
         {
-            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fepilepsy.png?alt=media&token=69b503eb-5b67-485e-8888-0157b515e419",
-            title: "Epilepsy",
-            description: "Comprehensive epilepsy and seizure management.",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Frelationship3.jpg?alt=media&token=65cd61e9-318b-4274-b72a-0adf5c7aa877",
+            title: "Relationship Counseling",
+            description: "Guidance and support for improving communication and resolving conflicts in relationships.",
         },
         {
             imageUrl: "https://firebasestorage.googleapis.com/v0/b/dr-pratik.appspot.com/o/images%2Fbipolar-disorder-treatment.jpg?alt=media&token=13e69c0c-0edb-4bfe-b0f6-8f3c8775e3fe",

@@ -11,7 +11,6 @@ import About from './pages/About';
 import './index.css';
 import DepressionAnxiety from './components/services/DepressionAnxiety';
 import BipolarDisorder from './components/services/BipolarDisorder';
-import Epilepsy from './components/services/Epilepsy';
 import AddictionDisorders from './components/services/Addiction';
 import OCDPTSDandADHD from './components/services/Ocd';
 import RelationshipCounseling from './components/services/Relationship';
@@ -29,7 +28,7 @@ const App: React.FC = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/services/depression-anxiety" element={<DepressionAnxiety />} />
           <Route path="/services/bipolar-disorder" element={<BipolarDisorder />} />
-          <Route path="/services/epilepsy" element={<Epilepsy />} />
+      
           <Route path="/services/addiction-disorders" element={<AddictionDisorders />}  />
           <Route path="/services/relationship-counseling" element={<RelationshipCounseling />} />
           <Route path="/services/ocd-ptsd-adhd" element={<OCDPTSDandADHD />} />

@@ -86,6 +86,7 @@ const Home: React.FC = () => {
   console.log(ref, inView);
 
   const [experienceYears, setExperienceYears] = useState(0);
+  const [servedPatients, setServedPatients] = useState(0);
 
   useEffect(() => {
     const animateValue = (start: number, end: number, duration: number) => {
@@ -100,7 +101,22 @@ const Home: React.FC = () => {
       };
       window.requestAnimationFrame(step);
     };
+
+    const animateValue2 = (start: number, end: number, duration: number) => {
+      let startTimestamp: number | null = null;
+      const step = (timestamp: number) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        setServedPatients(Math.floor(progress * (end - start) + start));
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    };
     animateValue(0, 10, 2000);
+    animateValue2(0, 50, 2000);
+    //eslint-disable-next-line
   }, [])
 
 
@@ -175,8 +191,8 @@ const Home: React.FC = () => {
                   </h1>
                   <p className="text-lg sm:text-xl mb-6 text-teal-600">
                     by DNB-qualified psychiatrist with over 10 years of experience in comprehensive mental health treatment
-                </p>
-                
+                  </p>
+
                 </div>
                 <Link
                   to="/contact"
@@ -220,7 +236,10 @@ const Home: React.FC = () => {
             </div>
             <div className="flex flex-col items-center text-center">
               <FaSmile className="text-3xl md:text-4xl mb-3" />
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">Client Satisfaction</p>
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                Served <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">{servedPatients}k+</span> patients
+              </p>
+
             </div>
           </div>
         </div>
@@ -231,13 +250,12 @@ const Home: React.FC = () => {
         <div className="bg-gradient-to-l from-teal-800 to-teal-500 text-white py-2 px-2">
           <div className="container mx-auto text-center">
             <div className="rounded-lg p-6 md:p-8 lg:p-10">
-            <p 
-              className={`text-lg md:text-xl lg:text-2xl font-edu min-h-[4rem] md:min-h-[5rem] transition-opacity duration-1000 ${
-                textVisible ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              {currentText}
-            </p>
+              <p
+                className={`text-lg md:text-xl lg:text-2xl font-edu min-h-[4rem] md:min-h-[5rem] transition-opacity duration-1000 ${textVisible ? 'opacity-100' : 'opacity-0'
+                  }`}
+              >
+                {currentText}
+              </p>
             </div>
           </div>
         </div>

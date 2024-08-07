@@ -7,8 +7,10 @@ import { FaBrain, FaHeartbeat, FaBed, FaUsers, FaComments } from 'react-icons/fa
 
 const Services: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+ 
   const [dailyTip, setDailyTip] = useState('');
+  
+  console.log(currentSlide, dailyTip);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,7 +34,7 @@ const Services: React.FC = () => {
       "Try a few minutes of mindfulness meditation to center yourself."
     ];
     setDailyTip(tips[Math.floor(Math.random() * tips.length)]);
-     //eslint-disable-next-line
+    //eslint-disable-next-line
   }, []);
 
   const handleEmojiClick = (emoji: any) => {
@@ -120,10 +122,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Added quick mental health tip */}
-            <div className="bg-teal-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-teal-800 mb-2">Today's Mental Health Tip</h3>
-              <p className="text-gray-700">{dailyTip}</p>
-            </div>
+
           </div>
 
 
@@ -146,7 +145,7 @@ const Services: React.FC = () => {
             <path fill="#F5EABF" fillOpacity="0.5" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
         </div>
-
+         
         {/* Content */}
         <div className="relative container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12 text-teal-800">Comprehensive Care for Your Mental Health</h1>
