@@ -76,7 +76,7 @@ const About: React.FC = () => {
 
                                         <div className="space-y-4">
                                             <p className="text-lg text-gray-700">
-                                                Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar. With over 5 years of experience, he has made significant contributions to the field of mental health.
+                                                Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar. With more than 10 years of experience, he has made significant contributions to the field of mental health.
                                             </p>
                                             <p className="text-lg text-gray-700">
                                                 Specializing in neuropsychiatry and de-addiction, Dr. Kumar's expertise spans:
