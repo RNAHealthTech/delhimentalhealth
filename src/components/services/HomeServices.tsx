@@ -22,54 +22,60 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageUrl, title, description 
     );
 };
 
-const QuoteSection = () => {
+const FromConsultantsDesk = () => {
     return (
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 ml-2">Embark on Your Journey to Holistic Mental Health with Dr. Pratik Kumar</h3>
-
-                <motion.div
-                    className="w-full md:w-1/2 mb-8 md:mb-0"
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <img
-                        src="/images/dr-prateek-2.jpg"
-                        alt="Mental Health Illustration"
-                        className="rounded-lg shadow-xl w-full h-auto"
-                    />
-                </motion.div>
-                <motion.div
-                    className="w-full md:w-1/2 md:pl-12"
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                    <p className="text-base md:text-lg text-gray-700 mb-4">
-                        With experience of over a decade and expertise in DNB (Psychiatry), Dr. Pratik Kumar offers compassionate, evidence-based care for a wide range of mental health concerns.
-                    </p>
-                    <p className="text-base md:text-lg text-gray-700 mb-4">
-                        From his work at prestigious institutions like IHBAS, New Delhi to his dedication during the COVID-19 pandemic, Dr. Kumar has consistently demonstrated his commitment to accessible, high-quality mental healthcare.
-                    </p>
-                    <Link
-                        to="/about"
-                        className="group inline-flex mt-6 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out"
+        <div className="bg-gradient-to-r from-teal-50 to-blue-50 py-28">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-teal-800">From Consultant's Desk</h2>
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                    <motion.div
+                        className="w-full md:w-1/3 mb-8 md:mb-0"
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
                     >
-                        About Dr. Pratik Kumar
-                        <span className="ml-2 sm:ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
-                            <img
-                                src="/images/circle-red-double-hover.png"
-                                alt="Animated Circle"
-                                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain animate-spin-slow"
-                            />
-                            <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-                    </Link>
+                        <img
+                            src="/images/dr-prateek-2.jpg"
+                            alt="Dr. Pratik Kumar"
+                            className="rounded-full shadow-xl w-64 h-64 mx-auto object-cover border-4 border-teal-500"
+                        />
+                    </motion.div>
+                    <motion.div
+                        className="w-full md:w-2/3 md:pl-12"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                        <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-teal-800">Dr. Pratik Kumar's Insights on Mental Health</h3>
+                        <blockquote className="border-l-4 border-teal-500 pl-4 italic text-gray-600 mb-4">
+                            "In an age where mental health buzzwords flood our screens, remember: true healing isn't found in trending hashtags or quick fixes. It's a deeply personal journey of self-discovery, resilience, and gradual growth. Let's prioritize genuine well-being over viral sensations." - Dr. Pratik Kumar
+                        </blockquote>
 
-                </motion.div>
+                        <p className="text-lg text-gray-700 mb-12">
+                            With experience of over a decade and expertise in DNB (Psychiatry), I'm committed to offering compassionate, evidence-based care for a wide range of mental health concerns.
+                        </p>
+                        <p className="text-lg text-gray-700 mb-12">
+                            From my work at prestigious institutions like IHBAS, New Delhi to my dedication during the COVID-19 pandemic, I've consistently strived to make high-quality mental healthcare accessible to all.
+                        </p>
+
+                        <Link
+                            to="/about"
+                            className="group inline-flex mt-6 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out"
+                        >
+                            About Dr. Pratik Kumar
+                            <span className="ml-2 sm:ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
+                                <img
+                                    src="/images/circle-red-double-hover.png"
+                                    alt="Animated Circle"
+                                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain animate-spin-slow"
+                                />
+                                <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                </svg>
+                            </span>
+                        </Link>
+                    </motion.div>
+                </div>
             </div>
         </div>
     )
@@ -113,9 +119,9 @@ const HomeServices: React.FC = () => {
 
     return (
         <section className="container-contact py-24 relative overflow-hidden">
-            <QuoteSection />
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Choose your Personalized Session</h2>
+            <FromConsultantsDesk />
+            <div className="container mx-auto px-4 mt-8 sm:px-6 lg:px-8">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-teal-900">Choose your Personalized Session</h2>
 
                 <div className="flex justify-center">
 

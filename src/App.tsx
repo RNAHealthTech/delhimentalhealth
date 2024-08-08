@@ -9,6 +9,7 @@ import BlogRouter from './components/Blog/BlogRouter';
 import About from './pages/About';
 
 import './index.css';
+
 import DepressionAnxiety from './components/services/DepressionAnxiety';
 import BipolarDisorder from './components/services/BipolarDisorder';
 import AddictionDisorders from './components/services/Addiction';
@@ -16,6 +17,9 @@ import OCDPTSDandADHD from './components/services/Ocd';
 import RelationshipCounseling from './components/services/Relationship';
 import SleepAndSexualHealth from './components/services/SleepSex';
 import Psychotherapy from './components/services/Psychotherapy';
+import Dementia from './components/services/Dementia';
+import Schizophrenia from './components/services/Schizophrenia';
+
 
 
 const App: React.FC = () => {
@@ -28,8 +32,9 @@ const App: React.FC = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/services/depression-anxiety" element={<DepressionAnxiety />} />
           <Route path="/services/bipolar-disorder" element={<BipolarDisorder />} />
-      
-          <Route path="/services/addiction-disorders" element={<AddictionDisorders />}  />
+          <Route path='/services/dementia' element={<Dementia />} />
+          <Route path='/services/schizophrenia' element={<Schizophrenia />} />
+          <Route path="/services/addiction-disorders" element={<AddictionDisorders />} />
           <Route path="/services/relationship-counseling" element={<RelationshipCounseling />} />
           <Route path="/services/ocd-ptsd-adhd" element={<OCDPTSDandADHD />} />
           <Route path="/services/sleep-sexual-health" element={<SleepAndSexualHealth />} />

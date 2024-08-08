@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
-import { FaBrain, FaHeartbeat, FaBed, FaUsers, FaComments } from 'react-icons/fa';
+import { FaBrain, FaHeartbeat, FaBed, FaUsers, FaComments, FaSadCry } from 'react-icons/fa';
 //import { AnimatePresence, motion } from 'framer-motion';
 
 
 const Services: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
- 
+
   const [dailyTip, setDailyTip] = useState('');
-  
+
   console.log(currentSlide, dailyTip);
 
   useEffect(() => {
@@ -55,16 +55,22 @@ const Services: React.FC = () => {
       link: "/services/bipolar-disorder"
     },
     {
-      icon: <FaBrain className="text-5xl text-primary mb-4" />,
-      title: "Epilepsy",
-      description: "Comprehensive epilepsy and seizure management.",
-      link: "/services/epilepsy"
-    },
-    {
       icon: <FaUsers className="text-5xl text-primary mb-4" />,
       title: "Addiction",
       description: "Support for overcoming substance and behavioral addictions.",
       link: "/services/addiction-disorders"
+    },
+    {
+      icon: <FaBrain className="text-5xl text-primary mb-4" />,
+      title: "Dementia",
+      description: "Specialized support and care for individuals living with dementia, focusing on maintaining quality of life and cognitive function.",
+      link: "/services/dementia"
+    },
+    {
+      icon: <FaSadCry className="text-5xl text-primary mb-4" />,
+      title: "Schizophrenia",
+      description: "Comprehensive treatment and management for individuals with schizophrenia, including medication, therapy, and support services.",
+      link: "/services/schizophrenia"
     },
     {
       icon: <FaBrain className="text-5xl text-primary mb-4" />,
@@ -145,7 +151,7 @@ const Services: React.FC = () => {
             <path fill="#F5EABF" fillOpacity="0.5" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
         </div>
-         
+
         {/* Content */}
         <div className="relative container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12 text-teal-800">Comprehensive Care for Your Mental Health</h1>

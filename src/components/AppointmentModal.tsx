@@ -16,10 +16,14 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         phone: '',
         email: '',
         date: '',
-        hours: ''
+        hours: '',
+        whatsapp: ''
     });
 
     const [state, handleSubmit] = useForm("xeojgdnk");
+    const [useWhatsApp, setUseWhatsApp] = useState(false);
+
+
 
     useEffect(() => {
         if (state.succeeded) {
@@ -34,7 +38,8 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     phone: '',
                     email: '',
                     date: '',
-                    hours: ''
+                    hours: '',
+                    whatsapp: ''
                 });
                 setStep(1);
             }, 3000);
@@ -65,7 +70,27 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     const handleFinalSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         handleSubmit(formData);
+        if (useWhatsApp) {
+            sendWhatsAppMessage();
+        }
     };
+
+    const sendWhatsAppMessage = () => {
+        const message = `New Appointment Request:
+        Name: ${formData.name}
+        Age: ${formData.age}
+        Disorder: ${formData.disorder}
+        Phone: ${formData.phone}
+        Email: ${formData.email}
+        Date: ${formData.date}
+        Time: ${formData.hours}`;
+
+        const whatsappNumber = '916306204612'; // Replace with your WhatsApp number
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+
+    }
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] flex justify-center items-center p-4">
@@ -75,131 +100,146 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     {state.succeeded ? (
                         <p className="mt-4 text-green-600 text-lg">Thanks for your submission! This window will close shortly.</p>
                     ) : (
-                    <>
-                        {step === 1 ? (
-                            <form onSubmit={handleNextStep} className="space-y-6">
-                                <div className='form-group'>
-                                    <label htmlFor="name" className="block text-sm font-medium text-teal-700 mb-1">Name</label>
-                                    <input
-                                        id="name"
-                                        type="text"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className='form-group'>
-                                    <label htmlFor="age" className="block text-sm font-medium text-teal-700 mb-1">Age</label>
-                                    <input
-                                        id="age"
-                                        type="number"
-                                        name="age"
-                                        value={formData.age}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className='form-group'>
-                                    <label htmlFor="disorder" className="block text-sm font-medium text-teal-700 mb-1">Disorder/Mental Health Concern</label>
-                                    <input
-                                        id="disorder"
-                                        type="text"
-                                        name="disorder"
-                                        value={formData.disorder}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className="flex justify-end space-x-2">
-                                    <button
-                                        type="button"
-                                        onClick={onClose}
-                                        className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
-                                    >
-                                        Cancel
-                                    </button>
-                                    <button
-                                        type="submit"
-                                        className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
-                                    >
-                                        Next
-                                    </button>
-                                </div>
-                            </form>
-                        ) : (
-                            <form onSubmit={handleFinalSubmit} className="space-y-6">
-                                <div className='form-group'>
-                                    <label htmlFor="phone" className="block text-sm font-medium text-teal-700 mb-1">Phone</label>
-                                    <input
-                                        id="phone"
-                                        type="tel"
-                                        name="phone"
-                                        value={formData.phone}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className='form-group'>
-                                    <label htmlFor="email" className="block text-sm font-medium text-teal-700 mb-1">Email</label>
-                                    <input
-                                        id="email"
-                                        type="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                    <ValidationError prefix="Email" field="email" errors={state.errors} />
-                                </div>
-                                <div className='form-group'>
-                                    <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-1">Preferred Date</label>
-                                    <input
-                                        id="date"
-                                        type="date"
-                                        name="date"
-                                        value={formData.date}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className='form-group'>
-                                    <label htmlFor="hours" className="block text-sm font-medium text-teal-700 mb-1">Preferred Hours</label>
-                                    <input
-                                        id="hours"
-                                        type="time"
-                                        name="hours"
-                                        value={formData.hours}
-                                        onChange={handleChange}
-                                        required
-                                        className="form-input"
-                                    />
-                                </div>
-                                <div className="flex justify-end space-x-2">
-                                    <button
-                                        type="button"
-                                        onClick={handlePrevStep}
-                                        className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
-                                    >
-                                        Back
-                                    </button>
-                                    <button
-                                        type="submit"
-                                        disabled={state.submitting}
-                                        className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
-                                    >
-                                        {state.submitting ? 'Submitting...' : 'Submit'}
-                                    </button>
-                                </div>
-                            </form>
-                        )}
-                    </>
+                        <>
+                            {step === 1 ? (
+                                <form onSubmit={handleNextStep} className="space-y-6">
+                                    <div className='form-group'>
+                                        <label htmlFor="name" className="block text-sm font-medium text-teal-700 mb-1">Name</label>
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="age" className="block text-sm font-medium text-teal-700 mb-1">Age</label>
+                                        <input
+                                            id="age"
+                                            type="number"
+                                            name="age"
+                                            value={formData.age}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="disorder" className="block text-sm font-medium text-teal-700 mb-1">Disorder/Mental Health Concern</label>
+                                        <input
+                                            id="disorder"
+                                            type="text"
+                                            name="disorder"
+                                            value={formData.disorder}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className="flex justify-end space-x-2">
+                                        <button
+                                            type="button"
+                                            onClick={onClose}
+                                            className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
+                                        >
+                                            Cancel
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                </form>
+                            ) : (
+                                <form onSubmit={handleFinalSubmit} className="space-y-6">
+                                    <div className='form-group'>
+                                        <label htmlFor="phone" className="block text-sm font-medium text-teal-700 mb-1">Phone</label>
+                                        <input
+                                            id="phone"
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="email" className="block text-sm font-medium text-teal-700 mb-1">Email</label>
+                                        <input
+                                            id="email"
+                                            type="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                        <ValidationError prefix="Email" field="email" errors={state.errors} />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-1">Preferred Date</label>
+                                        <input
+                                            id="date"
+                                            type="date"
+                                            name="date"
+                                            value={formData.date}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="hours" className="block text-sm font-medium text-teal-700 mb-1">Preferred Hours</label>
+                                        <input
+                                            id="hours"
+                                            type="time"
+                                            name="hours"
+                                            value={formData.hours}
+                                            onChange={handleChange}
+                                            required
+                                            className="form-input"
+                                        />
+                                    </div>
+                                    <div className='form-group'>
+                                        <label className="flex items-center">
+                                            <input
+                                                type="checkbox"
+                                                checked={useWhatsApp}
+                                                onChange={() => {
+                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
+                                                    setUseWhatsApp(!useWhatsApp);
+                                                }}
+                                                className="form-checkbox h-5 w-5 text-teal-600"
+                                                style={{cursor: 'pointer', pointerEvents: 'auto'}}
+                                            />
+                                            <span className="ml-2 text-sm text-teal-700">Send appointment details via WhatsApp</span>
+                                        </label>
+                                    </div>
+                                    <div className="flex justify-end space-x-2">
+                                        <button
+                                            type="button"
+                                            onClick={handlePrevStep}
+                                            className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
+                                        >
+                                            Back
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            disabled={state.submitting}
+                                            className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
+                                        >
+                                            {state.submitting ? 'Submitting...' : 'Submit'}
+                                        </button>
+                                    </div>
+                                </form>
+                            )}
+                        </>
                     )}
                 </div>
             </div>

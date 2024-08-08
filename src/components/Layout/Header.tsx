@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
 import Banner from './banner';
 import AppointmentModal from '../AppointmentModal';
@@ -10,20 +10,20 @@ const Header: React.FC = () => {
   const [isServicesOpen, setIsServicesOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+  const navigate = useNavigate();
+
+
   const services = [
     { name: "Depression & Anxiety", path: "/services/depression-anxiety" },
     { name: "Bipolar Disorder", path: "/services/bipolar-disorder" },
     { name: "Addiction", path: "/services/addiction-disorders" },
     { name: "OCD, PTSD & ADHD", path: "/services/ocd-ptsd-adhd" },
+    { name: "Dementia / Memory Loss", path: "/services/dementia" },
+    { name: "Schizophrenia / Anger Issues", path: "/services/schizophrenia" },
     { name: "Sleep & Sexual Health", path: "/services/sleep-sexual-health" },
     { name: "Relationship Counseling", path: "/services/relationship-counseling" },
     { name: "Psychotherapy", path: "/services/psychotherapy" }
   ];
-
-  const handleLinkClick = () => {
-    setIsServicesOpen(false);
-    setIsMenuOpen(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +45,15 @@ const Header: React.FC = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   }
+
+  const handleServicesClick = (e: React.MouseEvent) => {
+    if (window.innerWidth < 768) {  // mobile view
+      e.preventDefault();
+      setIsServicesOpen(!isServicesOpen);
+    } else {
+      navigate('/services');
+    }
+  };
 
 
 
@@ -70,7 +79,7 @@ const Header: React.FC = () => {
                 <img
                   src="/images/logo.png"
                   alt="Dr. Pratik Kumar Logo"
-                  className="h-10 w-auto mr-3"
+                  className="h-12 w-auto mr-3"
                 />
               </Link>
 
@@ -78,32 +87,30 @@ const Header: React.FC = () => {
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <div className="relative group">
-                  <button
+                  <Link
+                    to="/services"
                     className="flex font-bold items-center hover:text-teal-800 transition duration-300"
-                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                    onClick={handleServicesClick}
                   >
                     Services
                     <svg className="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </button>
-                  {isServicesOpen && (
-                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                      <div className="py-1" role="menu" aria-orientation="vertical">
-                        {services.map((service) => (
-                          <Link
-                            key={service.path}
-                            to={service.path}
-                            className="block px-4 py-2 text-teal-600 text-sm hover:bg-teal-50 hover:text-teal-800"
-                            role="menuitem"
-                            onClick={handleLinkClick}
-                          >
-                            {service.name}
-                          </Link>
-                        ))}
-                      </div>
+                  </Link>
+                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    <div className="py-1" role="menu" aria-orientation="vertical">
+                      {services.map((service) => (
+                        <Link
+                          key={service.path}
+                          to={service.path}
+                          className="block px-4 py-2 text-teal-600 text-sm hover:bg-teal-50 hover:text-teal-800"
+                          role="menuitem"
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
                     </div>
-                  )}
+                  </div>
                 </div>
                 <NavLink to="/blog">Blog</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
