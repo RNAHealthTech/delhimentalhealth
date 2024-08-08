@@ -90,7 +90,7 @@ const About: React.FC = () => {
                                         </div>
 
                                         <div className="flex items-center gap-4">
-                                            <p className="font-edu text-gray-700 text-xl">
+                                            <p className="font-edu text-gray-700 text-sm lg:text-xl">
                                                 📍DELHI  GL🌏BAL  MIND  CLINIC
                                             
                                             </p>

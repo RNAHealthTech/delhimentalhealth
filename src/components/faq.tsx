@@ -68,7 +68,7 @@ const FAQ: React.FC = () => {
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
                     <div className="w-full lg:w-1/2 mb-8">
                         <img
-                            src="/images/mental-health.jpg" alt="FAQ Illustration"
+                            src="/images/mental-health.png" alt="FAQ Illustration"
                             width={500}
                             height={500}
                             className="rounded-lg"

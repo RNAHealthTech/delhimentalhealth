@@ -6,7 +6,7 @@ const siteMetadata = {
   linkedin: "https://www.linkedin.com/in/dr-pratik-kumar",
   facebook: "https://www.facebook.com/drpratikkumar",
   twitter: "https://twitter.com/drpratikkumar",
-  phone: "+91 9023997854",
+  phone: "+91-7827990913, 9023997854 ",
   email: "docpratikkumar@gmail.com",
   address: " Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi-88",
 };
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 <li><FooterLink to="/services/psychotherapy">Psychotherapy</FooterLink></li>
                 <li><FooterLink to="/services/relationship-counseling">Relationship Counseling</FooterLink></li>
                 <li><FooterLink to="/services/ocd-ptsd-adhd">Trauma Healing</FooterLink></li>
-                <li>Call for Home Visits<FooterLink to="tel:9934035397">: 9934035397</FooterLink></li>
+                <li>Call for Home Visits<FooterLink to="tel:9934035397">: 7827990913 / 9023997854</FooterLink></li>
               </ul>
             </div>
 
