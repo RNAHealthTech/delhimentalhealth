@@ -104,7 +104,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                             {step === 1 ? (
                                 <form onSubmit={handleNextStep} className="space-y-6">
                                     <div className='form-group'>
-                                        <label htmlFor="name" className="block text-sm font-medium text-teal-700 mb-1">Name</label>
+                                        <label htmlFor="name" className="block text-sm font-medium text-teal-700 mb-2">Name</label>
                                         <input
                                             id="name"
                                             type="text"
@@ -116,7 +116,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         />
                                     </div>
                                     <div className='form-group'>
-                                        <label htmlFor="age" className="block text-sm font-medium text-teal-700 mb-1">Age</label>
+                                        <label htmlFor="age" className="block text-sm font-medium text-teal-700 mb-4">Age</label>
                                         <input
                                             id="age"
                                             type="number"
@@ -128,7 +128,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         />
                                     </div>
                                     <div className='form-group'>
-                                        <label htmlFor="disorder" className="block text-sm font-medium text-teal-700 mb-1">Disorder/Mental Health Concern</label>
+                                        <label htmlFor="disorder" className="block text-sm font-medium text-teal-700 mb-2">Disorder/Mental Health Concern</label>
                                         <input
                                             id="disorder"
                                             type="text"
@@ -158,7 +158,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                             ) : (
                                 <form onSubmit={handleFinalSubmit} className="space-y-6">
                                     <div className='form-group'>
-                                        <label htmlFor="phone" className="block text-sm font-medium text-teal-700 mb-1">Phone</label>
+                                        <label htmlFor="phone" className="block text-sm font-medium text-teal-700 mb-2">Phone</label>
                                         <input
                                             id="phone"
                                             type="tel"
@@ -170,7 +170,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         />
                                     </div>
                                     <div className='form-group'>
-                                        <label htmlFor="email" className="block text-sm font-medium text-teal-700 mb-1">Email</label>
+                                        <label htmlFor="email" className="block text-sm font-medium text-teal-700 mb-2">Email</label>
                                         <input
                                             id="email"
                                             type="email"
@@ -183,7 +183,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                                     </div>
                                     <div className='form-group'>
-                                        <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-1">Preferred Date</label>
+                                        <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-2">Preferred Date</label>
                                         <input
                                             id="date"
                                             type="date"
@@ -195,7 +195,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         />
                                     </div>
                                     <div className='form-group'>
-                                        <label htmlFor="hours" className="block text-sm font-medium text-teal-700 mb-1">Preferred Hours</label>
+                                        <label htmlFor="hours" className="block text-sm font-medium text-teal-700 mb-2">Preferred Hours</label>
                                         <input
                                             id="hours"
                                             type="time"
@@ -206,8 +206,8 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             className="form-input"
                                         />
                                     </div>
-                                    <div className='form-group'>
-                                        <label className="flex items-center">
+                                    <div className='form-group mb-8'>
+                                        <label className="flex items-start text-sm flex-wrap">
                                             <input
                                                 type="checkbox"
                                                 checked={useWhatsApp}
@@ -215,24 +215,40 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                                     console.log('Checkbox clicked, current state:', useWhatsApp);
                                                     setUseWhatsApp(!useWhatsApp);
                                                 }}
-                                                className="form-checkbox h-5 w-5 text-teal-600"
-                                                style={{cursor: 'pointer', pointerEvents: 'auto'}}
+                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600"
+                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
                                             />
-                                            <span className="ml-2 text-sm text-teal-700">Send appointment details via WhatsApp</span>
+                                            <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
                                         </label>
                                     </div>
-                                    <div className="flex justify-end space-x-2">
+                                    {/* <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
+                                        <button 
+                                            type="button"
+                                            onClick={handlePrevStep}
+                                            className="w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
+                                            >
+                                            Back
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            disabled={state.submitting}
+                                            className="w-full sm:w-auto px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
+                                            >
+                                            {state.submitting ? 'Submitting...' : 'Submit'}
+                                        </button>
+                                    </div> */}
+                                    <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2 mt-4">
                                         <button
                                             type="button"
                                             onClick={handlePrevStep}
-                                            className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
+                                            className="w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
                                         >
                                             Back
                                         </button>
                                         <button
                                             type="submit"
                                             disabled={state.submitting}
-                                            className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
+                                            className="w-full sm:w-auto px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
                                         >
                                             {state.submitting ? 'Submitting...' : 'Submit'}
                                         </button>

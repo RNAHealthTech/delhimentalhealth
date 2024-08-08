@@ -69,9 +69,9 @@ const FAQ: React.FC = () => {
                     <div className="w-full lg:w-1/2 mb-8">
                         <img
                             src="/images/mental-health.png" alt="FAQ Illustration"
-                            width={500}
-                            height={500}
-                            className="rounded-lg"
+                            width={400}
+                            height={400}
+                            className="rounded-lg shadow-md"
                         />
                     </div>
                     <div className="w-full lg:w-1/2">
