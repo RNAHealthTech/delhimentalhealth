@@ -42,31 +42,7 @@ const Contact: React.FC = () => {
       </div>
       <div className="container-contact mx-auto py-16 px-4">
         <div className="flex flex-col lg:flex-row-reverse items-start">
-          {/* Contact Information 
-          <section className="lg:w-1/3 w-full mb-12 lg:mb-0 lg:ml-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl text-center font-bold mb-6 text-zinc-900 md:text-3xl lg:text-3xl">Contact Information</h2>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <FaPhone className="text-blue-600 mr-4 text-xl" />
-                  <span className="text-gray-700">9023997854 / 9877065403</span>
-                </div>
-                <div className="flex items-center">
-                  <FaEnvelope className="text-blue-600 mr-4 text-xl" />
-                  <span className="text-gray-700">docpratikkumar@gmail.com</span>
-                </div>
-                <div className="flex items-start">
-                  <FaMapMarkerAlt className="text-blue-600 mr-4 text-xl mt-1" />
-                  <span className="text-gray-700">BLOCK &POCKET, BN LOCALSHOPPING Centre, FIRST FLOOR, MANISH CHAMBERS,PLOT NO1, near WEST SHALIMAR BAGH, Delhi, 110088</span>
-                </div>
-              </div>
-            </div>
-          </section>
-          <img
-            src="/path/to/your/image.jpg"
-            alt="Description of the image"
-            className="w-full h-auto mt-4 rounded-lg shadow-md"
-  />*/}
+         
           {/* Contact Information */}
           <section className="lg:w-1/3 w-full mb-12 lg:mb-0 lg:ml-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -74,7 +50,7 @@ const Contact: React.FC = () => {
               <div className="space-y-4 mb-6"> {/* Added mb-6 for spacing */}
                 <div className="flex items-center">
                   <FaPhone className="text-blue-600 mr-4 text-xl" />
-                  <span className="text-gray-700">9023997854 / 9877065403</span>
+                  <span className="text-gray-700"> 7827990913 / 9023997854  </span>
                 </div>
                 <div className="flex items-center">
                   <FaEnvelope className="text-blue-600 mr-4 text-xl" />

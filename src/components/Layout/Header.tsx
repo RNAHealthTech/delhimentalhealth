@@ -61,10 +61,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
-        {/* <div className="bg-gradient-to-l from-teal-800 to-teal-600 p-2 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-2">
-          <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={openModal}>Schedule An Appointment</button>
-          <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={() => window.location.href = 'tel:08046961835'}>Call : 080-4696-1835</button>
-        </div> */}
+        
         <div className="bg-gradient-to-l from-teal-800 to-teal-600 p-2 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-12">
           <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={openModal}>Schedule An Appointment</button>
           <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={() => window.location.href = 'tel:9023997854'}>Call : 7827990913 / 9023997854</button>
