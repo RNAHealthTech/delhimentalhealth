@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import ReactGA from 'react-ga'
 import "./Appointment.css";
 
 interface AppointmentModalProps {
@@ -68,6 +69,11 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     };
 
     const handleFinalSubmit = (e: React.FormEvent) => {
+        ReactGA.event({
+            category: 'User Interaction',
+            action: 'Button Click',
+            label: 'Appointment Button',
+          });
         e.preventDefault();
         handleSubmit(formData);
         if (useWhatsApp) {
@@ -221,22 +227,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
                                         </label>
                                     </div>
-                                    {/* <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
-                                        <button 
-                                            type="button"
-                                            onClick={handlePrevStep}
-                                            className="w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
-                                            >
-                                            Back
-                                        </button>
-                                        <button
-                                            type="submit"
-                                            disabled={state.submitting}
-                                            className="w-full sm:w-auto px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition duration-300"
-                                            >
-                                            {state.submitting ? 'Submitting...' : 'Submit'}
-                                        </button>
-                                    </div> */}
+                                   
                                     <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2 mt-4">
                                         <button
                                             type="button"

@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -7,7 +7,7 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import BlogRouter from './components/Blog/BlogRouter';
 import About from './pages/About';
-
+import ReactGA from 'react-ga'
 import './index.css';
 
 import DepressionAnxiety from './components/services/DepressionAnxiety';
@@ -22,7 +22,20 @@ import Schizophrenia from './components/services/Schizophrenia';
 
 
 
+
 const App: React.FC = () => {
+  
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize('G-KZT3PEE729');
+    //eslint-disable-next-line
+  },[]);
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  },[location]);
+
   return (
     <Router>
       <Layout>
