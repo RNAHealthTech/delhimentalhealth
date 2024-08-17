@@ -28,7 +28,7 @@ const App: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.initialize('G-KZT3PEE729');
+    ReactGA.initialize('G-KZEBS8L8K4');
     //eslint-disable-next-line
   },[]);
 
