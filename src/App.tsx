@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -37,7 +37,7 @@ const App: React.FC = () => {
   },[location]);
 
   return (
-    <Router>
+    
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -57,7 +57,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-    </Router>
+  
   );
 };
 
