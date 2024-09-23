@@ -16,6 +16,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         disorder: '',
         phone: '',
         email: '',
+        appointmentType: 'offline',
         date: '',
         hours: '',
         whatsapp: ''
@@ -38,6 +39,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     disorder: '',
                     phone: '',
                     email: '',
+                    appointmentType: 'offline',
                     date: '',
                     hours: '',
                     whatsapp: ''
@@ -73,7 +75,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
             category: 'User Interaction',
             action: 'Button Click',
             label: 'Appointment Button',
-          });
+        });
         e.preventDefault();
         handleSubmit(formData);
         if (useWhatsApp) {
@@ -88,6 +90,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         Disorder: ${formData.disorder}
         Phone: ${formData.phone}
         Email: ${formData.email}
+        Appointment: ${formData.appointmentType}
         Date: ${formData.date}
         Time: ${formData.hours}`;
 
@@ -188,6 +191,33 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                         />
                                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                                     </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-teal-700 mb-2">Appointment Type</label>
+                                        <div className="flex space-x-4">
+                                            <label className="inline-flex items-center">
+                                                <input
+                                                    type="radio"
+                                                    name="appointmentType"
+                                                    value="offline"
+                                                    checked={formData.appointmentType === 'offline'}
+                                                    onChange={handleChange}
+                                                    className="form-radio text-teal-600 focus:ring-teal-500 h-4 w-4"
+                                                />
+                                                <span className="ml-2 text-teal-700">Offline Appointment</span>
+                                            </label>
+                                            <label className="inline-flex items-center">
+                                                <input
+                                                    type="radio"
+                                                    name="appointmentType"
+                                                    value="online"
+                                                    checked={formData.appointmentType === 'online'}
+                                                    onChange={handleChange}
+                                                    className="form-radio text-teal-600 focus:ring-teal-500 h-4 w-4"
+                                                />
+                                                <span className="ml-2 text-teal-700">Online Appointment</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                     <div className='form-group'>
                                         <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-2">Preferred Date</label>
                                         <input
@@ -227,7 +257,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
                                         </label>
                                     </div>
-                                   
+
                                     <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2 mt-4">
                                         <button
                                             type="button"
