@@ -102,7 +102,7 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
         <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] flex justify-center items-center p-4">
             <div className="bg-white rounded-lg shadow-xl w-full max-w-md  md:max-w-lg lg:max-w-xl">
                 <div className="p-8">
-                    <h2 className="text-3xl font-bold text-teal-800 mb-6">Schedule an Appointment</h2>
+                    <h2 className="text-3xl font-bold text-teal-800 mb-6">Schedule Online Appointment</h2>
                     {state.succeeded ? (
                         <p className="mt-4 text-green-600 text-lg">Thanks for your submission! This window will close shortly.</p>
                     ) : (
