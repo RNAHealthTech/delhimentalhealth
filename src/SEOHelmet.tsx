@@ -49,6 +49,12 @@ const SEOHelmet: React.FC = () => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
+            <meta name="robots" content="index, follow" />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={description} />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://delhimentalhealth.com" />
+            <meta property="og:location" content="Delhi NCR, Shalimar Bagh, North Delhi, West Delhi, Kirti Nagar, Adarsh Nagar, Patel Nagar, Ashok Vihar" />
         </Helmet>
     );
 };
