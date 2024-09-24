@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import ReactGA from 'react-ga'
 import "./Appointment.css";
 
 interface AppointmentModalProps {
-    isOpen: boolean;
-    onClose: () => void;
+    isOpen2: boolean;
+    onClose2: () => void;
 }
 
-const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) => {
+const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
         name: '',
@@ -17,7 +16,6 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         disorder: '',
         phone: '',
         email: '',
-        appointmentType: 'offline',
         date: '',
         hours: '',
         whatsapp: ''
@@ -32,7 +30,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         if (state.succeeded) {
             // Close the modal after 3 seconds (adjust as needed)
             const timer = setTimeout(() => {
-                onClose();
+                onClose2();
                 // Reset form data and step
                 setFormData({
                     name: '',
@@ -40,7 +38,6 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     disorder: '',
                     phone: '',
                     email: '',
-                    appointmentType: 'offline',
                     date: '',
                     hours: '',
                     whatsapp: ''
@@ -50,9 +47,9 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
 
             return () => clearTimeout(timer);
         }
-    }, [state.succeeded, onClose]);
+    }, [state.succeeded, onClose2]);
 
-    if (!isOpen) return null;
+    if (!isOpen2) return null;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
@@ -91,28 +88,27 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
         Disorder: ${formData.disorder}
         Phone: ${formData.phone}
         Email: ${formData.email}
-        Appointment: ${formData.appointmentType}
-        Date: ${formData.date}
+         Date: ${formData.date}
         Time: ${formData.hours}`;
 
-        const whatsappNumber = '916306204612'; // Replace with your WhatsApp number
+        const whatsappNumber = '91'; // Replace with your WhatsApp number
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');
 
     }
 
-    return ReactDOM.createPortal(
+    return (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] flex justify-center items-center p-4">
-            <div className="bg-white rounded-lg shadow-xl w-full max-w-md  md:max-w-lg lg:max-w-xl overflow-y-auto">
-                <div className="p-8 flex flex-col h-full">
+            <div className="bg-white rounded-lg shadow-xl w-full max-w-md  md:max-w-lg lg:max-w-xl">
+                <div className="p-8">
                     <h2 className="text-3xl font-bold text-teal-800 mb-6">Schedule an Appointment</h2>
                     {state.succeeded ? (
                         <p className="mt-4 text-green-600 text-lg">Thanks for your submission! This window will close shortly.</p>
                     ) : (
                         <>
                             {step === 1 ? (
-                                <form onSubmit={handleNextStep} className="space-y-6 flex-1">
+                                <form onSubmit={handleNextStep} className="space-y-6">
                                     <div className='form-group'>
                                         <label htmlFor="name" className="block text-sm font-medium text-teal-700 mb-2">Name</label>
                                         <input
@@ -152,7 +148,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                     <div className="flex justify-end space-x-2">
                                         <button
                                             type="button"
-                                            onClick={onClose}
+                                            onClick={onClose2}
                                             className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
                                         >
                                             Cancel
@@ -166,7 +162,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                     </div>
                                 </form>
                             ) : (
-                                <form onSubmit={handleFinalSubmit} className="space-y-6 flex-1">
+                                <form onSubmit={handleFinalSubmit} className="space-y-6">
                                     <div className='form-group'>
                                         <label htmlFor="phone" className="block text-sm font-medium text-teal-700 mb-2">Phone</label>
                                         <input
@@ -191,33 +187,6 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             className="form-input"
                                         />
                                         <ValidationError prefix="Email" field="email" errors={state.errors} />
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium text-teal-700 mb-2">Appointment Type</label>
-                                        <div className="flex space-x-4">
-                                            <label className="inline-flex items-center">
-                                                <input
-                                                    type="radio"
-                                                    name="appointmentType"
-                                                    value="offline"
-                                                    checked={formData.appointmentType === 'offline'}
-                                                    onChange={handleChange}
-                                                    className="form-radio text-teal-600 focus:ring-teal-500 h-4 w-4"
-                                                />
-                                                <span className="ml-2 text-teal-700">Offline Appointment</span>
-                                            </label>
-                                            <label className="inline-flex items-center">
-                                                <input
-                                                    type="radio"
-                                                    name="appointmentType"
-                                                    value="online"
-                                                    checked={formData.appointmentType === 'online'}
-                                                    onChange={handleChange}
-                                                    className="form-radio text-teal-600 focus:ring-teal-500 h-4 w-4"
-                                                />
-                                                <span className="ml-2 text-teal-700">Online Appointment</span>
-                                            </label>
-                                        </div>
                                     </div>
                                     <div className='form-group'>
                                         <label htmlFor="date" className="block text-sm font-medium text-teal-700 mb-2">Preferred Date</label>
@@ -281,8 +250,8 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     )}
                 </div>
             </div>
-        </div>, document.body
+        </div>
     );
 };
 
-export default AppointmentModal;
+export default OnlineModal;

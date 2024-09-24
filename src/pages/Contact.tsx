@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
       </div>
       <div className="container-contact mx-auto py-16 px-4">
         <div className="flex flex-col lg:flex-row-reverse items-start">
-         
+
           {/* Contact Information */}
           <section className="lg:w-1/3 w-full mb-12 lg:mb-0 lg:ml-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -128,7 +128,30 @@ const Contact: React.FC = () => {
                     />
                     <ValidationError prefix="Date" field="date" errors={state.errors} />
                   </div>
-
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-2">Appointment Type</label>
+                    <div className="flex space-x-4">
+                      <label className="inline-flex items-center">
+                        <input
+                          type="radio"
+                          name="appointmentType"
+                          value="offline"
+                         
+                          className="text-teal-600 focus:ring-teal-500 h-4 w-4"
+                        />
+                        <span className="ml-2 text-black">Offline Appointment</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="radio"
+                          name="appointmentType"
+                          value="online"
+                          className="text-teal-600 focus:ring-teal-500 h-4 w-4"
+                        />
+                        <span className="ml-2 text-black">Online Appointment</span>
+                      </label>
+                    </div>
+                  </div>
                   <div className="mb-6">
                     <label htmlFor="hours" className="block text-gray-700 text-sm font-semibold mb-2">Hours</label>
                     <input

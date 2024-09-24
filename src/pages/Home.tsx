@@ -8,11 +8,20 @@ import HomeServices from '../components/services/HomeServices';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/faq';
 import SEOHelmet from '../SEOHelmet';
+import OnlineModal from '../components/OnlineModal';
 
 
 
 const Home: React.FC = () => {
 
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   const el = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -190,6 +199,7 @@ const Home: React.FC = () => {
                   </p>
 
                 </div>
+               <div className='flex flex-col mt-8'>
                 <Link
                   to="/contact"
                   className="group inline-flex mt-4 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out"
@@ -206,7 +216,25 @@ const Home: React.FC = () => {
                     </svg>
                   </span>
                 </Link>
+                <button
+                  className="group inline-flex mt-12 items-center justify-center ml-4 text-2xl sm:text-2xl md:text-3xl font-edu text-teal-800 transition-all duration-300 ease-in-out cursor-pointer"
+                  onClick={openModal}
+                  >
+                  Online Appointment
+                  <span className="ml-2 sm:ml-4 relative flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:scale-105 group-active:scale-95">
+                    <img
+                      src="/images/yellow-circle.png"
+                      alt="Animated Circle"
+                      className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain animate-spin-slow"
+                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="absolute h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </button>
+                </div>
               </div>
+              <OnlineModal isOpen2={isModalOpen} onClose2={closeModal} />
               {/* Right side image */}
               <div className="w-full md:w-1/2 mt-8 md:mt-0">
                 <img
