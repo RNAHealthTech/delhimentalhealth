@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
-import { Helmet } from 'react-helmet';
 //import { animate, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaChartLine, FaTrophy, FaSmile } from 'react-icons/fa';
 import HomeServices from '../components/services/HomeServices';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/faq';
+import SEOHelmet from '../SEOHelmet';
 
 
 
@@ -171,11 +171,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Dr. Pratik Kumar - Expert Psychiatrist & Mental Health Specialist</title>
-        <meta name="description" content="Dr. Pratik Kumar, DNB Psychiatrist with expertise in neuropsychiatry and de-addiction. Providing comprehensive mental health care in Punjab and Delhi." />
-        <meta name="keywords" content="Dr. Pratik Kumar, psychiatrist, mental health, neuropsychiatry, de-addiction, Punjab, Delhi, IHBAS" />
-      </Helmet>
+      <SEOHelmet />
       <div className="bg-white mt-28">
         <section className="relative text-white overflow-hidden pt-20 lg:pt-0">
           <div className="container-home mx-auto px-4 py-12 sm:py-16 md:py-20">

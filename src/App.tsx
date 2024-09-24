@@ -41,11 +41,12 @@ const App: React.FC = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shalimar-bagh" element={<Home />} />
-          <Route path="/ashok-vihar" element={<Home />} />
-          <Route path="/patel-nagar" element={<Home />} />
-          <Route path="/adarsh-nagar" element={<Home />} />
-          <Route path="/kirti-nagar" element={<Home />} />
+          <Route path="/psychologist-in-shalimar-bagh" element={<Home />} />
+          <Route path="/psychiatrist-in-ashok-vihar" element={<Home />} />
+          <Route path="/mental-health-specialist-patel-nagar" element={<Home />} />
+          <Route path="/psychologist-in-adarsh-nagar" element={<Home />} />
+          <Route path="/psychiatrist-in-kirti-nagar" element={<Home />} />
+          <Route path="/top-psychologist-in-delhi-ncr" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/depression-anxiety" element={<DepressionAnxiety />} />
