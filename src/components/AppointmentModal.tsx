@@ -103,9 +103,9 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     }
 
     return ReactDOM.createPortal(
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] flex justify-center items-center p-4">
-            <div className="bg-white rounded-lg shadow-xl w-full max-w-md  md:max-w-lg lg:max-w-xl overflow-y-auto">
-                <div className="p-8 flex flex-col h-full">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
+            <div className="bg-white rounded-lg shadow-xl w-full max-w-md  md:max-w-lg lg:max-w-xl">
+                <div className="p-8 flex flex-col max-h-[90vh] overflow-y-auto">
                     <h2 className="text-3xl font-bold text-teal-800 mb-6">Schedule an Appointment</h2>
                     {state.succeeded ? (
                         <p className="mt-4 text-green-600 text-lg">Thanks for your submission! This window will close shortly.</p>
@@ -243,7 +243,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             className="form-input"
                                         />
                                     </div>
-                                    <div className='form-group mb-8'>
+                                    {/* <div className='form-group mb-4 sm:mb-8'>
                                         <label className="flex items-start text-sm flex-wrap">
                                             <input
                                                 type="checkbox"
@@ -255,15 +255,43 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                                 className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600"
                                                 style={{ cursor: 'pointer', pointerEvents: 'auto' }}
                                             />
+                                            <span className="ml-2 text-teal-700 text-base md:text-md">Send appointment details via WhatsApp</span>
+                                        </label>
+                                    </div> */}
+                                    <div className='hidden md:block form-group checkbox-container'>
+                                        <label className="flex flex-row items-start text-sm">
+                                            <input
+                                                type="checkbox"
+                                                checked={useWhatsApp}
+                                                onChange={() => {
+                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
+                                                    setUseWhatsApp(!useWhatsApp);
+                                                }}
+                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600 flex-shrink-0"
+                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+                                            />
                                             <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
                                         </label>
                                     </div>
 
-                                    <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2 mt-4">
+                                    <div className="flex flex-col-reverse sm:flex-row justify-end space-y-2 space-y-reverse sm:space-y-0 sm:space-x-2 mt-6 sm:mt-4">
+                                        <label className="flex flex-row items-start text-sm block md:hidden">
+                                            <input
+                                                type="checkbox"
+                                                checked={useWhatsApp}
+                                                onChange={() => {
+                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
+                                                    setUseWhatsApp(!useWhatsApp);
+                                                }}
+                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600 flex-shrink-0"
+                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+                                            />
+                                            <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
+                                        </label>
                                         <button
                                             type="button"
                                             onClick={handlePrevStep}
-                                            className="w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300"
+                                            className="w-full sm:w-auto px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition duration-300 mb-2 sm:mb-0"
                                         >
                                             Back
                                         </button>

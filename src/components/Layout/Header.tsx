@@ -59,7 +59,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
         
         <div className="bg-gradient-to-l from-teal-800 to-teal-600 p-2 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-12">
           <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={openModal}>Schedule An Appointment</button>
