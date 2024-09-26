@@ -243,21 +243,6 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                                             className="form-input"
                                         />
                                     </div>
-                                    {/* <div className='form-group mb-4 sm:mb-8'>
-                                        <label className="flex items-start text-sm flex-wrap">
-                                            <input
-                                                type="checkbox"
-                                                checked={useWhatsApp}
-                                                onChange={() => {
-                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
-                                                    setUseWhatsApp(!useWhatsApp);
-                                                }}
-                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600"
-                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
-                                            />
-                                            <span className="ml-2 text-teal-700 text-base md:text-md">Send appointment details via WhatsApp</span>
-                                        </label>
-                                    </div> */}
                                     <div className='hidden md:block form-group checkbox-container'>
                                         <label className="flex flex-row items-start text-sm">
                                             <input
