@@ -19,6 +19,12 @@ import SleepAndSexualHealth from './components/services/SleepSex';
 import Psychotherapy from './components/services/Psychotherapy';
 import Dementia from './components/services/Dementia';
 import Schizophrenia from './components/services/Schizophrenia';
+import ShalimarBaghPage from './pages/ShalimarBaghPage';
+import AshokViharPage from './pages/AshokViharPage';
+import PatelNagarPage from './pages/PatelNagarPage';
+import AdarshNagarPage from './pages/AdarshNagarPage';
+import KirtiNagarPage from './pages/KirtiNagarPage';
+import NCRPage from './pages/NCRPage';
 
 
 
@@ -41,12 +47,12 @@ const App: React.FC = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/psychologist-in-shalimar-bagh" element={<Home />} />
-          <Route path="/psychiatrist-in-ashok-vihar" element={<Home />} />
-          <Route path="/mental-health-specialist-patel-nagar" element={<Home />} />
-          <Route path="/psychologist-in-adarsh-nagar" element={<Home />} />
-          <Route path="/psychiatrist-in-kirti-nagar" element={<Home />} />
-          <Route path="/top-psychologist-in-delhi-ncr" element={<Home />} />
+          <Route path="/top-psychologist-in-shalimar-bagh" element={<ShalimarBaghPage />} />
+          <Route path="/expert-psychiatrist-in-ashok-vihar" element={<AshokViharPage />} />
+          <Route path="/best-mental-health-specialist-patel-nagar" element={<PatelNagarPage />} />
+          <Route path="/leading-psychologist-in-adarsh-nagar" element={<AdarshNagarPage />} />
+          <Route path="/best-psychiatrist-in-kirti-nagar" element={<KirtiNagarPage />} />
+          <Route path="/top-psychologist-in-delhi-ncr" element={<NCRPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/depression-anxiety" element={<DepressionAnxiety />} />
