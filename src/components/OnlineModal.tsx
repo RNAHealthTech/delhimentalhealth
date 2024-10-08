@@ -18,14 +18,11 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
         email: '',
         date: '',
         hours: '',
-        whatsapp: ''
+    
     });
 
     const [state, handleSubmit] = useForm("xeojgdnk");
-    const [useWhatsApp, setUseWhatsApp] = useState(false);
-
-
-
+    
     useEffect(() => {
         if (state.succeeded) {
             // Close the modal after 3 seconds (adjust as needed)
@@ -40,7 +37,7 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
                     email: '',
                     date: '',
                     hours: '',
-                    whatsapp: ''
+                    
                 });
                 setStep(1);
             }, 3000);
@@ -76,9 +73,8 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
         });
         e.preventDefault();
         handleSubmit(formData);
-        if (useWhatsApp) {
-            sendWhatsAppMessage();
-        }
+        sendWhatsAppMessage();
+        
     };
 
     const sendWhatsAppMessage = () => {
@@ -212,36 +208,10 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
                                             className="form-input"
                                         />
                                     </div>
-                                    <div className='hidden md:block form-group checkbox-container'>
-                                        <label className="flex flex-row items-start text-sm">
-                                            <input
-                                                type="checkbox"
-                                                checked={useWhatsApp}
-                                                onChange={() => {
-                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
-                                                    setUseWhatsApp(!useWhatsApp);
-                                                }}
-                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600 flex-shrink-0"
-                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
-                                            />
-                                            <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
-                                        </label>
-                                    </div>
+                                    
 
                                     <div className="flex flex-col-reverse sm:flex-row justify-end space-y-2 space-y-reverse sm:space-y-0 sm:space-x-2 mt-6 sm:mt-4">
-                                        <label className="flex flex-row items-start text-sm block md:hidden">
-                                            <input
-                                                type="checkbox"
-                                                checked={useWhatsApp}
-                                                onChange={() => {
-                                                    console.log('Checkbox clicked, current state:', useWhatsApp);
-                                                    setUseWhatsApp(!useWhatsApp);
-                                                }}
-                                                className="form-checkbox h-4 w-4 mt-1 mr-2 text-teal-600 flex-shrink-0"
-                                                style={{ cursor: 'pointer', pointerEvents: 'auto' }}
-                                            />
-                                            <span className="ml-2 text-teal-700">Send appointment details via WhatsApp</span>
-                                        </label>
+                                        
                                         <button
                                             type="button"
                                             onClick={handlePrevStep}
