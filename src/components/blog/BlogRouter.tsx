@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import AnxietyBlog from '../blog/copingwithanxiety';
-import DepressionBlog from '../blog/depression';
-import SleepBlog from '../blog/sleep';
-import MindFullBlog from '../blog/mindfulness';
+import AnxietyBlog from './copingwithanxiety';
+import DepressionBlog from './depression';
+import SleepBlog from './sleep';
+import MindFullBlog from './mindfulness';
 
 const BlogRouter: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();

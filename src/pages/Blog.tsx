@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import BlogCard from '../components/Blog/BlogCard';
+import BlogCard from '../components/blog/BlogCard';
 
 const Blog: React.FC = () => {
   useEffect(() => {

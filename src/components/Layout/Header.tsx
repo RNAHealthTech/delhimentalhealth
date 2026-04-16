@@ -109,6 +109,7 @@ const Header: React.FC = () => {
                   </div>
                 </div>
                 <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/check-your-anxiety">Check Anxiety</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
               </div>
 
@@ -134,6 +135,7 @@ const Header: React.FC = () => {
               <NavLink to="/about" mobile onClick={toggleMenu}>About</NavLink>
               <NavLink to="/services" mobile onClick={toggleMenu}>Services</NavLink>
               <NavLink to="/blog" mobile onClick={toggleMenu}>Blog</NavLink>
+              <NavLink to="/check-your-anxiety" mobile onClick={toggleMenu}>Check Anxiety</NavLink>
               <NavLink to="/contact" mobile onClick={toggleMenu}>Contact</NavLink>
             </nav>
             <div className="flex items-center justify-center px-4 py-4 border-t border-teal-200">

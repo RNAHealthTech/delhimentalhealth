@@ -272,6 +272,38 @@ const Home: React.FC = () => {
 
 
         <HomeServices />
+
+        <section className="bg-white py-16 px-4">
+          <div className="container mx-auto">
+            <div className="bg-teal-50 rounded-3xl p-8 md:p-12 lg:flex lg:items-center lg:justify-between shadow-inner">
+              <div className="lg:max-w-xl">
+                <h2 className="text-3xl font-bold text-teal-900 mb-4 leading-tight">
+                  Wondering about your anxiety levels?
+                </h2>
+                <p className="text-lg text-teal-700 mb-8">
+                  Get a quick, scientifically-validated screening of your anxiety symptoms using the GAD-7 assessment tool.
+                </p>
+                <Link 
+                  to="/check-your-anxiety" 
+                  className="inline-block bg-teal-600 text-white font-bold py-4 px-10 rounded-2xl hover:bg-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95"
+                >
+                  Start Free Assessment
+                </Link>
+              </div>
+              <div className="mt-12 lg:mt-0 flex justify-center lg:justify-end w-full lg:w-1/3">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-teal-200 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
+                  <img 
+                    src="/images/anxiety-hero.png" 
+                    alt="Anxiety Assessment" 
+                    className="relative z-10 w-full max-w-sm h-auto rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500" 
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="bg-gradient-to-l from-teal-800 to-teal-500 text-white py-2 px-2">
           <div className="container mx-auto text-center">
             <div className="rounded-lg p-6 md:p-8 lg:p-10">

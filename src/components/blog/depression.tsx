@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import BlogPost from '../Blog/BlogPost';
+import BlogPost from './BlogPost';
 
 const DepressionBlog: React.FC = () => {
     const blogContent = {

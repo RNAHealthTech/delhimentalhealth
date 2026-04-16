@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
-import BlogRouter from './components/Blog/BlogRouter';
+import BlogRouter from './components/blog/BlogRouter';
 import About from './pages/About';
 import ReactGA from 'react-ga'
 import './index.css';
@@ -25,6 +25,7 @@ import PatelNagarPage from './pages/PatelNagarPage';
 import AdarshNagarPage from './pages/AdarshNagarPage';
 import KirtiNagarPage from './pages/KirtiNagarPage';
 import NCRPage from './pages/NCRPage';
+import AnxietyAssessment from './pages/AnxietyAssessment';
 
 
 
@@ -66,6 +67,7 @@ const App: React.FC = () => {
           <Route path="/services/psychotherapy" element={<Psychotherapy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogRouter />} />
+          <Route path="/check-your-anxiety" element={<AnxietyAssessment />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPost from "../Blog/BlogPost";
+import BlogPost from "./BlogPost";
 import { Helmet } from "react-helmet";
 
 const SleepBlog: React.FC = () => {
