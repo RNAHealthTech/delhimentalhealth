@@ -9,7 +9,7 @@ interface FAQItem {
 const faqs: FAQItem[] = [
     {
         question: "How can I take an appointment with Dr. Pratik Kumar?",
-        answer: "You can book an appointment with Dr. Pratik Kumar by calling 9023997854 or 9877065403. Alternatively, you can email him at docpratikkumar@gmail.com to schedule a consultation.",
+        answer: "You can book an appointment with Dr. Pratik Kumar by calling +91 99340 35397. Alternatively, you can email him at docpratikkumar@gmail.com to schedule a consultation.",
     },
     {
         question: "Where does Dr. Pratik Kumar practice?",

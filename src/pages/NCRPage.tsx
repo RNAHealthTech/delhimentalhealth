@@ -46,7 +46,7 @@ const NCRPage:React.FC = () => {
       <section>
         <h2>Contact Information</h2>
         <p>Main Clinic: Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi-88</p>
-        <p>Phone: 9023997854 / 9877065403</p>
+        <p>Phone: +91 99340 35397</p>
         <p>Email: docpratikkumar@gmail.com</p>
       </section>
 

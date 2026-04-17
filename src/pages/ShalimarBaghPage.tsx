@@ -37,7 +37,7 @@ const ShalimarBaghPage = () => {
         <h2 className="text-2xl font-semibold text-teal-600 mb-4">Contact Dr. Pratik Kumar - Your Trusted Shalimar Bagh Psychologist</h2>
         <div className="bg-gray-100 p-6 rounded-lg">
           <p className="flex items-center mb-3"><MapPin className="text-teal-600 mr-2" /> Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi-88</p>
-          <p className="flex items-center mb-3"><Phone className="text-teal-600 mr-2" /> 9023997854 / 9877065403</p>
+          <p className="flex items-center mb-3"><Phone className="text-teal-600 mr-2" /> +91 99340 35397</p>
           <p className="flex items-center"><Mail className="text-teal-600 mr-2" /> docpratikkumar@gmail.com</p>
         </div>
       </section>

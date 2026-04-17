@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
     <>
       <Helmet>
         <title>Contact Dr. Pratik Kumar - Book Your Appointment</title>
-        <meta name="description" content="Get in touch with Dr. Pratik Kumar for expert psychiatric consultations. Contact via phone: 9023997854 / 9877065403 or email: docpratikkumar@gmail.com" />
+        <meta name="description" content="Get in touch with Dr. Pratik Kumar for expert psychiatric consultations. Contact via phone: +91 99340 35397 or email: docpratikkumar@gmail.com" />
         <meta name="keywords" content="contact Dr. Pratik Kumar, psychiatric appointment, mental health consultation, psychiatrist contact details" />
       </Helmet>
       <section className="bg-white py-12 mt-28">
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
               <div className="space-y-4 mb-6"> {/* Added mb-6 for spacing */}
                 <div className="flex items-center">
                   <FaPhone className="text-blue-600 mr-4 text-xl" />
-                  <span className="text-gray-700"> 7827990913 / 9023997854  </span>
+                  <span className="text-gray-700"> +91 99340 35397  </span>
                 </div>
                 <div className="flex items-center">
                   <FaEnvelope className="text-blue-600 mr-4 text-xl" />

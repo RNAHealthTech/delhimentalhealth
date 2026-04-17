@@ -87,7 +87,7 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
          Date: ${formData.date}
         Time: ${formData.hours}`;
 
-        const whatsappNumber = '917827990913'; // Replace with your WhatsApp number
+        const whatsappNumber = '919934035397'; // Replace with your WhatsApp number
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');

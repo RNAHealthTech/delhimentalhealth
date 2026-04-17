@@ -63,7 +63,7 @@ const Header: React.FC = () => {
         
         <div className="bg-gradient-to-l from-teal-800 to-teal-600 p-2 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-12">
           <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={openModal}>Schedule An Appointment</button>
-          <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={() => window.location.href = 'tel:9023997854'}>Call : 7827990913 / 9023997854</button>
+          <button className="w-full sm:w-auto bg-teal-800 text-white px-4 py-2 border border-solid rounded" onClick={() => window.location.href = 'tel:9934035397'}>Call : +91 99340 35397</button>
         </div>
 
         <Banner />
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
 
               <div className="hidden md:flex items-center">
                 <FaPhone className="text-teal-600 mr-2" />
-                <span className='text-teal-600 font-bold cursor-pointer' onClick={() => { window.location.href = 'tel:9023997854' }}>+91 9023997854</span>
+                <span className='text-teal-600 font-bold cursor-pointer' onClick={() => { window.location.href = 'tel:9934035397' }}>+91 99340 35397</span>
               </div>
 
               <button
@@ -140,7 +140,7 @@ const Header: React.FC = () => {
             </nav>
             <div className="flex items-center justify-center px-4 py-4 border-t border-teal-200">
               <FaPhone className="text-teal-600 mr-2" />
-              <span className="text-teal-600 font-bold cursor-pointer" onClick={() => { window.location.href = 'tel:9023997854' }}>+91 9023997854</span>
+              <span className="text-teal-600 font-bold cursor-pointer" onClick={() => { window.location.href = 'tel:9934035397' }}>+91 99340 35397</span>
             </div>
           </div>
         )}
