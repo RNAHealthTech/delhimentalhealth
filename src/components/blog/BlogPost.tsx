@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 type ParagraphContent = {
   type: 'paragraph';
@@ -31,18 +32,56 @@ interface BlogPostProps {
   tags: string[];
 }
 
-const BlogPost: React.FC<BlogPostProps> = ({ title, date, content, tags }) => {
+const BlogPost: React.FC<BlogPostProps> = ({ title, author, date, content, tags }) => {
   useEffect(() => {
       window.scrollTo(0,0);
   },[])
+
+  const firstImage = content.find((item): item is ImageContent => item.type === 'image')?.src;
+  const firstParagraph = content.find((item): item is ParagraphContent => item.type === 'paragraph')?.content || title;
+
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "description": firstParagraph,
+    "author": {
+      "@type": "Person",
+      "name": author || "Dr. Pratik Kumar",
+      "jobTitle": "Consultant Psychiatrist",
+      "url": "https://delhimentalhealth.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Delhi Global Mind Clinic",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://delhimentalhealth.com/logo192.png"
+      }
+    },
+    "datePublished": date,
+    "dateModified": date,
+    "image": firstImage || "https://delhimentalhealth.com/images/dr-prateek.png",
+    "keywords": tags.join(', '),
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    }
+  };
+
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-48">
-      <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{title}</h1>
-        <div className="flex items-center text-gray-600">
-          <time dateTime={date}>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-        </div>
-      </header>
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(blogPostSchema)}
+        </script>
+      </Helmet>
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-48">
+        <header className="mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{title}</h1>
+          <div className="flex items-center text-gray-600">
+            <time dateTime={date}>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+          </div>
+        </header>
 
       <div className="prose prose-lg max-w-none">
       {/* eslint-disable-next-line*/}
@@ -81,6 +120,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ title, date, content, tags }) => {
         </div>
       </footer>
     </article>
+    </>
   );
 };
 

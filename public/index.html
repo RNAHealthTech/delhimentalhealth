@@ -27,22 +27,143 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MedicalClinic",
-      "name": "Delhi Global Mind Clinic",
-      "alternateName": "Dr. Pratik Kumar",
-      "url": "https://delhimentalhealth.com",
-      "logo": "https://delhimentalhealth.com/logo192.png",
-      "telephone": "+919934035397",
-      "email": "docpratikkumar@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh",
-        "addressLocality": "New Delhi",
-        "postalCode": "110088",
-        "addressCountry": "IN"
-      },
-      "medicalSpecialty": "Psychiatric",
-      "description": "Delhi Global Mind Clinic by Dr. Pratik Kumar provides expert psychiatric consultations and mental health treatments in New Delhi."
+      "@graph": [
+        {
+          "@type": ["MedicalClinic", "PsychiatricClinic", "LocalBusiness"],
+          "@id": "https://delhimentalhealth.com/#clinic",
+          "name": "Delhi Global Mind Clinic",
+          "alternateName": ["Dr. Pratik Kumar Mental Health Clinic", "Delhi Global Mind Clinic Shalimar Bagh"],
+          "url": "https://delhimentalhealth.com",
+          "logo": "https://delhimentalhealth.com/logo192.png",
+          "image": "https://delhimentalhealth.com/images/dr-prateek.png",
+          "telephone": "+919934035397",
+          "email": "docpratikkumar@gmail.com",
+          "priceRange": "₹₹",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh",
+            "addressLocality": "New Delhi",
+            "addressRegion": "Delhi",
+            "postalCode": "110088",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.7170,
+            "longitude": 77.1610
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "10:00",
+              "closes": "20:00"
+            }
+          ],
+          "medicalSpecialty": [
+            "Psychiatric",
+            "Neuropsychiatry",
+            "DeAddiction",
+            "Psychotherapy"
+          ],
+          "areaServed": [
+            "Shalimar Bagh",
+            "Ashok Vihar",
+            "Patel Nagar",
+            "Adarsh Nagar",
+            "Kirti Nagar",
+            "Delhi NCR",
+            "New Delhi"
+          ],
+          "description": "Delhi Global Mind Clinic by Dr. Pratik Kumar provides expert psychiatric consultations, neuropsychiatry, de-addiction, psychotherapy, and comprehensive mental health treatments in New Delhi.",
+          "founder": {
+            "@id": "https://delhimentalhealth.com/#physician"
+          }
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://delhimentalhealth.com/#physician",
+          "name": "Dr. Pratik Kumar",
+          "jobTitle": "Consultant Psychiatrist & Neuropsychiatrist",
+          "medicalSpecialty": "Psychiatric",
+          "telephone": "+919934035397",
+          "email": "docpratikkumar@gmail.com",
+          "url": "https://delhimentalhealth.com/about",
+          "image": "https://delhimentalhealth.com/images/dr-prateek.png",
+          "worksFor": {
+            "@id": "https://delhimentalhealth.com/#clinic"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Institute of Mental Health, Amritsar (Govt. Mental Hospital)"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "JJM Medical College, Davangere"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "IHBAS, New Delhi"
+            }
+          ],
+          "description": "Dr. Pratik Kumar is a DNB-qualified psychiatrist with over 10 years of experience in clinical psychiatry, neuropsychiatry, de-addiction, and psychotherapy."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://delhimentalhealth.com/#website",
+          "url": "https://delhimentalhealth.com",
+          "name": "Delhi Global Mind Clinic | Dr. Pratik Kumar",
+          "publisher": {
+            "@id": "https://delhimentalhealth.com/#clinic"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://delhimentalhealth.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How can I take an appointment with Dr. Pratik Kumar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can book an appointment with Dr. Pratik Kumar by calling +91 99340 35397. Alternatively, you can email him at docpratikkumar@gmail.com to schedule a consultation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where does Dr. Pratik Kumar practice?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dr. Pratik Kumar practices at Delhi Global Mind Clinic located at Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi 110088."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the educational qualification of Dr. Pratik Kumar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dr. Pratik Kumar holds a DNB in Psychiatry from Govt. Mental Hospital, Institute of Mental Health, Amritsar (2018) and an MBBS degree from JJM Medical College, Davangere, Karnataka (2012)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What services are offered at Delhi Global Mind Clinic?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Delhi Global Mind Clinic offers treatment for Depression & Anxiety, Bipolar Disorder, Addiction Disorders, OCD, PTSD, ADHD, Sleep & Sexual Health, Psychotherapy, Dementia, and Schizophrenia."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
   </head>
