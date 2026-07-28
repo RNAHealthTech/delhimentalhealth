@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
+import SecurityCheck from './components/SecurityCheck';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Blog from './pages/Blog';
@@ -44,7 +45,7 @@ const App: React.FC = () => {
   },[location]);
 
   return (
-    
+    <SecurityCheck>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -71,7 +72,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-  
+    </SecurityCheck>
   );
 };
 
