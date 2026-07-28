@@ -37,10 +37,7 @@ const isBotOrCrawler = (): boolean => {
 const SecurityCheck: React.FC<SecurityCheckProps> = ({ children }) => {
   const COOKIE_NAME = 'dmh_sec_verified';
 
-  const [isVerified, setIsVerified] = useState<boolean>(() => {
-    if (isBotOrCrawler()) return true;
-    return getCookie(COOKIE_NAME) === 'true';
-  });
+  const [isVerified, setIsVerified] = useState<boolean>(false); // FORCED FALSE FOR TESTING
 
   const [isChecking, setIsChecking] = useState<boolean>(false);
   const [currentStep, setCurrentStep] = useState<number>(0);
@@ -83,8 +80,7 @@ const SecurityCheck: React.FC<SecurityCheckProps> = ({ children }) => {
 
   return (
     <>
-      {/* Website Content (Blurred & Disabled when not verified) */}
-      <div className={`transition-all duration-700 ${!isVerified ? 'pointer-events-none select-none blur-sm opacity-60' : ''}`}>
+      <div className={`transition-all duration-700 w-full min-h-screen ${!isVerified ? 'pointer-events-none select-none blur-[4px] opacity-40' : ''}`}>
         {children}
       </div>
 
