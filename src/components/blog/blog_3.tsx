@@ -6,7 +6,7 @@ const Blog3BipolarDisorder: React.FC = () => {
     const blogContent = {
         title: "Bipolar Disorder: Navigating the Extremes of Mood",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-22",
         content: [
             {
                 type: 'paragraph' as const,

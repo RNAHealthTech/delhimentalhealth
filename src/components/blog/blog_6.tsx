@@ -6,7 +6,7 @@ const Blog6SchizophreniaComplex: React.FC = () => {
     const blogContent = {
         title: "Schizophrenia: Understanding a Complex Condition",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-13",
         content: [
             {
                 type: 'paragraph' as const,

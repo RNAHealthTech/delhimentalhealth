@@ -6,7 +6,7 @@ const Blog7AdhdIn: React.FC = () => {
     const blogContent = {
         title: "Attention-Deficit/Hyperactivity Disorder (ADHD) in Adults",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-10",
         content: [
             {
                 type: 'paragraph' as const,

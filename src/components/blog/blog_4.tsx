@@ -6,7 +6,7 @@ const Blog4OcdBreaking: React.FC = () => {
     const blogContent = {
         title: "Obsessive-Compulsive Disorder (OCD): Breaking the Cycle",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-19",
         content: [
             {
                 type: 'paragraph' as const,

@@ -6,7 +6,7 @@ const Blog1DepressionMore: React.FC = () => {
     const blogContent = {
         title: "Understanding Depression: More Than Just Feeling Sad",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-28",
         content: [
             {
                 type: 'paragraph' as const,

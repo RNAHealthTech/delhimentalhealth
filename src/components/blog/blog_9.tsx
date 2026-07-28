@@ -6,7 +6,7 @@ const Blog9EatingDisorders: React.FC = () => {
     const blogContent = {
         title: "Eating Disorders: Recognizing the Warning Signs",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-04",
         content: [
             {
                 type: 'paragraph' as const,

@@ -43,7 +43,7 @@ const Blog: React.FC = () => {
     {
       title: "Understanding Depression: More Than Just Feeling Sad",
       excerpt: "Depression is often misunderstood as simply feeling sad. Learn about major depressive disorder, its symptoms, and why professional treatment is crucial.",
-      date: "July 28, 2024",
+      date: "July 28, 2026",
       imageUrl: "/images/understanding_depression.png",
       slug: "depression-more-than-sad",
       tags: ["Depression","Mental Health","Treatment"],
@@ -51,7 +51,7 @@ const Blog: React.FC = () => {
     {
       title: "Anxiety Disorders: When Worry Takes Over",
       excerpt: "When everyday worry turns into intense and persistent fear, it might be an anxiety disorder. Discover the symptoms and highly effective treatments available.",
-      date: "July 28, 2024",
+      date: "July 25, 2026",
       imageUrl: "/images/anxiety_coping.png",
       slug: "anxiety-worry-takes-over",
       tags: ["Anxiety","Mental Health","CBT"],
@@ -59,7 +59,7 @@ const Blog: React.FC = () => {
     {
       title: "Bipolar Disorder: Navigating the Extremes of Mood",
       excerpt: "Bipolar disorder causes extreme mood swings from euphoric highs to depressive lows. Learn how to navigate and manage this lifelong condition.",
-      date: "July 28, 2024",
+      date: "July 22, 2026",
       imageUrl: "/images/understanding_depression.png",
       slug: "bipolar-disorder-extremes",
       tags: ["Bipolar Disorder","Mental Health","Mood Swings"],
@@ -67,7 +67,7 @@ const Blog: React.FC = () => {
     {
       title: "Obsessive-Compulsive Disorder (OCD): Breaking the Cycle",
       excerpt: "OCD features unwanted thoughts and repetitive behaviors. Learn how exposure and response prevention therapy can help break the cycle of obsessions and compulsions.",
-      date: "July 28, 2024",
+      date: "July 19, 2026",
       imageUrl: "/images/mindfulness_stress.png",
       slug: "ocd-breaking-cycle",
       tags: ["OCD","Mental Health","Therapy"],
@@ -75,7 +75,7 @@ const Blog: React.FC = () => {
     {
       title: "Post-Traumatic Stress Disorder (PTSD): Healing After Trauma",
       excerpt: "PTSD is triggered by terrifying events, causing flashbacks and severe anxiety. Discover how talk therapy and support make healing after trauma entirely possible.",
-      date: "July 28, 2024",
+      date: "July 16, 2026",
       imageUrl: "/images/sleep_mental_health.png",
       slug: "ptsd-healing-after-trauma",
       tags: ["PTSD","Trauma","Mental Health"],
@@ -83,7 +83,7 @@ const Blog: React.FC = () => {
     {
       title: "Schizophrenia: Understanding a Complex Condition",
       excerpt: "Schizophrenia is a serious mental disorder that impairs daily functioning. Understanding its positive, negative, and cognitive symptoms is key to effective care.",
-      date: "July 28, 2024",
+      date: "July 13, 2026",
       imageUrl: "/images/understanding_depression.png",
       slug: "schizophrenia-complex-condition",
       tags: ["Schizophrenia","Mental Health","Psychiatry"],
@@ -91,7 +91,7 @@ const Blog: React.FC = () => {
     {
       title: "Attention-Deficit/Hyperactivity Disorder (ADHD) in Adults",
       excerpt: "ADHD frequently persists into adulthood, causing trouble focusing and organizing. Recognizing ADHD in adulthood is the first step toward managing its impact.",
-      date: "July 28, 2024",
+      date: "July 10, 2026",
       imageUrl: "/images/mindfulness_stress.png",
       slug: "adhd-in-adults",
       tags: ["ADHD","Mental Health","Focus"],
@@ -99,7 +99,7 @@ const Blog: React.FC = () => {
     {
       title: "Sleep Disorders and Mental Health: The Insomnia Connection",
       excerpt: "Sleep disorders like insomnia are closely linked to mental health conditions. Prioritizing sleep hygiene is a crucial component of overall mental health management.",
-      date: "July 28, 2024",
+      date: "July 7, 2026",
       imageUrl: "/images/sleep_mental_health.png",
       slug: "sleep-disorders-insomnia",
       tags: ["Sleep","Insomnia","Mental Health"],
@@ -107,7 +107,7 @@ const Blog: React.FC = () => {
     {
       title: "Eating Disorders: Recognizing the Warning Signs",
       excerpt: "Eating disorders involve extreme emotions and behaviors surrounding weight and food. Learn how to recognize the warning signs and seek life-saving early intervention.",
-      date: "July 28, 2024",
+      date: "July 4, 2026",
       imageUrl: "/images/understanding_depression.png",
       slug: "eating-disorders-warning-signs",
       tags: ["Eating Disorders","Mental Health","Wellness"],
@@ -115,7 +115,7 @@ const Blog: React.FC = () => {
     {
       title: "Substance Use Disorders: A Path to Recovery",
       excerpt: "Substance use disorder is a complex condition of uncontrolled substance use. Discover how behavioral therapy and support can lead individuals on a path to recovery.",
-      date: "July 28, 2024",
+      date: "July 1, 2026",
       imageUrl: "/images/understanding_depression.png",
       slug: "substance-use-disorders-recovery",
       tags: ["Substance Use","Addiction","Recovery"],

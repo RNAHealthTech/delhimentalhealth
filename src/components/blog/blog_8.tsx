@@ -6,7 +6,7 @@ const Blog8SleepDisorders: React.FC = () => {
     const blogContent = {
         title: "Sleep Disorders and Mental Health: The Insomnia Connection",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-07",
         content: [
             {
                 type: 'paragraph' as const,

@@ -6,7 +6,7 @@ const Blog2AnxietyWorry: React.FC = () => {
     const blogContent = {
         title: "Anxiety Disorders: When Worry Takes Over",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-25",
         content: [
             {
                 type: 'paragraph' as const,

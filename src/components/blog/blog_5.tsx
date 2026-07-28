@@ -6,7 +6,7 @@ const Blog5PtsdHealing: React.FC = () => {
     const blogContent = {
         title: "Post-Traumatic Stress Disorder (PTSD): Healing After Trauma",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-16",
         content: [
             {
                 type: 'paragraph' as const,

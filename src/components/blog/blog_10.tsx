@@ -6,7 +6,7 @@ const Blog10SubstanceUse: React.FC = () => {
     const blogContent = {
         title: "Substance Use Disorders: A Path to Recovery",
         author: "Dr. Pratik Kumar",
-        date: "2024-07-28",
+        date: "2026-07-01",
         content: [
             {
                 type: 'paragraph' as const,
