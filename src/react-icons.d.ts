@@ -1,0 +1,19 @@
+declare module 'react-icons/fa' {
+  export const FaBrain: any;
+  export const FaHeartbeat: any;
+  export const FaBed: any;
+  export const FaUsers: any;
+  export const FaComments: any;
+  export const FaSadCry: any;
+  export const FaChartLine: any;
+  export const FaTrophy: any;
+  export const FaSmile: any;
+  export const FaPhone: any;
+  export const FaEnvelope: any;
+  export const FaMapMarkerAlt: any;
+  export const FaLock: any;
+  export const FaCheckCircle: any;
+  export const FaSpinner: any;
+  export const FaBars: any;
+  export const FaTimes: any;
+}
