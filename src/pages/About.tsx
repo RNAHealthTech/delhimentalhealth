@@ -60,6 +60,7 @@ const About: React.FC = () => {
                     <div className="container mx-auto px-6 pt-20 pb-12 relative z-10 mt-40">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                             <div className="w-full">
+                                {/* @ts-ignore */}
                                 <AnimatePresence>
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
@@ -108,6 +109,7 @@ const About: React.FC = () => {
                                 </AnimatePresence>
                             </div>
                             <div className="w-full flex justify-center lg:justify-end">
+                                {/* @ts-ignore */}
                                 <AnimatePresence>
                                     <motion.div
                                         initial={{ opacity: 0, scale: 0.9 }}

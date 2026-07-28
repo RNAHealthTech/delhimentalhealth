@@ -122,6 +122,7 @@ const Testimonials: React.FC = () => {
         <div className='w-full lg:w-1/2'>
         {isMobile ? (
           <div className='relative h-[400px]'>
+            {/* @ts-ignore */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}

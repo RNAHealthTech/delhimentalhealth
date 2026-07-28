@@ -39,6 +39,7 @@ const FAQItems: React.FC<{ item: FAQItem, isOpen: boolean, toggleOpen: () => voi
                 <span className="pr-2 text-sm sm:text-base">{item.question}</span>
                 <span className="text-xl flex-shrink-0">{isOpen ? '−' : '+'}</span>
             </button>
+            {/* @ts-ignore */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
