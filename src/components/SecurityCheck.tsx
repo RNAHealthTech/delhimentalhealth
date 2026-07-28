@@ -37,7 +37,10 @@ const isBotOrCrawler = (): boolean => {
 const SecurityCheck: React.FC<SecurityCheckProps> = ({ children }) => {
   const COOKIE_NAME = 'dmh_sec_verified';
 
-  const [isVerified, setIsVerified] = useState<boolean>(false); // FORCED FALSE FOR TESTING
+  const [isVerified, setIsVerified] = useState<boolean>(() => {
+    if (isBotOrCrawler()) return true;
+    return getCookie(COOKIE_NAME) === 'true';
+  });
 
   const [isChecking, setIsChecking] = useState<boolean>(false);
   const [currentStep, setCurrentStep] = useState<number>(0);
