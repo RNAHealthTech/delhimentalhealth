@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start">
                   <FaMapMarkerAlt className="text-blue-600 mr-4 text-xl mt-1" />
-                  <span className="text-gray-700"> Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi - 88</span>
+                  <span className="text-gray-700"> BR 3, First Floor, Shalimar Bagh, New Delhi - 110088</span>
                 </div>
               </div>
               {/* Added image inside the contact information div */}

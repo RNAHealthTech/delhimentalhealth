@@ -9,7 +9,7 @@ const siteMetadata = {
   twitter: "https://twitter.com/drpratikkumar",
   phone: "+91 99340 35397",
   email: "docpratikkumar@gmail.com",
-  address: " Ever Bake Market, Shop No. F1, First Floor, BN Block, Local Shopping Centre, West Shalimar Bagh, New Delhi-88",
+  address: "BR 3, First Floor, Shalimar Bagh, New Delhi - 110088",
 };
 
 const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
