@@ -9,15 +9,15 @@ interface FAQItem {
 const faqs: FAQItem[] = [
     {
         question: "How can I take an appointment with Dr. Pratik Kumar?",
-        answer: "You can book an appointment with Dr. Pratik Kumar by calling +91 99340 35397. Alternatively, you can email him at docpratikkumar@gmail.com to schedule a consultation.",
+        answer: "You can book an appointment with Dr. Pratik Kumar by calling +91 99340 35397 or +91 90239 97854. Alternatively, you can email him at docpratikkumar@gmail.com to schedule an in-clinic or online consultation.",
     },
     {
         question: "Where does Dr. Pratik Kumar practice?",
-        answer: "Dr. Pratik Kumar has experience working across Punjab and in New Delhi. He has worked at various centers including NIRMAL CHHAYA, DISHA, PARIVARTAN, and SAMARPAN in Punjab. Most recently, he worked as a Senior Resident at IHBAS in New Delhi.",
+        answer: "Dr. Pratik Kumar consults at Delhi Global Mind Clinic in New Delhi (Shalimar Bagh and Shakarpur). His extensive institutional and clinical background includes Senior Residency at Deep Chand Bandhu Delhi Govt. Hospital (managing Asia's largest juvenile de-addiction ward), Senior Residency and Chief SR at IHBAS (New Delhi), and consulting across premier de-addiction centres in Punjab (including Ludhiana Detox & Rehab Centre, Samarpan Drug Dependence Treatment Hospital Amritsar, and Nirmal Chhaya DDTC).",
     },
     {
         question: "What is the educational qualification of Dr. Pratik Kumar?",
-        answer: "Dr. Pratik Kumar holds a DNB in Psychiatry from Govt. Mental Hospital, Institute of Mental Health, Amritsar (2018). He also has an MBBS degree from JJM Medical College, Davengere, Karnataka (2012).",
+        answer: "Dr. Pratik Kumar holds a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar, awarded by the National Board of Examinations (NBE), New Delhi (2018). He completed his MBBS from JJM Medical College, Davangere, affiliated with Rajiv Gandhi University of Health Sciences, Bangalore (2012).",
     },
     {
         question: "What languages can Dr. Pratik Kumar speak?",

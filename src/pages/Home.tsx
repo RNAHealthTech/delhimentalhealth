@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'typed.js';
+
 //import { animate, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaChartLine, FaTrophy, FaSmile } from 'react-icons/fa';
@@ -24,7 +24,6 @@ const Home: React.FC = () => {
     setIsModalOpen(false);
   }
 
-  const el = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   console.log(currentSlide);
 
@@ -131,23 +130,7 @@ const Home: React.FC = () => {
 
 
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["DELHI GL🌍BAL MIND CLINIC"],
-      startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
-      smartBackspace: true,
-      loop: true,
-      showCursor: true,
-      cursorChar: ""
-    });
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
 
   // const typedRef = useRef(null);
   const [currentText, setCurrentText] = useState('Comprehensive psychiatric evaluation and evidence-based mental healthcare in New Delhi');
@@ -189,8 +172,10 @@ const Home: React.FC = () => {
               {/* Left side content */}
               <div className="w-full md:w-1/2 z-10 mb-8 md:mb-0">
                 <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg">
-                  <div className="h-[50px]">
-                    <p className="text-sm text-teal-500 font-semibold lg:text-xl" ref={el}></p>
+                  <div className="mb-2">
+                    <p className="text-base sm:text-lg lg:text-xl text-teal-600 font-bold tracking-wide">
+                      Delhi Global Mind Clinic
+                    </p>
                   </div>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-teal-800">
                     Expert Psychiatric Care

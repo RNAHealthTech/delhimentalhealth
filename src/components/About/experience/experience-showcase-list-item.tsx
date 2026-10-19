@@ -1,12 +1,9 @@
 import { RefObject, useRef } from "react";
-import {Link} from "react-router-dom";
-
 import { motion } from "framer-motion";
 
 export interface ExperienceListIconProps {
   iconRef: RefObject<HTMLElement>;
 }
-
 
 export interface ExperienceShowcaseListItemProps {
   title: string;
@@ -24,31 +21,36 @@ export default function ExperienceShowcaseListItem(
 ) {
   const ref = useRef(null);
   return (
-    <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
-     
+    <li ref={ref} className="mx-auto mb-14 flex w-[85%] md:w-[70%] lg:w-[60%] flex-col gap-1">
       <motion.div
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{
-          type: "spring",
           duration: 0.4,
         }}
       >
-        <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
+        <h3 className="text-base font-bold text-gray-900 sm:text-xl md:text-2xl">
           {props.title}{" "}
-          <Link
-            to={props.organisation.href}
-            className="cursor-pointer text-gray-500"
-            target="_blank"
-            rel="nofollow"
-          >
-            @{props.organisation.name}
-          </Link>
+          {props.organisation.href ? (
+            <a
+              href={props.organisation.href}
+              className="cursor-pointer text-teal-700 hover:underline"
+              target="_blank"
+              rel="nofollow"
+            >
+              @{props.organisation.name}
+            </a>
+          ) : (
+            <span className="text-teal-700">
+              @{props.organisation.name}
+            </span>
+          )}
         </h3>
-        <span className="text-sm font-medium text-foreground xs:text-base">
+        <span className="text-sm font-medium text-gray-700 xs:text-base">
           {props.date} | {props.location}
         </span>
-        <p className="text-sm font-medium text-muted-foreground xs:text-base">
+        <p className="text-sm font-medium text-gray-600 xs:text-base mt-1">
           {props.description}
         </p>
       </motion.div>

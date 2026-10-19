@@ -1,4 +1,4 @@
-# Dr. Pratik Website 🌍
+# Dr. Pratik Website
 
 ## Sitemap : 
 1. install the sitemap 

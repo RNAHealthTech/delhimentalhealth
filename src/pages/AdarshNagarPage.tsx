@@ -48,7 +48,7 @@ const AdarshNagarPage = () => {
           </li>
           <li className="flex items-start">
             <Users className="text-teal-600 mr-2 mt-1 flex-shrink-0" />
-            <span><strong>Institutional Clinical Experience:</strong> Over a decade of clinical experience, including Senior Residency at IHBAS, New Delhi.</span>
+            <span><strong>Institutional Clinical Experience:</strong> Over a decade of clinical experience, including Senior Residency at Deep Chand Bandhu Delhi Govt. Hospital and IHBAS, New Delhi.</span>
           </li>
           <li className="flex items-start">
             <Award className="text-teal-600 mr-2 mt-1 flex-shrink-0" />

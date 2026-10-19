@@ -23,12 +23,19 @@ const Contact: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2">
               <img src="/images/bg-circles-color.png" alt="background" />
-              <div className="md:w-1/2 z-10 top-0">
-                <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md">
-                  <h1 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600">Consultation & Care</h1>
-                  <p className="text-xl md:text-2xl text-gray-700">Delhi Global Mind Clinic</p>
+                <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md flex items-center gap-5">
+                  <img
+                    src="/images/logo.png"
+                    alt="Delhi Global Mind Clinic Logo"
+                    className="h-20 w-20 object-contain rounded-full shadow-md hidden sm:block flex-shrink-0"
+                  />
+                  <div>
+                    <h1 className="text-3xl md:text-4xl font-bold mb-1 text-teal-600">Consultation & Care</h1>
+                    <p className="text-xl md:text-2xl font-bold text-gray-800">Delhi Global Mind Clinic</p>
+                    <p className="text-xs font-semibold text-teal-800 uppercase tracking-wider">Neuropsychiatry & De-Addiction</p>
+                    <p className="text-sm text-teal-700 italic font-medium mt-1 font-serif">"It's Ok To Not Be Ok"</p>
+                  </div>
                 </div>
-              </div>
             </div>
 
             <div className="md:w-1/2">
@@ -49,16 +56,26 @@ const Contact: React.FC = () => {
               <h2 className="text-2xl text-center font-bold mb-6 text-zinc-900 md:text-3xl lg:text-3xl">Contact Information</h2>
               <div className="space-y-4 mb-6"> {/* Added mb-6 for spacing */}
                 <div className="flex items-center">
-                  <FaPhone className="text-blue-600 mr-4 text-xl" />
-                  <span className="text-gray-700"> +91 99340 35397  </span>
+                  <FaPhone className="text-teal-600 mr-4 text-xl flex-shrink-0" />
+                  <span className="text-gray-700"> +91 99340 35397 / +91 90239 97854 </span>
                 </div>
                 <div className="flex items-center">
-                  <FaEnvelope className="text-blue-600 mr-4 text-xl" />
+                  <FaEnvelope className="text-teal-600 mr-4 text-xl flex-shrink-0" />
                   <span className="text-gray-700">docpratikkumar@gmail.com</span>
                 </div>
                 <div className="flex items-start">
-                  <FaMapMarkerAlt className="text-blue-600 mr-4 text-xl mt-1" />
-                  <span className="text-gray-700"> BR 3, First Floor, Shalimar Bagh, New Delhi - 110088</span>
+                  <FaMapMarkerAlt className="text-teal-600 mr-4 text-xl mt-1 flex-shrink-0" />
+                  <div className="text-gray-700">
+                    <p className="font-semibold text-teal-800">Shalimar Bagh Clinic:</p>
+                    <p>BR 3, First Floor, Shalimar Bagh, New Delhi - 110088</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <FaMapMarkerAlt className="text-teal-600 mr-4 text-xl mt-1 flex-shrink-0" />
+                  <div className="text-gray-700">
+                    <p className="font-semibold text-teal-800">Shakarpur Consultation:</p>
+                    <p>S-666, Sai Bhawan, 3rd Floor, School Block, Shakarpur, New Delhi – 110092</p>
+                  </div>
                 </div>
               </div>
               {/* Added image inside the contact information div */}

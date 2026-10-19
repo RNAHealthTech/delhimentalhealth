@@ -71,12 +71,20 @@ const Header: React.FC = () => {
         <nav className="sticky bg-white border-b border-teal-200 w-full"> {/* Added w-full to ensure full width */}
           <div className="container mx-auto px-4 w-full">
             <div className="flex justify-between items-center py-4">
-              <Link to="/" className="flex items-center">
+              <Link to="/" className="flex items-center gap-3">
                 <img
                   src="/images/logo.png"
-                  alt="Dr. Pratik Kumar Logo"
-                  className="h-12 w-auto mr-3"
+                  alt="Delhi Global Mind Clinic Logo"
+                  className="h-11 w-11 sm:h-12 sm:w-12 object-contain rounded-full shadow-sm"
                 />
+                <div className="flex flex-col">
+                  <span className="font-bold text-teal-900 text-base sm:text-lg leading-tight tracking-tight">
+                    Delhi Global Mind Clinic
+                  </span>
+                  <span className="text-xs text-teal-600 font-medium hidden sm:inline-block">
+                    Dr. Pratik Kumar | Neuropsychiatry & De-Addiction
+                  </span>
+                </div>
               </Link>
 
               <div className="hidden md:flex space-x-6 text-teal-600 items-center">

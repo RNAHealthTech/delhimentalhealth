@@ -26,10 +26,19 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between">
           {/* Column 1: About */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-2">Dr. Pratik Kumar</h3>
-            <h4 className="text-md">Delhi Global Mind Clinic</h4>
-            <p className="text-sm text-gray-300 mt-4 mb-6 max-w-xs">
-              Experienced psychiatrist providing compassionate care and comprehensive mental health services.
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src="/images/logo.png"
+                alt="Delhi Global Mind Clinic Logo"
+                className="h-12 w-12 object-contain rounded-full bg-white p-0.5 shadow-md flex-shrink-0"
+              />
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold leading-tight">Delhi Global Mind Clinic</h3>
+                <h4 className="text-sm text-teal-200">Dr. Pratik Kumar</h4>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 mt-3 mb-6 max-w-xs">
+              Experienced psychiatrist providing compassionate care, neuropsychiatry, and comprehensive de-addiction services in New Delhi.
             </p>
           </div>
 

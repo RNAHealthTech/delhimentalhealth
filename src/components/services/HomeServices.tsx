@@ -55,7 +55,7 @@ const FromConsultantsDesk = () => {
                             With experience of over a decade and expertise in DNB (Psychiatry), I'm committed to offering compassionate, evidence-based care for a wide range of mental health concerns.
                         </p>
                         <p className="text-lg text-gray-700 mb-12">
-                            From my work at prestigious institutions like IHBAS, New Delhi to my dedication during the COVID-19 pandemic, I've consistently strived to make high-quality mental healthcare accessible to all.
+                            From my work at prestigious institutions like Deep Chand Bandhu Delhi Govt. Hospital and IHBAS, New Delhi to my extensive clinical leadership in juvenile de-addiction and community outreach, I've consistently strived to make high-quality mental healthcare accessible to all.
                         </p>
 
                         <Link

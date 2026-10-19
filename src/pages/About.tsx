@@ -17,10 +17,10 @@ const About: React.FC = () => {
     const [textVisible, setTextVisible] = useState(true);
 
     const texts = [
-        "Consultant at multiple de-addiction and neuropsychiatry centers across Punjab",
-        "Senior Resident at IHBAS, New Delhi - autonomous tertiary mental health and neurosciences institute",
-        "Involved in District Mental Health Program (DMHP) under National Mental Health Program",
-        "Provided services through Mobile Mental Health Unit (MMHU) in Delhi",
+        "Senior Resident at Deep Chand Bandhu Delhi Govt. Hospital (Asia's largest juvenile de-addiction ward)",
+        "Senior Resident & Chief SR at IHBAS, New Delhi (Institute of Human Behaviour & Allied Sciences)",
+        "Consultant Psychiatrist – De-addiction & Neuropsychiatry across premier centres in Punjab",
+        "Involved in District Mental Health Program (DMHP) & Mobile Mental Health Unit (MMHU)",
         "Now serving at Delhi Global Mind Clinic, bringing expert psychiatric care to the capital"
     ];
 
@@ -33,21 +33,19 @@ const About: React.FC = () => {
                 setCurrentText(texts[currentIndex]);
                 setTextVisible(true);
                 currentIndex = (currentIndex + 1) % texts.length;
-            }, 1000); // Wait for fade out before changing text
+            }, 1000);
         };
-        const intervalId = setInterval(changeText, 4000); // Change text every 5 seconds
+        const intervalId = setInterval(changeText, 4000);
 
         return () => clearInterval(intervalId);
-    //eslint-disable-next-line
     }, []);
-
 
     return (
         <>
             <Helmet>
-                <title>About Dr. Pratik Kumar - Qualifications & Experience</title>
-                <meta name="description" content="Learn about Dr. Pratik Kumar's qualifications, including DNB Psychiatry, MBBS, and over 10 years of clinical experience in mental health treatment and research." />
-                <meta name="keywords" content="Dr. Pratik Kumar biography, psychiatric qualifications, mental health experience, IHBAS, senior resident, publications" />
+                <title>About Dr. Pratik Kumar - Qualifications & Experience | Delhi Global Mind Clinic</title>
+                <meta name="description" content="Learn about Dr. Pratik Kumar's qualifications, including DNB Psychiatry, MBBS, Senior Residency at Deep Chand Bandhu Delhi Govt Hospital & IHBAS, and over 10 years of clinical experience." />
+                <meta name="keywords" content="Dr. Pratik Kumar biography, psychiatric qualifications, mental health experience, Deep Chand Bandhu Hospital, IHBAS, senior resident, de-addiction consultant, publications" />
             </Helmet>
             <div className="bg-white">
                 <div className="relative overflow-hidden">
@@ -58,9 +56,8 @@ const About: React.FC = () => {
                         </svg>
                     </div>
                     <div className="container mx-auto px-6 pt-20 pb-12 relative z-10 mt-40">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="w-full">
-                                {/* @ts-ignore */}
                                 <AnimatePresence>
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
@@ -72,38 +69,35 @@ const About: React.FC = () => {
                                             <h1 className="text-4xl font-bold text-teal-800 sm:text-5xl md:text-6xl lg:text-7xl">
                                                 Dr. Pratik Kumar
                                             </h1>
-                                            <h2 className="mt-2 text-xl font-semibold text-teal-600">Consultant Psychiatrist & Neuropsychiatrist</h2>
+                                            <h2 className="mt-2 text-xl font-semibold text-teal-600">
+                                                Consultant Psychiatrist & Neuropsychiatrist
+                                            </h2>
                                         </div>
 
                                         <div className="space-y-4">
                                             <p className="text-lg text-gray-700">
-                                                Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar. With more than 10 years of experience, he has made significant contributions to the field of mental health.
+                                                Dr. Pratik Kumar is a highly qualified psychiatrist with a DNB in Psychiatry from the Govt. Mental Hospital, Institute of Mental Health, Amritsar (National Board of Examination, New Delhi). With more than 10 years of clinical and academic experience, he has made significant contributions to psychiatry, neuropsychiatry, and addiction medicine.
                                             </p>
                                             <p className="text-lg text-gray-700">
                                                 Specializing in neuropsychiatry and de-addiction, Dr. Kumar's expertise spans:
                                             </p>
-                                            <ul className="list-disc pl-6 text-lg text-gray-700">
-                                                <li>Extensive experience in outpatient and inpatient care</li>
-                                                <li>Academic teaching and clinical research</li>
-                                                <li>Mental health services through various outreach programs</li>
-                                                <li>Telepsychiatry services during the COVID-19 pandemic</li>
+                                            <ul className="list-disc pl-6 text-lg text-gray-700 space-y-1">
+                                                <li>Senior Residency at Deep Chand Bandhu Delhi Govt. Hospital (Asia's largest juvenile de-addiction ward)</li>
+                                                <li>Senior Residency & Chief SR at IHBAS, New Delhi (Institute of Human Behaviour & Allied Sciences)</li>
+                                                <li>Consultant in Neuropsychiatry & De-Addiction across premier centres in Punjab (Ludhiana Detox, Samarpan, Nirmal Chhaya)</li>
+                                                <li>Extensive OPD, IPD, ICU, and psychiatric emergency patient care</li>
+                                                <li>Academic teaching for PG and non-PG students, research, and community mental health (DMHP, MMHU, Tele-MANAS)</li>
                                             </ul>
-                                            <div className="p-4 bg-teal-50 border border-teal-200 rounded-lg text-sm text-teal-900 mt-4">
-                                                <p><strong>Verified Qualifications:</strong> MBBS (2012, JJM Medical College, RGUHS), DNB Psychiatry (2018, National Board of Examinations)</p>
-                                                <p className="text-xs text-teal-700 mt-1">Medical Council Registration details are on file and available upon inquiry at the clinic.</p>
-                                            </div>
                                         </div>
 
-                                        <div className="flex items-center gap-4">
-                                            <p className="font-edu text-gray-700 text-sm lg:text-xl">
-                                                📍DELHI  GL🌏BAL  MIND  CLINIC
-                                            
+                                        <div className="flex items-center gap-4 pt-2">
+                                            <p className="font-edu text-gray-700 text-sm lg:text-xl font-semibold">
+                                                📍 Delhi Global Mind Clinic
                                             </p>
-                                            <br />
                                             <img
                                                 src="https://flagcdn.com/w40/in.png"
                                                 alt="India"
-                                                className="w-10 h-auto"
+                                                className="w-8 h-auto"
                                             />
                                             <span className="text-lg font-edu text-teal-700">
                                                 Delhi, India
@@ -113,7 +107,6 @@ const About: React.FC = () => {
                                 </AnimatePresence>
                             </div>
                             <div className="w-full flex justify-center lg:justify-end">
-                                {/* @ts-ignore */}
                                 <AnimatePresence>
                                     <motion.div
                                         initial={{ opacity: 0, scale: 0.9 }}
@@ -149,7 +142,7 @@ const About: React.FC = () => {
                 <ResearchList title="Research" details={RESEARCH} />
             </div>
         </>
-    )
-}
+    );
+};
 
 export default About;

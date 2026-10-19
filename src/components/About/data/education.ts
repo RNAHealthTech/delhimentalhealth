@@ -1,44 +1,44 @@
-import { EducationShowcaseListItemProps} from "../education/education-showcase-list-item";
+import { EducationShowcaseListItemProps } from "../education/education-showcase-list-item";
 
 export const EDUCATION: EducationShowcaseListItemProps[] = [
     {
         title: "DNB Psychiatry",
         organisation: {
-           name: "Govt. Mental Hospital, Institute of Mental Health, NBE, New Delhi",
-           href: "",
+            name: "Govt. Mental Hospital, Institute of Mental Health, Amritsar | National Board of Examination (NBE), New Delhi",
+            href: "",
         },
-        date: "Jan 2018", 
-        location: "New Delhi, India",
-        description: "Specialisation in DNB psychiatry"
+        date: "January 2018", 
+        location: "Amritsar / New Delhi",
+        description: "Govt. Mental Hospital, Institute of Mental Health, Amritsar • National Board of Examination (NBE), New Delhi"
     }, 
     {
-        title: "MBBS",
+        title: "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
         organisation: {
-           name: "JJM Medical College,Rajiv Gandhi University of Health Sciences, Bangalore",
-           href: "",
+            name: "JJM Medical College, Davangere, Karnataka (MCI Recognized) | Rajiv Gandhi University of Health Sciences, Bangalore",
+            href: "",
         },
-        date: "Aug 2012", 
-        location: "Devengere, Karnataka",
-        description: "Bachelor degree in Medicine and Bachelor of Surgery"
+        date: "2012", 
+        location: "Davangere, Karnataka",
+        description: "JJM Medical College, Davangere, Karnataka (MCI Recognized) • Rajiv Gandhi University of Health Sciences, Bangalore"
     },
     {
-        title: "Intermediate,CBSE",
+        title: "Intermediate",
         organisation: {
-           name: "DPS, Ranchi",
-           href: "",
+            name: "Delhi Public School, Ranchi, Jharkhand | CBSE (Central Board of Secondary Education)",
+            href: "",
         },
-        date: "Jun 2004", 
+        date: "2004", 
         location: "Ranchi, Jharkhand",
-        description: "Completed my 12 grade from CBSE board"
+        description: "Delhi Public School, Ranchi, Jharkhand • CBSE (Central Board of Secondary Education)"
     },
     {
-        title: "High School, CBSE",
+        title: "High School",
         organisation: {
-           name: "B.D. Public School, Patna",
-           href: "",
+            name: "B.D. Public School, Patna, Bihar | CBSE (Central Board of Secondary Education)",
+            href: "",
         },
-        date: "Jun 2002", 
+        date: "2002", 
         location: "Patna, Bihar",
-        description: "Completed my high school"
+        description: "B.D. Public School, Patna, Bihar • CBSE (Central Board of Secondary Education)"
     }
-]
+];

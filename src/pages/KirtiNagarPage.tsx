@@ -42,7 +42,7 @@ const KirtiNagarPage = () => {
           </li>
           <li className="flex items-start">
             <Zap className="text-teal-600 mr-2 mt-1 flex-shrink-0" />
-            <span><strong>Institutional Residency Experience:</strong> Served as Senior Resident and Chief SR at IHBAS, New Delhi, gaining extensive emergency, OPD, and IPD clinical experience.</span>
+            <span><strong>Institutional Residency Experience:</strong> Served as Senior Resident at Deep Chand Bandhu Delhi Govt. Hospital and Senior Resident & Chief SR at IHBAS, New Delhi, gaining extensive emergency, OPD, IPD, and juvenile de-addiction clinical experience.</span>
           </li>
           <li className="flex items-start">
             <Brain className="text-teal-600 mr-2 mt-1 flex-shrink-0" />

@@ -101,15 +101,15 @@ const SecurityCheck: React.FC<SecurityCheckProps> = ({ children }) => {
         <div className="flex flex-col items-center justify-center mb-6">
           <img
             src="/images/logo.png"
-            alt="Dr. Pratik Kumar Logo"
-            className="h-14 w-auto mb-4 bg-white/90 p-2 rounded-lg shadow-md"
+            alt="Delhi Global Mind Clinic Logo"
+            className="h-16 w-16 mb-3 object-contain rounded-full bg-white p-1 shadow-md"
             onError={(e) => {
               // Fallback if image fails to load
               e.currentTarget.style.display = 'none';
             }}
           />
           <h2 className="text-2xl font-bold text-white tracking-wide">
-            Delhi Mental Health
+            Delhi Global Mind Clinic
           </h2>
           <p className="text-xs text-teal-200 mt-1 uppercase tracking-widest font-semibold">
             Dr. Pratik Kumar • Security Verification
