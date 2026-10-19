@@ -121,7 +121,7 @@ const HomeServices: React.FC = () => {
         <section className="container-contact py-24 relative overflow-hidden">
             <FromConsultantsDesk />
             <div className="container mx-auto px-4 mt-8 sm:px-6 lg:px-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-teal-900">Choose your Personalized Session</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-teal-900">Specialized Clinical Care Services</h2>
 
                 <div className="flex justify-center">
 

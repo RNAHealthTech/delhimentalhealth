@@ -5,14 +5,14 @@ const NCRPage:React.FC = () => {
   return (
     <div className="page-container  mt-36 mb-20">
       <SEOHelmet />
-      <h1>Top Psychologist in Delhi NCR - Dr. Pratik Kumar</h1>
-      <p>Dr. Pratik Kumar: Your trusted psychologist and psychiatrist serving the entire Delhi NCR region. Experience comprehensive mental health care tailored to your needs.</p>
+      <h1>Psychiatric & Mental Health Care in Delhi NCR - Dr. Pratik Kumar</h1>
+      <p>Dr. Pratik Kumar, Consultant Psychiatrist (MBBS, DNB Psychiatry), provides psychiatric evaluations, neuropsychiatric care, and psychotherapy consultations for patients across Delhi NCR.</p>
       
       <section>
         <h2>Comprehensive Mental Health Services Across NCR</h2>
         <ul>
           <li>Depression and Anxiety Treatment</li>
-          <li>Addiction Counseling</li>
+          <li>Addiction Counseling and De-addiction Care</li>
           <li>Relationship and Family Therapy</li>
           <li>Stress Management</li>
           <li>Psychiatric Evaluations and Medication Management</li>
@@ -21,9 +21,9 @@ const NCRPage:React.FC = () => {
 
       <section>
         <h2>Areas Served in Delhi NCR</h2>
-        <p>Dr. Kumar provides his expert services across Delhi NCR, including:</p>
+        <p>Consultations are available for patients across Delhi NCR, including:</p>
         <ul>
-          <li>Shalimar Bagh</li>
+          <li>Shalimar Bagh (Primary Clinic)</li>
           <li>Ashok Vihar</li>
           <li>Patel Nagar</li>
           <li>Adarsh Nagar</li>
@@ -33,13 +33,13 @@ const NCRPage:React.FC = () => {
       </section>
 
       <section>
-        <h2>Why Choose Dr. Pratik Kumar?</h2>
+        <h2>Clinical Qualifications & Approach</h2>
         <ul>
-          <li>Experienced psychologist and psychiatrist with a proven track record</li>
-          <li>Evidence-based treatments tailored to individual needs</li>
-          <li>Comprehensive care covering both psychological and psychiatric aspects</li>
-          <li>Convenient locations across Delhi NCR</li>
-          <li>Commitment to patient confidentiality and comfort</li>
+          <li>Qualified medical specialist (DNB Psychiatry, MBBS) with extensive clinical experience</li>
+          <li>Evidence-based treatments tailored to individual clinical needs</li>
+          <li>Comprehensive care covering both medical and psychotherapeutic aspects</li>
+          <li>Accessible consultation options across Delhi NCR</li>
+          <li>Strict adherence to patient confidentiality and professional medical ethics</li>
         </ul>
       </section>
 
@@ -51,8 +51,8 @@ const NCRPage:React.FC = () => {
       </section>
 
       <section>
-        <h2>Schedule Your Consultation</h2>
-        <p>Take the first step towards better mental health. Contact Dr. Pratik Kumar today to schedule your consultation at any of his Delhi NCR locations.</p>
+        <h2>Consultation Access & Scheduling</h2>
+        <p>For clinical appointments and inquiries regarding psychiatric consultations, please reach out via phone or email.</p>
       </section>
       </div>
   )

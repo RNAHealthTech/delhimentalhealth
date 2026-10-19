@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-300">&copy; {new Date().getFullYear()} Dr. Pratik Kumar. All rights reserved.</p>
           <p className="text-sm text-gray-300">
-            DNB Psychiatrist | Mental Health Expert
+            Dr. Pratik Kumar, MBBS, DNB (Psychiatry) | Consultant Psychiatrist
           </p>
           <p className='text-sm'>
           Website by <a href="https://rnahealthtech.com" className="text-white-800 hover:underline">RNA HealthTech</a>

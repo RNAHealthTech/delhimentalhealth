@@ -150,15 +150,15 @@ const Home: React.FC = () => {
   }, []);
 
   // const typedRef = useRef(null);
-  const [currentText, setCurrentText] = useState('Therapy sessions with Dr. Pratik helped me the best to unfold my burden of so many years');
+  const [currentText, setCurrentText] = useState('Comprehensive psychiatric evaluation and evidence-based mental healthcare in New Delhi');
   const [textVisible, setTextVisible] = useState(true);
 
   const texts = [
-    "Ranbir: 'Dr. Pratik's expertise changed my life.'",
-    "Mr. Sahu: 'He is basically brilliant.'",
-    "Ganesah (Tilak Nagar): 'I finally found hope with Dr. Kumar's treatment.'",
-    "Rubal: 'Dr. Pratik's approach is both professional and compassionate.'",
-    "Sushant: 'Dr. Pratik helped me in the worst time of my career.'",
+    "Early clinical assessment and evidence-based care support long-term mental wellness.",
+    "Personalized psychiatric evaluations tailored to individual clinical history and needs.",
+    "Integrating medical treatment with supportive psychotherapy for holistic patient care.",
+    "Confidential, compassionate consultations adhering to professional medical ethics.",
+    "Structured care pathways for mood disorders, anxiety, addiction, and neuropsychiatric health.",
   ];
 
   useEffect(() => {
@@ -257,7 +257,7 @@ const Home: React.FC = () => {
             </div>
             <div className="flex flex-col items-center text-center">
               <FaTrophy className="text-3xl md:text-4xl mb-3" />
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">Proven Results</p>
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">Evidence-Based Care</p>
             </div>
             <div className="flex flex-col items-center text-center">
               <FaSmile className="text-3xl md:text-4xl mb-3" />

@@ -14,8 +14,8 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Dr. Pratik Kumar - Book Your Appointment</title>
-        <meta name="description" content="Get in touch with Dr. Pratik Kumar for expert psychiatric consultations. Contact via phone: +91 99340 35397 or email: docpratikkumar@gmail.com" />
+        <title>Contact Dr. Pratik Kumar - Clinic Consultation & Inquiries</title>
+        <meta name="description" content="Get in touch with Dr. Pratik Kumar for psychiatric consultations. Contact via phone: +91 99340 35397 or email: docpratikkumar@gmail.com." />
         <meta name="keywords" content="contact Dr. Pratik Kumar, psychiatric appointment, mental health consultation, psychiatrist contact details" />
       </Helmet>
       <section className="bg-white py-12 mt-28">
@@ -25,8 +25,8 @@ const Contact: React.FC = () => {
               <img src="/images/bg-circles-color.png" alt="background" />
               <div className="md:w-1/2 z-10 top-0">
                 <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md">
-                  <h1 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600">Get Therapy</h1>
-                  <p className="text-xl md:text-2xl text-gray-700">Discover the new YOU</p>
+                  <h1 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600">Consultation & Care</h1>
+                  <p className="text-xl md:text-2xl text-gray-700">Delhi Global Mind Clinic</p>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <section id="contact-form" className="lg:w-2/3 w-full">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-8 text-center text-zinc-900 md:text-3xl lg:text-3xl">Schedule Your Appointment</h3>
+              <h3 className="text-2xl font-bold mb-8 text-center text-zinc-900 md:text-3xl lg:text-3xl">Request a Consultation</h3>
 
               {state.succeeded ? (
                 <h3 className="text-2xl font-bold mb-4 text-green-600">
@@ -180,7 +180,7 @@ const Contact: React.FC = () => {
                     type="submit"
                     className="w-full bg-white text-gray-600 font-semibold py-3 px-6 border border-solid border-teal-800  rounded-md hover:text-gray-900 transition duration-300 ease-in-out transform  hover:-translate-y-1 hover:shadow-lg"
                   >
-                    Schedule Appointment
+                    Submit Consultation Request
                   </button>
                 </form>
               )}

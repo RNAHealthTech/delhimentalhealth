@@ -1,9 +1,17 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('react-ga');
+
+test('renders Dr. Pratik Kumar clinic navigation/header', () => {
+  render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+  const elements = screen.getAllByText(/Dr\. Pratik Kumar/i);
+  expect(elements.length).toBeGreaterThan(0);
 });
+

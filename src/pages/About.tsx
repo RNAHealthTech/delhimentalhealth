@@ -13,12 +13,12 @@ const About: React.FC = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const [currentText, setCurrentText] = useState('Best Psychiatrist in India');
+    const [currentText, setCurrentText] = useState('Consultant Psychiatrist & Neuropsychiatrist');
     const [textVisible, setTextVisible] = useState(true);
 
     const texts = [
         "Consultant at multiple de-addiction and neuropsychiatry centers across Punjab",
-        "Senior Resident at IHBAS, New Delhi - a premier institute for mental health",
+        "Senior Resident at IHBAS, New Delhi - autonomous tertiary mental health and neurosciences institute",
         "Involved in District Mental Health Program (DMHP) under National Mental Health Program",
         "Provided services through Mobile Mental Health Unit (MMHU) in Delhi",
         "Now serving at Delhi Global Mind Clinic, bringing expert psychiatric care to the capital"
@@ -46,7 +46,7 @@ const About: React.FC = () => {
         <>
             <Helmet>
                 <title>About Dr. Pratik Kumar - Qualifications & Experience</title>
-                <meta name="description" content="Learn about Dr. Pratik Kumar's extensive qualifications, including DNB Psychiatry, MBBS, and 5+ years of experience in mental health treatment and research." />
+                <meta name="description" content="Learn about Dr. Pratik Kumar's qualifications, including DNB Psychiatry, MBBS, and over 10 years of clinical experience in mental health treatment and research." />
                 <meta name="keywords" content="Dr. Pratik Kumar biography, psychiatric qualifications, mental health experience, IHBAS, senior resident, publications" />
             </Helmet>
             <div className="bg-white">
@@ -72,7 +72,7 @@ const About: React.FC = () => {
                                             <h1 className="text-4xl font-bold text-teal-800 sm:text-5xl md:text-6xl lg:text-7xl">
                                                 Dr. Pratik Kumar
                                             </h1>
-                                            <h2 className="mt-2 text-xl font-semibold text-teal-600">Experienced Psychiatrist</h2>
+                                            <h2 className="mt-2 text-xl font-semibold text-teal-600">Consultant Psychiatrist & Neuropsychiatrist</h2>
                                         </div>
 
                                         <div className="space-y-4">
@@ -88,6 +88,10 @@ const About: React.FC = () => {
                                                 <li>Mental health services through various outreach programs</li>
                                                 <li>Telepsychiatry services during the COVID-19 pandemic</li>
                                             </ul>
+                                            <div className="p-4 bg-teal-50 border border-teal-200 rounded-lg text-sm text-teal-900 mt-4">
+                                                <p><strong>Verified Qualifications:</strong> MBBS (2012, JJM Medical College, RGUHS), DNB Psychiatry (2018, National Board of Examinations)</p>
+                                                <p className="text-xs text-teal-700 mt-1">Medical Council Registration details are on file and available upon inquiry at the clinic.</p>
+                                            </div>
                                         </div>
 
                                         <div className="flex items-center gap-4">

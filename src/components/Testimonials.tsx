@@ -1,76 +1,75 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Stethoscope, FileText, MessageSquare, ShieldCheck, HeartPulse, Users } from 'lucide-react';
 
-interface Testimonial {
+interface GuidanceItem {
   id: number;
-  name: string;
-  role: string;
+  title: string;
+  category: string;
   content: string;
-  avatar: string;
+  icon: React.ReactNode;
 }
 
-const testimonials: Testimonial[] = [
+const guidanceList: GuidanceItem[] = [
   {
     id: 1,
-    name: "Vishakha",
-    role: "Anxiety Patient",
-    content: "What truly sets Dr. Pratik apart is his genuine care for his patients. His treatment plans were comprehensive and tailored specifically to my needs, incorporating a combination of therapy and medication management.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjV6KHi9mccX2_5YK2yMTXnFVbAtYj9A5B-CT8fKSm1wIxyVdQPq=w60-h60-p-rp-mo-br100",
+    title: "Comprehensive Clinical Assessment",
+    category: "Diagnostic Evaluation",
+    content: "Structured psychiatric evaluations assess emotional, cognitive, and physiological symptoms to formulate an accurate diagnosis and individualized care plan.",
+    icon: <Stethoscope className="w-7 h-7 text-teal-700" />,
   },
   {
     id: 2,
-    name: "Meenakshi Kayshap",
-    role: "Depression Recovery",
-    content: "Truly amazing doctor and treats you like a friend. He had in-depth knowledge of the diseases and also gave expert meditation and lifestyle tips to me. I'm out of my illness all thanks to him.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUF0mY-y8Vl2Myl8prddD6a0MmCyokm1KskjOiBSYarC_79t9Hh=w60-h60-p-rp-mo-br100",
+    title: "Evidence-Based Treatment Plans",
+    category: "Therapeutic Modalities",
+    content: "Care regimens integrate modern psychopharmacology, clinical monitoring, and lifestyle modifications tailored to individual patient health profiles.",
+    icon: <FileText className="w-7 h-7 text-teal-700" />,
   },
   {
     id: 3,
-    name: "Sneh Prabhakar",
-    role: "Bipolar Disorder Patient",
-    content: "A very good humble and knowledgeable doctor and a kind human being. I was totally satisfied with his treatment. And I recommend doctor pratik for all your mental health issues.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWC3-3hHYtcOlce9ODauOZ9MD_bxMKhyAuLj8YJZ994s4w5Elk=w60-h60-p-rp-mo-br100",
+    title: "Psychotherapy & Counseling",
+    category: "Psychological Support",
+    content: "Structured therapeutic interventions, including Cognitive Behavioral Therapy (CBT), assist patients in developing sustainable coping mechanisms.",
+    icon: <MessageSquare className="w-7 h-7 text-teal-700" />,
   },
   {
     id: 4,
-    name: "Sanyam Gupta",
-    role: "PTSD",
-    content: "Amongst the best psychiatrists in New Delhi. Has great knowledge, will listen to your problems properly and suggest best treatment. Highly recommended.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUxZY7VfBzH_oRfks4amsYfnYMO0ey7-bIMvbQ_nVr808Z3yB1h=w60-h60-p-rp-mo-br100",
+    title: "Confidentiality & Ethical Standards",
+    category: "Patient Privacy",
+    content: "All clinical consultations and records strictly follow professional confidentiality guidelines and National Medical Commission ethical conduct rules.",
+    icon: <ShieldCheck className="w-7 h-7 text-teal-700" />,
   },
   {
     id: 5,
-    name: "Anil Kumar Sharma",
-    role: "Clinical Depression",
-    content: "My 1st best experience with any doctor. Good behaviour with my known patient. I must recommend to visit for any patient.",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXWq2s1zawN2G0IDU23TvPD4SPUEw4H98lbWw-wN5_TkguStZI=w60-h60-p-rp-mo-br100"
-  }, 
+    title: "Collaborative Wellness Care",
+    category: "Long-Term Management",
+    content: "Care plans emphasize collaborative goal-setting, ongoing symptom monitoring, and structured follow-ups for stable, lasting mental wellness.",
+    icon: <HeartPulse className="w-7 h-7 text-teal-700" />,
+  },
   {
     id: 6,
-    name: "Arumit Palit",
-    role: "Alcohal Addiction",
-    content: "Excellent doctor , understands patient . Very precise in picking up problems.available 24x7 for his patients",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVtF-R5m-1EhugvUglqggxkunNvOQLTTEq1SnmDAOjYKB8X4At6=w60-h60-p-rp-mo-br100"
+    title: "Family Psychoeducation & Support",
+    category: "Caregiver Education",
+    content: "Educational support for family members builds understanding, strengthens communication, and fosters an empathetic environment for ongoing recovery.",
+    icon: <Users className="w-7 h-7 text-teal-700" />,
   }
 ];
 
-const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
+const GuidanceCard: React.FC<{ item: GuidanceItem }> = ({ item }) => {
   return (
     <motion.div
-      className="rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+      className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center h-full border border-teal-50"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
     >
-      <img
-        src={testimonial.avatar}
-        alt={testimonial.name}
-        className="w-20 h-20 rounded-full mb-4 border-4 border-amber-100"
-      />
-      <h3 className="text-xl font-semibold mb-2 text-teal-800">{testimonial.name}</h3>
-      <p className="text-gray-600 mb-4">{testimonial.role}</p>
-      <p className="text-gray-800 italic">&ldquo;{testimonial.content}&rdquo;</p>
+      <div className="w-16 h-16 rounded-full mb-4 bg-teal-50 border-2 border-teal-200 flex items-center justify-center shadow-sm">
+        {item.icon}
+      </div>
+      <h3 className="text-xl font-semibold mb-1 text-teal-800">{item.title}</h3>
+      <p className="text-teal-600 text-sm font-medium mb-3">{item.category}</p>
+      <p className="text-gray-700 text-sm leading-relaxed">{item.content}</p>
     </motion.div>
   );
 };
@@ -91,7 +90,7 @@ const Testimonials: React.FC = () => {
   useEffect(() => {
     if (isMobile) {
       const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % guidanceList.length);
       }, 5000);
       return () => clearInterval(interval);
     }
@@ -106,44 +105,46 @@ const Testimonials: React.FC = () => {
         <div className="absolute -top-1/4 left-1/4 w-1/2 h-1/2 bg-amber-300 rounded-full opacity-10"></div>
         <div className="absolute bottom-1/4 left-1/3 w-1/3 h-1/3 bg-amber-200 rounded-full opacity-15"></div>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">What Our Patients Say</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">
+          Mental Health Assessment, Care & Patient Guidance
+        </h2>
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <img 
-              src="/images/wallpaper.jpeg" // looking dull 
-              alt="Patient Testimonials"
+              src="/images/wallpaper.jpeg" 
+              alt="Mental Health Care & Guidance"
               width={500}
               height={500}
-              className="rounded-lg"
+              className="rounded-lg shadow-md"
             />
           </div>     
-        <div className='w-full lg:w-1/2'>
-        {isMobile ? (
-          <div className='relative h-[400px]'>
-            {/* @ts-ignore */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-                className="absolute w-full"
-              >
-                <TestimonialCard testimonial={testimonials[currentIndex]} />
-              </motion.div>
-            </AnimatePresence>
+          <div className='w-full lg:w-1/2'>
+            {isMobile ? (
+              <div className='relative h-[360px]'>
+                {/* @ts-ignore */}
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentIndex}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute w-full"
+                  >
+                    <GuidanceCard item={guidanceList[currentIndex]} />
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {guidanceList.map((item) => (
+                  <GuidanceCard key={item.id} item={item} />
+                ))}
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </div>
-        )}
-        </div>
         </div>
       </div>
     </div>

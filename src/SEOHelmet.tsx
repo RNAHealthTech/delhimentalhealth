@@ -13,50 +13,50 @@ interface SEOData {
 
 const seoContent: { [key: string]: SEOData } = {
     '/': {
-        title: "Dr. Pratik Kumar - Expert Psychologist & Psychiatrist in Delhi NCR | Mental Health Specialist",
-        description: "Dr. Pratik Kumar, leading psychologist and psychiatrist in Delhi NCR, specializes in mental health disorders. Compassionate care with advanced treatments. Book your consultation today.",
-        keywords: "psychologist Delhi NCR, psychiatrist Delhi, mental health specialist, Dr. Pratik Kumar, depression treatment, anxiety disorders",
+        title: "Dr. Pratik Kumar - Consultant Psychiatrist in Delhi NCR | Delhi Global Mind Clinic",
+        description: "Dr. Pratik Kumar, Consultant Psychiatrist (MBBS, DNB Psychiatry) in Delhi NCR, offers evidence-based psychiatric evaluations, neuropsychiatry, and psychotherapy services.",
+        keywords: "psychiatrist Delhi NCR, psychiatric clinic Shalimar Bagh, mental health consultation, Dr. Pratik Kumar, depression treatment, anxiety disorders",
         type: "WebPage"
     },
     '/top-psychologist-in-shalimar-bagh': {
-        title: "Top Psychologist in Shalimar Bagh | Dr. Pratik Kumar - Mental Health Expert",
-        description: "Seeking a psychologist in Shalimar Bagh? Dr. Pratik Kumar offers expert care for mental health conditions. Personalized approach with evidence-based treatments.",
-        keywords: "psychologist Shalimar Bagh, mental health treatment, psychiatrist near me, Dr. Pratik Kumar, cognitive behavioral therapy",
+        title: "Psychiatrist & Mental Health Clinic in Shalimar Bagh | Dr. Pratik Kumar",
+        description: "Looking for psychiatric care in Shalimar Bagh? Dr. Pratik Kumar offers clinical evaluation and evidence-based treatments for mental health conditions.",
+        keywords: "psychiatrist Shalimar Bagh, mental health treatment Shalimar Bagh, Dr. Pratik Kumar, cognitive behavioral therapy, psychiatric clinic Delhi",
         areaName: "Shalimar Bagh, North West Delhi",
         type: "MedicalWebPage"
     },
     '/expert-psychiatrist-in-ashok-vihar': {
-        title: "Expert Psychiatrist in Ashok Vihar - Dr. Pratik Kumar",
-        description: "Dr. Pratik Kumar brings world-class psychiatric care to Ashok Vihar. Specializing in mood disorders, anxiety, and addiction treatment. Schedule your visit now.",
+        title: "Psychiatric Consultation in Ashok Vihar - Dr. Pratik Kumar",
+        description: "Dr. Pratik Kumar provides evidence-based psychiatric consultations for Ashok Vihar residents, covering mood disorders, anxiety, and de-addiction care.",
         keywords: "psychiatrist Ashok Vihar, depression treatment, anxiety specialist, Dr. Pratik Kumar, addiction counseling",
         areaName: "Ashok Vihar, North West Delhi",
         type: "MedicalWebPage"
     },
     '/best-mental-health-specialist-patel-nagar': {
-        title: "Best Mental Health Specialist in Patel Nagar | Dr. Pratik Kumar",
-        description: "Residents of Patel Nagar, access top-tier mental health treatments with Dr. Pratik Kumar. Specialized care for stress, relationship issues, and psychiatric disorders.",
-        keywords: "mental health specialist Patel Nagar, stress management, relationship counseling, Dr. Pratik Kumar, psychiatric care",
+        title: "Psychiatric & Mental Health Care in Patel Nagar | Dr. Pratik Kumar",
+        description: "Residents of Patel Nagar, access comprehensive psychiatric and mental health consultations with Dr. Pratik Kumar for stress, anxiety, and mood disorders.",
+        keywords: "psychiatrist Patel Nagar, mental health consultation Patel Nagar, stress management, relationship counseling, Dr. Pratik Kumar, psychiatric care",
         areaName: "Patel Nagar, West Delhi",
         type: "MedicalWebPage"
     },
     '/leading-psychologist-in-adarsh-nagar': {
-        title: "Leading Psychologist for Adarsh Nagar | Dr. Pratik Kumar",
-        description: "Dr. Pratik Kumar offers advanced psychological solutions to Adarsh Nagar. Expert in treating complex mental health disorders. Consult today for personalized care.",
-        keywords: "psychologist Adarsh Nagar, mental health counseling, psychiatrist Adarsh Nagar, Dr. Pratik Kumar, behavioral therapy",
+        title: "Psychiatric & Mental Health Consultation in Adarsh Nagar | Dr. Pratik Kumar",
+        description: "Dr. Pratik Kumar offers evidence-based psychiatric evaluations and care for Adarsh Nagar residents. Individualized clinical support for emotional and mental health concerns.",
+        keywords: "psychiatrist Adarsh Nagar, mental health consultation, psychiatric care Adarsh Nagar, Dr. Pratik Kumar, behavioral therapy",
         areaName: "Adarsh Nagar, North Delhi",
         type: "MedicalWebPage"
     },
     '/best-psychiatrist-in-kirti-nagar': {
-        title: "Best Psychiatrist in Kirti Nagar - Dr. Pratik Kumar",
-        description: "Trust Dr. Pratik Kumar for exceptional psychiatric care in Kirti Nagar. Specializing in comprehensive mental health evaluations and treatment plans.",
+        title: "Psychiatric Consultation in Kirti Nagar - Dr. Pratik Kumar",
+        description: "Consult Dr. Pratik Kumar for evidence-based psychiatric care in Kirti Nagar. Clinical evaluations, mood disorder management, and personalized care pathways.",
         keywords: "psychiatrist Kirti Nagar, mental health assessment, psychotherapy, Dr. Pratik Kumar, medication management",
         areaName: "Kirti Nagar, West Delhi",
         type: "MedicalWebPage"
     },
     '/top-psychologist-in-delhi-ncr': {
-        title: "Top Psychologist in Delhi NCR - Dr. Pratik Kumar | Comprehensive Mental Health Care",
-        description: "Dr. Pratik Kumar: Your trusted psychologist and psychiatrist in Delhi NCR. Expertise in depression, anxiety, addiction, and more. Evidence-based treatments tailored to your needs.",
-        keywords: "top psychologist Delhi NCR, best psychiatrist Delhi, mental health expert, Dr. Pratik Kumar, depression treatment Delhi, anxiety therapy NCR",
+        title: "Psychiatric & Mental Health Care in Delhi NCR - Dr. Pratik Kumar",
+        description: "Dr. Pratik Kumar provides consultant psychiatric care across Delhi NCR. Clinical evaluations for depression, anxiety, addiction, and neuropsychiatric health.",
+        keywords: "psychiatrist Delhi NCR, mental health clinic Delhi, Dr. Pratik Kumar, depression treatment Delhi, anxiety therapy NCR, psychiatric consultation",
         areaName: "Delhi NCR",
         type: "MedicalWebPage"
     },
@@ -74,7 +74,7 @@ const seoContent: { [key: string]: SEOData } = {
     },
     '/services/depression-anxiety': {
         title: "Depression & Anxiety Treatment in Delhi | Dr. Pratik Kumar",
-        description: "Effective clinical treatment for depression and anxiety disorders by Dr. Pratik Kumar at Delhi Global Mind Clinic. Book evidence-based therapy sessions.",
+        description: "Clinical treatment for depression and anxiety disorders by Dr. Pratik Kumar at Delhi Global Mind Clinic. Evidence-based psychiatric and therapeutic care.",
         keywords: "depression treatment Delhi, anxiety disorder therapy, panic attack treatment, psychiatrist for anxiety",
         serviceName: "Depression and Anxiety Treatment",
         type: "MedicalWebPage"
@@ -87,43 +87,43 @@ const seoContent: { [key: string]: SEOData } = {
         type: "MedicalWebPage"
     },
     '/services/dementia': {
-        title: "Dementia & Memory Care Specialist in Delhi | Dr. Pratik Kumar",
-        description: "Comprehensive dementia assessment, Alzheimer's care, and cognitive support by expert neuropsychiatrist Dr. Pratik Kumar.",
-        keywords: "dementia specialist Delhi, Alzheimer's treatment, memory loss clinic, geriatric psychiatry",
+        title: "Dementia & Memory Care Support in Delhi | Dr. Pratik Kumar",
+        description: "Comprehensive dementia assessment, cognitive evaluation, and caregiver guidance by Dr. Pratik Kumar.",
+        keywords: "dementia assessment Delhi, Alzheimer's care, memory loss clinic, geriatric psychiatry",
         serviceName: "Dementia & Memory Care",
         type: "MedicalWebPage"
     },
     '/services/schizophrenia': {
         title: "Schizophrenia & Psychosis Treatment in Delhi | Dr. Pratik Kumar",
-        description: "Expert evaluation, medication management, and rehabilitation for schizophrenia and psychotic disorders.",
+        description: "Clinical evaluation, medication management, and supportive care for schizophrenia and psychotic disorders.",
         keywords: "schizophrenia treatment Delhi, psychosis psychiatrist, delusion hallucination management",
         serviceName: "Schizophrenia & Psychosis Care",
         type: "MedicalWebPage"
     },
     '/services/addiction-disorders': {
         title: "Addiction & De-Addiction Treatment Clinic in Delhi | Dr. Pratik Kumar",
-        description: "Compassionate de-addiction therapy for alcohol, substance abuse, and behavioral addictions by Dr. Pratik Kumar.",
+        description: "De-addiction medical management for alcohol, substance abuse, and behavioral addictions by Dr. Pratik Kumar.",
         keywords: "de-addiction center Delhi, alcohol addiction treatment, substance abuse counselor",
         serviceName: "Addiction De-Addiction Services",
         type: "MedicalWebPage"
     },
     '/services/relationship-counseling': {
         title: "Relationship & Marital Counseling in Delhi | Dr. Pratik Kumar",
-        description: "Professional relationship counseling and couples therapy to build healthy communication and resolve conflicts.",
+        description: "Professional relationship counseling and couples guidance to foster constructive communication and interpersonal health.",
         keywords: "relationship counseling Delhi, couples therapy, marriage counselor Shalimar Bagh",
         serviceName: "Relationship & Marital Counseling",
         type: "MedicalWebPage"
     },
     '/services/ocd-ptsd-adhd': {
-        title: "OCD, PTSD & ADHD Treatment Specialist in Delhi | Dr. Pratik Kumar",
+        title: "OCD, PTSD & ADHD Clinical Care in Delhi | Dr. Pratik Kumar",
         description: "Specialized evidence-based care for OCD, post-traumatic stress disorder (PTSD), and adult/child ADHD.",
         keywords: "OCD treatment Delhi, PTSD specialist, ADHD psychiatrist Delhi, CBT therapy",
         serviceName: "OCD, PTSD & ADHD Treatment",
         type: "MedicalWebPage"
     },
     '/services/sleep-sexual-health': {
-        title: "Sleep Disorders & Sexual Health Specialist in Delhi | Dr. Pratik Kumar",
-        description: "Comprehensive solutions for insomnia, sleep apnea, psychosexual disorders, and sexual wellness.",
+        title: "Sleep Disorders & Sexual Health Care in Delhi | Dr. Pratik Kumar",
+        description: "Clinical evaluation for insomnia, sleep disorders, psychosexual health, and emotional well-being.",
         keywords: "sleep clinic Delhi, insomnia treatment, sexual health psychiatrist, psychosexual disorder care",
         serviceName: "Sleep & Sexual Health Therapy",
         type: "MedicalWebPage"
@@ -136,15 +136,15 @@ const seoContent: { [key: string]: SEOData } = {
         type: "MedicalWebPage"
     },
     '/check-your-anxiety': {
-        title: "Free Online GAD-7 Anxiety Assessment Tool | Delhi Global Mind Clinic",
-        description: "Evaluate your anxiety levels using the scientifically validated GAD-7 assessment tool online. Instant results & expert guidance.",
+        title: "Online GAD-7 Anxiety Assessment Tool | Delhi Global Mind Clinic",
+        description: "Evaluate your anxiety symptoms using the scientifically validated GAD-7 screening tool online. Structured results & clinical guidance.",
         keywords: "anxiety test online, GAD-7 assessment, check anxiety levels, mental health self-assessment",
         type: "MedicalWebPage"
     },
     '/contact': {
-        title: "Contact & Book Appointment | Delhi Global Mind Clinic - West Shalimar Bagh",
-        description: "Book an in-clinic or online consultation with Dr. Pratik Kumar at Delhi Global Mind Clinic, West Shalimar Bagh, New Delhi. Call +91 99340 35397.",
-        keywords: "book psychiatrist appointment Delhi, Shalimar Bagh clinic contact, Dr. Pratik Kumar phone number",
+        title: "Contact & Clinic Consultations | Delhi Global Mind Clinic - Shalimar Bagh",
+        description: "Schedule an in-clinic or online consultation with Dr. Pratik Kumar at Delhi Global Mind Clinic, Shalimar Bagh, New Delhi. Call +91 99340 35397.",
+        keywords: "psychiatrist appointment Delhi, Shalimar Bagh clinic contact, Dr. Pratik Kumar phone number",
         type: "ContactPage"
     }
 };

@@ -9,7 +9,7 @@ export const EDUCATION: EducationShowcaseListItemProps[] = [
         },
         date: "Jan 2018", 
         location: "New Delhi, India",
-        description: "Specialisation in DNB psychaitry"
+        description: "Specialisation in DNB psychiatry"
     }, 
     {
         title: "MBBS",

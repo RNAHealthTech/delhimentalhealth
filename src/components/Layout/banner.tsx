@@ -27,8 +27,8 @@ const Banner: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-2 sm:px-4">
-        <p className='hidden sm:block text-sm sm:text-base md:text-lg'>Discover unparalleled care with One of India's best therapists. Transform your life with personalized, compassionate therapy that empowers you to thrive.</p>
-        <p className="text-teal-900 text-sm sm:text-base md:text-lg">Book Your Appointment Today!</p>
+        <p className='hidden sm:block text-sm sm:text-base md:text-lg'>Consultant psychiatric and mental healthcare services by Dr. Pratik Kumar, MBBS, DNB Psychiatry.</p>
+        <p className="text-teal-900 text-sm sm:text-base md:text-lg">Consultations available at Delhi Global Mind Clinic, Shalimar Bagh, New Delhi.</p>
       </div>
     </div>
   );

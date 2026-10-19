@@ -109,8 +109,8 @@ const Services: React.FC = () => {
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
           {/* Left side: Text and Slides */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <h1 className="text-4xl font-bold text-teal-800 mb-6">Transformative Mental Health Care</h1>
-            <p className="text-xl text-gray-600 mb-8">Personalized expertise for your unique journey to well-being</p>
+            <h1 className="text-4xl font-bold text-teal-800 mb-6">Clinical Mental Health Services</h1>
+            <p className="text-xl text-gray-600 mb-8">Evidence-based psychiatric care and individual treatment planning</p>
             <div className="bg-amber-50 border-l-4 border-teal-800 p-6 rounded-r-lg shadow-md mb-8">
               <h2 className="text-2xl font-semibold text-teal-800 mb-3">Daily Mental Health Check-In</h2>
               <p className="text-gray-700 mb-4">How are you feeling today? Select an emoji that best represents your current state:</p>

@@ -131,10 +131,10 @@ const AnxietyAssessment: React.FC = () => {
                   <div className="bg-teal-50 p-6 rounded-xl border border-teal-100">
                     <h3 className="font-bold text-teal-900 mb-3">Next Steps</h3>
                     <ul className="text-sm text-teal-800 space-y-2">
-                    <li>• Consult Dr. Pratik Kumar for Expert Opinion</li>
-                    <li>• Keep a journal of your symptoms</li>
-                    <li>• Practice daily mindfulness or meditation</li>
-                    <li>• Discuss these results with a healthcare provider</li>
+                    <li>• Consult a psychiatrist or healthcare professional for clinical evaluation</li>
+                    <li>• Keep a record of your symptoms and potential triggers</li>
+                    <li>• Practice relaxation and mindfulness techniques</li>
+                    <li>• Discuss these results during a clinical consultation</li>
                     </ul>
                   </div>
                 </div>
